@@ -6,19 +6,19 @@ from entities.reimbursement import Reimbursement
 from entities.submission import Submission
 
 
-class EmployeeDAO(ABC):
+class EmployeeService(ABC):
     @abstractmethod
-    def login(self, credentials: Credentials):
+    def service_login(self, credentials: Credentials):
         pass
 
     @abstractmethod
-    def submit_new_request(self, submission: Submission):
+    def service_submit_new_request(self, submission: Submission):
         pass
 
     @abstractmethod
-    def view_reimbursements_by_employee_id(self, employee_id: int) -> List[Reimbursement]:
+    def service_view_reimbursements_by_employee_id(self, employee_id: int) -> List[Reimbursement]:
         pass
 
     @abstractmethod
-    def logout(self) -> bool:
+    def service_logout(self) -> bool:
         pass

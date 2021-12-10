@@ -1,0 +1,286 @@
+2021-12-09 21:13:28,803 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-09 21:19:05,592 ERROR Exception on /submission [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 33, in submit_new_request
+    submission_id = employee_service.service_submit_new_request(new_submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 26, in service_submit_new_request
+    return self.employee_dao.submit_new_request(submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 21, in submit_new_request
+    cursor.execute(sql, (submission.employee_id, submission.date, submission.amount, submission.reason))
+psycopg2.errors.UndefinedTable: relation "reimbursements" does not exist
+LINE 1: insert into reimbursements values(default, 1, '2021-12-09', ...
+                    ^
+
+2021-12-09 21:19:05,601 INFO 127.0.0.1 - - [09/Dec/2021 21:19:05] "[35m[1mPOST /submission HTTP/1.1[0m" 500 -
+2021-12-09 21:20:49,381 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-09 21:20:55,664 ERROR Exception on /submission [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 33, in submit_new_request
+    submission_id = employee_service.service_submit_new_request(new_submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 26, in service_submit_new_request
+    return self.employee_dao.submit_new_request(submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 21, in submit_new_request
+    cursor.execute(sql, (submission.employee_id, submission.date, submission.amount, submission.reason))
+psycopg2.errors.UndefinedTable: relation "reimbursements" does not exist
+LINE 1: insert into reimbursements values(default, 1, '2021-12-09', ...
+                    ^
+
+2021-12-09 21:20:55,667 INFO 127.0.0.1 - - [09/Dec/2021 21:20:55] "[35m[1mPOST /submission HTTP/1.1[0m" 500 -
+2021-12-09 21:27:05,836 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-09 21:27:11,280 ERROR Exception on /submission [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 33, in submit_new_request
+    submission_id = employee_service.service_submit_new_request(new_submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 26, in service_submit_new_request
+    return self.employee_dao.submit_new_request(submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 21, in submit_new_request
+    cursor.execute(sql, (submission.employee_id, submission.date, submission.amount, submission.reason))
+psycopg2.errors.UndefinedTable: relation "reimbursements" does not exist
+LINE 1: insert into reimbursements values(default, 1, '2021-12-09', ...
+                    ^
+
+2021-12-09 21:27:11,288 INFO 127.0.0.1 - - [09/Dec/2021 21:27:11] "[35m[1mPOST /submission HTTP/1.1[0m" 500 -
+2021-12-09 21:27:50,681 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-09 21:27:55,240 ERROR Exception on /submission [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 33, in submit_new_request
+    submission = employee_service.service_submit_new_request(new_submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 26, in service_submit_new_request
+    return self.employee_dao.submit_new_request(submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 21, in submit_new_request
+    cursor.execute(sql, (submission.employee_id, submission.date, submission.amount, submission.reason))
+psycopg2.errors.UndefinedTable: relation "reimbursements" does not exist
+LINE 1: insert into reimbursements values(default, 1, '2021-12-09', ...
+                    ^
+
+2021-12-09 21:27:55,244 INFO 127.0.0.1 - - [09/Dec/2021 21:27:55] "[35m[1mPOST /submission HTTP/1.1[0m" 500 -
+2021-12-09 21:28:11,445 ERROR Exception on /submission [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 33, in submit_new_request
+    submission = employee_service.service_submit_new_request(new_submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 26, in service_submit_new_request
+    return self.employee_dao.submit_new_request(submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 21, in submit_new_request
+    cursor.execute(sql, (submission.employee_id, submission.date, submission.amount, submission.reason))
+psycopg2.errors.InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block
+
+2021-12-09 21:28:11,446 INFO 127.0.0.1 - - [09/Dec/2021 21:28:11] "[35m[1mPOST /submission HTTP/1.1[0m" 500 -
+2021-12-09 21:40:05,719 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-09 21:43:47,892 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-09 21:44:47,750 ERROR Exception on /submission [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 33, in submit_new_request
+    submission = employee_service.service_submit_new_request(new_submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 26, in service_submit_new_request
+    return self.employee_dao.submit_new_request(submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 21, in submit_new_request
+    cursor.execute(sql, (submission.employee_id, submission.date, submission.amount, submission.reason))
+psycopg2.errors.UndefinedTable: relation "reimbursements" does not exist
+LINE 1: insert into reimbursements values(default, 1, '2021-12-09', ...
+                    ^
+
+2021-12-09 21:44:47,758 INFO 127.0.0.1 - - [09/Dec/2021 21:44:47] "[35m[1mPOST /submission HTTP/1.1[0m" 500 -
+2021-12-09 21:52:14,485 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-09 21:52:18,575 ERROR Exception on /submission [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 33, in submit_new_request
+    submission = employee_service.service_submit_new_request(new_submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 26, in service_submit_new_request
+    return self.employee_dao.submit_new_request(submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 21, in submit_new_request
+    cursor.execute(sql, (submission.employee_id, submission.date, submission.amount, submission.reason))
+psycopg2.errors.UndefinedTable: relation "reimbursements" does not exist
+LINE 1: insert into reimbursements values(default, 1, '2021-12-09', ...
+                    ^
+
+2021-12-09 21:52:18,579 INFO 127.0.0.1 - - [09/Dec/2021 21:52:18] "[35m[1mPOST /submission HTTP/1.1[0m" 500 -
+2021-12-09 22:01:08,672 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-09 22:01:14,904 ERROR Exception on /submission [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 33, in submit_new_request
+    submission = employee_service.service_submit_new_request(new_submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 26, in service_submit_new_request
+    return self.employee_dao.submit_new_request(submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 21, in submit_new_request
+    cursor.execute(sql, (submission.employee_id, submission.date, submission.amount, submission.reason))
+psycopg2.errors.UndefinedTable: relation "reimbursements" does not exist
+LINE 1: insert into reimbursements values(default, 1, '2021-12-09', ...
+                    ^
+
+2021-12-09 22:01:14,908 INFO 127.0.0.1 - - [09/Dec/2021 22:01:14] "[35m[1mPOST /submission HTTP/1.1[0m" 500 -
+2021-12-09 22:06:11,910 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-09 22:06:16,371 ERROR Exception on /submission [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 33, in submit_new_request
+    submission = employee_service.service_submit_new_request(new_submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 26, in service_submit_new_request
+    return self.employee_dao.submit_new_request(submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 21, in submit_new_request
+    cursor.execute(sql, (submission.employee_id, submission.date, submission.amount, submission.reason))
+psycopg2.errors.UndefinedTable: relation "reimbursements" does not exist
+LINE 1: insert into reimbursements values(default, 1, '2021-12-09', ...
+                    ^
+
+2021-12-09 22:06:16,377 INFO 127.0.0.1 - - [09/Dec/2021 22:06:16] "[35m[1mPOST /submission HTTP/1.1[0m" 500 -
+2021-12-09 22:12:52,439 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-09 22:12:56,122 ERROR Exception on /submission [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 33, in submit_new_request
+    submission = employee_service.service_submit_new_request(new_submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 26, in service_submit_new_request
+    return self.employee_dao.submit_new_request(submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 21, in submit_new_request
+    cursor.execute(sql, (submission.employee_id, submission.date, submission.amount, submission.reason))
+psycopg2.errors.UndefinedTable: relation "reimbursements" does not exist
+LINE 1: insert into reimbursements values(default, 1, '2021-12-09', ...
+                    ^
+
+2021-12-09 22:12:56,126 INFO 127.0.0.1 - - [09/Dec/2021 22:12:56] "[35m[1mPOST /submission HTTP/1.1[0m" 500 -
+2021-12-09 22:16:19,855 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-09 22:16:23,648 ERROR Exception on /submission [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 33, in submit_new_request
+    submission = employee_service.service_submit_new_request(new_submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 26, in service_submit_new_request
+    return self.employee_dao.submit_new_request(submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 21, in submit_new_request
+    cursor.execute(sql, (submission.employee_id, submission.date, submission.amount, submission.reason))
+psycopg2.errors.UndefinedTable: relation "reimbursements" does not exist
+LINE 1: insert into reimbursements values(default, 1, '2021-12-09', ...
+                    ^
+
+2021-12-09 22:16:23,651 INFO 127.0.0.1 - - [09/Dec/2021 22:16:23] "[35m[1mPOST /submission HTTP/1.1[0m" 500 -
+2021-12-10 09:29:30,020 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-10 09:31:08,337 ERROR Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 26, in login
+    logged_in = employee_service.service_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 18, in service_login
+    credentials_returned = self.employee_dao.login(test_credentials)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 14, in login
+    cursor.execute(sql, (credentials.user_name, credentials.password))
+psycopg2.errors.UndefinedTable: relation "employees" does not exist
+LINE 1: select user_name, password from employees where user_name = ...
+                                        ^
+
+2021-12-10 09:31:08,343 INFO 127.0.0.1 - - [10/Dec/2021 09:31:08] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2021-12-10 09:31:56,527 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-10 09:32:02,655 INFO 127.0.0.1 - - [10/Dec/2021 09:32:02] "POST /submission HTTP/1.1" 200 -
+2021-12-10 09:32:08,775 ERROR Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1538, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1731, in make_response
+    "The view function did not return a valid"
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a bool.
+2021-12-10 09:32:08,777 INFO 127.0.0.1 - - [10/Dec/2021 09:32:08] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2021-12-10 09:34:36,731 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-10 09:34:40,623 INFO 127.0.0.1 - - [10/Dec/2021 09:34:40] "[35m[1mPOST /login HTTP/1.1[0m" 0 -
+2021-12-10 09:35:20,615 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-10 09:35:25,334 INFO 127.0.0.1 - - [10/Dec/2021 09:35:25] "POST /login HTTP/1.1" 200 -
+2021-12-10 09:36:52,940 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-10 09:43:34,362 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-10 09:44:23,109 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-10 09:44:27,160 INFO 127.0.0.1 - - [10/Dec/2021 09:44:27] "POST /login HTTP/1.1" 200 -
+2021-12-10 09:59:01,906 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-10 10:01:05,648 INFO 127.0.0.1 - - [10/Dec/2021 10:01:05] "GET /reimbursements/1 HTTP/1.1" 200 -
