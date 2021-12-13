@@ -8,7 +8,7 @@ from entities.submission import Submission
 
 class EmployeeDAO(ABC):
     @abstractmethod
-    def login(self, credentials: Credentials):
+    def employee_login(self, credentials: Credentials):
         pass
 
     @abstractmethod
@@ -17,8 +17,4 @@ class EmployeeDAO(ABC):
 
     @abstractmethod
     def view_reimbursements_by_employee_id(self, employee_id: int) -> List[Reimbursement]:
-        pass
-
-    @abstractmethod
-    def logout(self) -> bool:
         pass

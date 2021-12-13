@@ -1,46 +1,56 @@
 from dao_layer.implemented_classes.manager_postgres_dao import ManagerPostgresDAO
-from entities.reimbursement import Reimbursement
+from entities.credentials import Credentials
 
-manager_dao_postgres = ManagerPostgresDAO()
+manager_postgres_dao = ManagerPostgresDAO()
 
-reimbursement_comment = Reimbursement(1, "2021-12-09", 25.00, "food", "denied", "Went over allowance of $20.00")
+credentials = Credentials("laPatrona", "bella1")
 
 
-def test_login_success():
-    login = manager_dao_postgres.login("laPatrona", "bella1")
+def test_manager_login_success():
+    login = manager_postgres_dao.manager_login(credentials)
     assert bool(login)
 
 
 def test_approve_reimbursement_by_id_success():
-    approved = manager_dao_postgres.approve_reimbursement_by_id(1)
+    approved = manager_postgres_dao.approve_reimbursement_by_id(14)
     assert bool(approved)
 
 
 def test_deny_reimbursement_by_id_success():
-    denied = manager_dao_postgres.deny_reimbursement_by_id(2)
+    denied = manager_postgres_dao.deny_reimbursement_by_id(2, "Over 40$ allowance.")
     assert bool(denied)
 
 
-def test_decision_comment_by_id_success():
-    comment = manager_dao_postgres.decision_comment_by_id(reimbursement_comment)
-    assert bool(comment)
-
-
 def test_view_pending_requests_success():
-    pending_requests = manager_dao_postgres.view_pending_requests()
+    pending_requests = manager_postgres_dao.view_pending_requests()
     assert len(pending_requests) >= 1
 
 
 def test_view_past_requests_success():
-    past_requests = manager_dao_postgres.view_past_requests()
+    past_requests = manager_postgres_dao.view_past_requests()
     assert len(past_requests) >= 1
 
 
-def test_view_stats_success():
-    stats = manager_dao_postgres.view_stats()
+def test_view_total_amount_approved_by_employee_success():
+    stats = manager_postgres_dao.view_total_amount_approved()
     assert len(stats) >= 1
 
 
-def test_logout_success():
-    logged_out = manager_dao_postgres.logout()
-    assert bool(logged_out)
+def test_view_total_number_approved_requests_success():
+    stats = manager_postgres_dao.view_total_number_approved_requests()
+    assert len(stats) >= 1
+
+
+def test_view_total_number_denied_requests_success():
+    stats = manager_postgres_dao.view_total_number_denied_requests()
+    assert len(stats) >= 1
+
+
+def test_view_total_number_approved_food_drink_success():
+    stats = manager_postgres_dao.view_total_number_approved_food_drink()
+    assert len(stats) >= 1
+
+
+def test_view_total_number_approved_transportation_success():
+    stats = manager_postgres_dao.view_total_number_approved_transportation()
+    assert bool(stats)

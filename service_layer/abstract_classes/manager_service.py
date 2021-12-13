@@ -10,45 +10,43 @@ from entities.total_number_approved_transportation import TotalNumberApprovedTra
 from entities.total_number_denied_requests import TotalNumberDeniedRequests
 
 
-class ManagerDAO(ABC):
+class ManagerService(ABC):
     @abstractmethod
-    def manager_login(self, credentials: Credentials):
+    def service_manager_login(self, credentials: Credentials):
         pass
 
     @abstractmethod
-    def approve_reimbursement_by_id(self, reimbursement_id: int):
+    def service_approve_reimbursement_by_id(self, reimbursement_id: int):
         pass
 
     @abstractmethod
-    def deny_reimbursement_by_id(self, reimbursement_id: int, comment: str):
+    def service_deny_reimbursement_by_id(self, reimbursement_id: int, comment: str):
         pass
 
     @abstractmethod
-    def view_pending_requests(self) -> List[Reimbursement]:
+    def service_view_pending_requests(self) -> List[Reimbursement]:
         pass
 
     @abstractmethod
-    def view_past_requests(self) -> List[Reimbursement]:
-        pass
-
-    # stats
-    @abstractmethod
-    def view_total_amount_approved(self) -> List[TotalAmountApproved]:
+    def service_view_past_requests(self) -> List[Reimbursement]:
         pass
 
     @abstractmethod
-    def view_total_number_approved_requests(self) -> List[TotalNumberApprovedRequests]:
+    def service_view_total_amount_approved(self) -> List[TotalAmountApproved]:
         pass
 
     @abstractmethod
-    def view_total_number_denied_requests(self) -> List[TotalNumberDeniedRequests]:
+    def service_view_total_number_approved_requests(self) -> List[TotalNumberApprovedRequests]:
         pass
 
     @abstractmethod
-    def view_total_number_approved_food_drink(self) -> List[TotalNumberApprovedFoodDrink]:
+    def service_view_total_number_denied_requests(self) -> List[TotalNumberDeniedRequests]:
         pass
 
     @abstractmethod
-    def view_total_number_approved_transportation(self) -> List[TotalNumberApprovedTransportation]:
+    def service_view_total_number_approved_food_drink(self) -> List[TotalNumberApprovedFoodDrink]:
         pass
 
+    @abstractmethod
+    def service_view_total_number_approved_transportation(self) -> List[TotalNumberApprovedTransportation]:
+        pass

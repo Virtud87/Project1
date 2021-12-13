@@ -10,10 +10,10 @@ employee_service = EmployeePostgresService(employee_dao)
 
 submission = Submission(0, 1, "2021-12-09", "string", "transportation")
 
-credentials = Credentials("User", "pwd")
+credentials = Credentials("user", "veritas1")
 
 
-def test_service_login():
+def test_service_employee_login():
     try:
         employee_service.service_login(credentials)
         assert False

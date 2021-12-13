@@ -8,7 +8,7 @@ from util.database_connection import connection
 
 
 class EmployeePostgresDAO(EmployeeDAO):
-    def login(self, credentials: Credentials):
+    def employee_login(self, credentials: Credentials):
         sql = "select user_name, password from employees where user_name = %s and password = %s"
         cursor = connection.cursor()
         cursor.execute(sql, (credentials.user_name, credentials.password))
@@ -32,6 +32,3 @@ class EmployeePostgresDAO(EmployeeDAO):
         for reimbursement in all_reimbursements:
             reimbursements.append(Reimbursement(*reimbursement))
         return reimbursements
-
-    def logout(self) -> bool:
-        pass
