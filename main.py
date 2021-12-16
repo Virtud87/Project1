@@ -1,5 +1,6 @@
 import logging
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 from custom_exceptions.custom_exceptions import NonNumericAmount, NegativeDollarAmount, UsernameOrPasswordIncorrect
 from dao_layer.implemented_classes.employee_postgres_dao import EmployeePostgresDAO
@@ -12,6 +13,7 @@ from service_layer.implemented_classes.manager_postgres_service import ManagerPo
 logging.basicConfig(filename="records.log", level=logging.DEBUG, format=f"%(asctime)s %(levelname)s %(message)s")
 
 app: Flask = Flask(__name__)
+CORS(app)
 
 employee_dao = EmployeePostgresDAO()
 employee_service = EmployeePostgresService(employee_dao)
@@ -28,8 +30,9 @@ def employee_login():
         login_data = Credentials(
             credentials["username"],
             credentials["password"])
-        logged_in = employee_service.service_employee_login(login_data)
-        return f"Logged in as {logged_in}."
+        employee = employee_service.service_employee_login(login_data)
+        employee_id_as_dict = {"managerId": int(employee[1])}
+        return employee_id_as_dict
     except UsernameOrPasswordIncorrect as e:
         exception_dictionary = {"message": str(e)}
         return jsonify(exception_dictionary)
@@ -73,8 +76,9 @@ def manager_login():
         login_data = Credentials(
             credentials["username"],
             credentials["password"])
-        logged_in = manager_service.service_manager_login(login_data)
-        return f"Logged in as {logged_in}."
+        manager = manager_service.service_manager_login(login_data)
+        manager_id_as_dict = {"managerId": int(manager[1])}
+        return manager_id_as_dict
     except UsernameOrPasswordIncorrect as e:
         exception_dictionary = {"message": str(e)}
         return jsonify(exception_dictionary)

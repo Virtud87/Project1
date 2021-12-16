@@ -16,6 +16,10 @@ class ManagerDAO(ABC):
         pass
 
     @abstractmethod
+    def return_manager_id(self, credentials: Credentials):
+        pass
+
+    @abstractmethod
     def approve_reimbursement_by_id(self, reimbursement_id: int):
         pass
 

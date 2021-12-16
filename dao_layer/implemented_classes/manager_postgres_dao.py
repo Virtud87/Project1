@@ -1,4 +1,5 @@
-from typing import List, Tuple, Dict
+from typing import List
+
 
 from dao_layer.abstract_classes.manager_dao import ManagerDAO
 from entities.credentials import Credentials
@@ -16,9 +17,15 @@ class ManagerPostgresDAO(ManagerDAO):
         sql = "select user_name, password from managers where user_name = %s and password = %s"
         cursor = connection.cursor()
         cursor.execute(sql, (credentials.user_name, credentials.password))
-        connection.commit()
         credentials = cursor.fetchone()
         return credentials
+
+    def return_manager_id(self, credentials: Credentials):
+        sql = "select manager_id from managers where user_name = %s and password = %s"
+        cursor = connection.cursor()
+        cursor.execute(sql, (credentials.user_name, credentials.password))
+        manager_id = cursor.fetchone()
+        return str(manager_id)
 
     def approve_reimbursement_by_id(self, reimbursement_id: int):
         sql = "update reimbursements set status = 'approved' where reimbursement_id = %s"

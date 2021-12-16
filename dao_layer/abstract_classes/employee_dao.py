@@ -12,6 +12,10 @@ class EmployeeDAO(ABC):
         pass
 
     @abstractmethod
+    def return_employee_id(self, credentials: Credentials):
+        pass
+
+    @abstractmethod
     def submit_new_request(self, submission: Submission):
         pass
 

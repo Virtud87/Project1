@@ -12,9 +12,15 @@ class EmployeePostgresDAO(EmployeeDAO):
         sql = "select user_name, password from employees where user_name = %s and password = %s"
         cursor = connection.cursor()
         cursor.execute(sql, (credentials.user_name, credentials.password))
-        connection.commit()
         credentials = cursor.fetchone()
         return credentials
+
+    def return_employee_id(self, credentials: Credentials):
+        sql = "select employee_id from employees where user_name = %s and password = %s"
+        cursor = connection.cursor()
+        cursor.execute(sql, (credentials.user_name, credentials.password))
+        employee_id = cursor.fetchone()
+        return str(employee_id)
 
     def submit_new_request(self, submission: Submission):
         sql = "insert into reimbursements values(default, %s, %s, %s, %s)"

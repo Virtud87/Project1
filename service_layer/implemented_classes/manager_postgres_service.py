@@ -19,10 +19,10 @@ class ManagerPostgresService(ManagerService):
         self.manager_dao = manager_dao
 
     def service_manager_login(self, credentials: Credentials):
-        credentials_returned = self.manager_dao.manager_login(test_credentials)
-        if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+        credentials_returned = self.manager_dao.manager_login(credentials)
+        if credentials_returned is None:
             raise UsernameOrPasswordIncorrect("Either your user name or password or both are incorrect!")
-        return self.manager_dao.manager_login(credentials)
+        return self.manager_dao.return_manager_id(credentials)
 
     def service_approve_reimbursement_by_id(self, reimbursement_id: int):
         return self.manager_dao.approve_reimbursement_by_id(reimbursement_id)

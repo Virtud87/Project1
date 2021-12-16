@@ -15,10 +15,10 @@ class EmployeePostgresService(EmployeeService):
         self.employee_dao = employee_dao
 
     def service_employee_login(self, credentials: Credentials):
-        credentials_returned = self.employee_dao.employee_login(test_credentials)
-        if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+        credentials_returned = self.employee_dao.employee_login(credentials)
+        if credentials_returned is None:
             raise UsernameOrPasswordIncorrect("Either your user name or password or both are incorrect!")
-        return self.employee_dao.employee_login(credentials)
+        return self.employee_dao.return_employee_id(credentials)
 
     def service_submit_new_request(self, submission: Submission):
         check_float = isinstance(submission.amount, float)

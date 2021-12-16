@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Prestige! Worldwide</h1>
+      <p>a global consulting firm in AI</p>
+    </header>
+    <section class="articles">
+      <article class="card-login card-manager">
+        <h2 class="login-h2">Continue as a MANAGER</h2>
+        <div class="input-group">
+          <input
+            id="manager-username"
+            class="input"
+            type="text"
+            placeholder="Enter username"
+          />
+          <input
+            id="manager-password"
+            class="input"
+            type="text"
+            placeholder="Enter password"
+          />
+        </div>
+        <button
+          onclick="validateLogin()"
+          id="manager-login"
+          class="btn btn--login btn--primary"
+        >
+          login
+        </button>
+      </article>
+      <article class="card-login card-employee">
+        <h2 class="login-h2">Continue as an EMPLOYEE</h2>
+        <div class="input-group">
+          <input class="input" type="text" placeholder="Enter username" />
+          <input class="input" type="text" placeholder="Enter password" />
+        </div>
+        <button id="employee-login" class="btn btn--login btn--primary">
+          login
+        </button>
+      </article>
+    </section>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

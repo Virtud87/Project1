@@ -493,3 +493,1423 @@ AttributeError: 'tuple' object has no attribute 'create_tnar_dictionary'
 2021-12-12 18:01:27,282 INFO 127.0.0.1 - - [12/Dec/2021 18:01:27] "GET /foodDrink HTTP/1.1" 200 -
 2021-12-12 18:08:07,384 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 2021-12-12 18:09:11,370 INFO 127.0.0.1 - - [12/Dec/2021 18:09:11] "GET /transportation HTTP/1.1" 200 -
+2021-12-14 12:30:43,815 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-14 12:56:02,989 INFO 127.0.0.1 - - [14/Dec/2021 12:56:02] "POST /manager/login HTTP/1.1" 200 -
+2021-12-14 12:56:16,341 INFO 127.0.0.1 - - [14/Dec/2021 12:56:16] "POST /manager/login HTTP/1.1" 200 -
+2021-12-14 13:41:54,883 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-14 13:41:59,640 INFO 127.0.0.1 - - [14/Dec/2021 13:41:59] "[35m[1mPOST /manager/login HTTP/1.1[0m" 0 -
+2021-12-14 13:42:27,321 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-14 13:42:33,550 INFO 127.0.0.1 - - [14/Dec/2021 13:42:33] "POST /manager/login HTTP/1.1" 200 -
+2021-12-14 13:42:38,347 INFO 127.0.0.1 - - [14/Dec/2021 13:42:38] "[35m[1mPOST /manager/login HTTP/1.1[0m" 0 -
+2021-12-14 13:44:44,270 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-14 13:44:49,861 INFO 127.0.0.1 - - [14/Dec/2021 13:44:49] "POST /manager/login HTTP/1.1" 200 -
+2021-12-14 14:00:50,132 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-14 14:00:55,760 INFO 127.0.0.1 - - [14/Dec/2021 14:00:55] "POST /manager/login HTTP/1.1" 200 -
+2021-12-14 14:01:00,937 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 77, in manager_login
+    credentials_as_dict = logged_in.create_credentials_dictionary()
+AttributeError: 'tuple' object has no attribute 'create_credentials_dictionary'
+2021-12-14 14:01:00,943 INFO 127.0.0.1 - - [14/Dec/2021 14:01:00] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-14 14:02:03,663 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-14 14:02:33,034 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 77, in manager_login
+    credentials_as_dict = logged_in.create_credentials_dictionary()
+AttributeError: 'tuple' object has no attribute 'create_credentials_dictionary'
+2021-12-14 14:02:33,044 INFO 127.0.0.1 - - [14/Dec/2021 14:02:33] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-14 14:04:21,008 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-14 14:04:25,400 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 77, in manager_login
+    credentials_as_dict = logged_in.create_credentials_dictionary()
+AttributeError: 'tuple' object has no attribute 'create_credentials_dictionary'
+2021-12-14 14:04:25,406 INFO 127.0.0.1 - - [14/Dec/2021 14:04:25] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-14 14:53:11,991 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-14 14:53:17,139 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 77, in manager_login
+    credentials_as_dict = dict((x, y) for x, y in logged_in)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 77, in <genexpr>
+    credentials_as_dict = dict((x, y) for x, y in logged_in)
+ValueError: too many values to unpack (expected 2)
+2021-12-14 14:53:17,146 INFO 127.0.0.1 - - [14/Dec/2021 14:53:17] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-14 14:54:13,944 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-14 14:54:18,580 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 77, in manager_login
+    credentials_as_dict = dict((x, y) for x, y in logged_in)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 77, in <genexpr>
+    credentials_as_dict = dict((x, y) for x, y in logged_in)
+ValueError: too many values to unpack (expected 2)
+2021-12-14 14:54:18,585 INFO 127.0.0.1 - - [14/Dec/2021 14:54:18] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-14 14:56:43,150 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-14 14:56:51,879 INFO 127.0.0.1 - - [14/Dec/2021 14:56:51] "POST /employee/login HTTP/1.1" 200 -
+2021-12-14 14:57:02,938 INFO 127.0.0.1 - - [14/Dec/2021 14:57:02] "POST /employee/login HTTP/1.1" 200 -
+2021-12-14 14:58:04,755 INFO 127.0.0.1 - - [14/Dec/2021 14:58:04] "POST /employee/login HTTP/1.1" 200 -
+2021-12-14 14:58:32,403 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-14 14:58:37,478 INFO 127.0.0.1 - - [14/Dec/2021 14:58:37] "[35m[1mPOST /employee/login HTTP/1.1[0m" 0 -
+2021-12-14 14:59:21,666 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-14 14:59:29,321 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 77, in manager_login
+    credentials_as_dict = dict((x, y) for x, y in logged_in)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 77, in <genexpr>
+    credentials_as_dict = dict((x, y) for x, y in logged_in)
+ValueError: too many values to unpack (expected 2)
+2021-12-14 14:59:29,327 INFO 127.0.0.1 - - [14/Dec/2021 14:59:29] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-14 15:11:18,445 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-14 15:11:28,952 INFO 127.0.0.1 - - [14/Dec/2021 15:11:28] "POST /manager/login HTTP/1.1" 200 -
+2021-12-14 15:29:56,474 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-14 15:30:00,847 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 22, in service_manager_login
+    manager = self.manager_dao.manager_login(test_credentials)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 20, in manager_login
+    return manager.manager_id
+AttributeError: 'tuple' object has no attribute 'manager_id'
+2021-12-14 15:30:00,851 INFO 127.0.0.1 - - [14/Dec/2021 15:30:00] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-14 15:34:50,606 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-14 15:34:54,019 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 22, in service_manager_login
+    manager = self.manager_dao.manager_login(test_credentials)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 20, in manager_login
+    return manager.manager_id
+AttributeError: 'tuple' object has no attribute 'manager_id'
+2021-12-14 15:34:54,026 INFO 127.0.0.1 - - [14/Dec/2021 15:34:54] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-14 15:55:36,067 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-14 15:55:42,001 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 25, in service_manager_login
+    return self.manager_dao.return_manager_id(credentials)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 26, in return_manager_id
+    cursor.execute(sql, (credentials.user_name, credentials.password))
+psycopg2.errors.SyntaxError: syntax error at or near "returning"
+LINE 1: ...e user_name = 'laPatrona' and password = 'bella1' returning ...
+                                                             ^
+
+2021-12-14 15:55:42,005 INFO 127.0.0.1 - - [14/Dec/2021 15:55:42] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-14 15:56:08,848 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-14 15:56:11,991 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 77, in manager_login
+    manager_id_as_dict = {"managerId": manager.manager_id}
+AttributeError: 'tuple' object has no attribute 'manager_id'
+2021-12-14 15:56:11,996 INFO 127.0.0.1 - - [14/Dec/2021 15:56:11] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-14 15:56:52,935 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-14 15:56:55,899 INFO 127.0.0.1 - - [14/Dec/2021 15:56:55] "POST /manager/login HTTP/1.1" 200 -
+2021-12-14 15:57:43,058 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-14 15:57:46,487 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 77, in manager_login
+    manager_id_as_dict = {"managerId": int(manager)}
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+2021-12-14 15:57:46,492 INFO 127.0.0.1 - - [14/Dec/2021 15:57:46] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-14 16:02:58,155 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 77, in manager_login
+    manager_id_as_dict = {"managerId": manager}
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+2021-12-14 16:02:58,160 INFO 127.0.0.1 - - [14/Dec/2021 16:02:58] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-14 16:03:18,810 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-14 16:03:21,705 INFO 127.0.0.1 - - [14/Dec/2021 16:03:21] "POST /manager/login HTTP/1.1" 200 -
+2021-12-14 16:07:21,988 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-14 16:07:25,519 INFO 127.0.0.1 - - [14/Dec/2021 16:07:25] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 09:38:20,085 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 09:39:38,423 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 09:40:13,519 INFO 127.0.0.1 - - [15/Dec/2021 09:40:13] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 09:40:37,975 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 09:40:43,260 INFO 127.0.0.1 - - [15/Dec/2021 09:40:43] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 09:41:50,185 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 23, in service_manager_login
+    if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 09:41:50,194 INFO 127.0.0.1 - - [15/Dec/2021 09:41:50] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 09:43:38,934 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 09:43:45,516 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 23, in service_manager_login
+    if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+IndexError: list index out of range
+2021-12-15 09:43:45,524 INFO 127.0.0.1 - - [15/Dec/2021 09:43:45] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 09:43:51,369 INFO 127.0.0.1 - - [15/Dec/2021 09:43:51] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 09:44:47,757 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 09:44:56,833 INFO 127.0.0.1 - - [15/Dec/2021 09:44:56] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 09:45:02,026 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 23, in service_manager_login
+    if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+IndexError: list index out of range
+2021-12-15 09:45:02,031 INFO 127.0.0.1 - - [15/Dec/2021 09:45:02] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 09:45:37,148 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 09:45:41,138 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 22, in service_manager_login
+    credentials_returned = self.manager_dao.manager_login(credentials)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 22, in manager_login
+    for credential in credentials:
+TypeError: 'NoneType' object is not iterable
+2021-12-15 09:45:41,144 INFO 127.0.0.1 - - [15/Dec/2021 09:45:41] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 09:45:46,026 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 22, in service_manager_login
+    credentials_returned = self.manager_dao.manager_login(credentials)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 23, in manager_login
+    credentials_list.append(Credentials(*credential))
+TypeError: __init__() takes 3 positional arguments but 10 were given
+2021-12-15 09:45:46,027 INFO 127.0.0.1 - - [15/Dec/2021 09:45:46] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 09:46:15,837 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 09:46:24,757 INFO 127.0.0.1 - - [15/Dec/2021 09:46:24] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 09:47:07,201 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 09:47:11,303 INFO 127.0.0.1 - - [15/Dec/2021 09:47:11] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 09:47:31,629 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 09:47:37,305 INFO 127.0.0.1 - - [15/Dec/2021 09:47:37] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 09:48:16,203 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 74, in manager_login
+    credentials["username"],
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 09:48:16,207 INFO 127.0.0.1 - - [15/Dec/2021 09:48:16] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 09:48:42,425 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 09:48:50,064 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 74, in manager_login
+    credentials["username"],
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 09:48:50,067 INFO 127.0.0.1 - - [15/Dec/2021 09:48:50] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 10:29:21,490 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 10:30:06,978 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 23, in service_manager_login
+    if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 10:30:06,991 INFO 127.0.0.1 - - [15/Dec/2021 10:30:06] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 10:30:17,561 INFO 127.0.0.1 - - [15/Dec/2021 10:30:17] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 10:30:33,106 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    credentials["username"],
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 10:30:33,108 INFO 127.0.0.1 - - [15/Dec/2021 10:30:33] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 10:33:17,355 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 10:33:20,879 INFO 127.0.0.1 - - [15/Dec/2021 10:33:20] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 10:33:32,331 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 23, in service_manager_login
+    if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 10:33:32,337 INFO 127.0.0.1 - - [15/Dec/2021 10:33:32] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 10:35:15,689 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 10:35:20,571 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 23, in service_manager_login
+    if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+IndexError: list index out of range
+2021-12-15 10:35:20,579 INFO 127.0.0.1 - - [15/Dec/2021 10:35:20] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 10:35:26,866 INFO 127.0.0.1 - - [15/Dec/2021 10:35:26] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 10:35:44,005 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 10:35:47,670 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 22, in service_manager_login
+    credentials_returned = self.manager_dao.manager_login(credentials)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 23, in manager_login
+    credentials_list.append(Credentials(*credential))
+TypeError: __init__() takes 3 positional arguments but 10 were given
+2021-12-15 10:35:47,675 INFO 127.0.0.1 - - [15/Dec/2021 10:35:47] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 10:35:51,620 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 22, in service_manager_login
+    credentials_returned = self.manager_dao.manager_login(credentials)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 22, in manager_login
+    for credential in credentials:
+TypeError: 'NoneType' object is not iterable
+2021-12-15 10:35:51,624 INFO 127.0.0.1 - - [15/Dec/2021 10:35:51] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 10:36:25,697 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 10:36:29,928 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 23, in service_manager_login
+    if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+IndexError: list index out of range
+2021-12-15 10:36:29,933 INFO 127.0.0.1 - - [15/Dec/2021 10:36:29] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 10:36:34,499 INFO 127.0.0.1 - - [15/Dec/2021 10:36:34] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 10:36:58,002 INFO 127.0.0.1 - - [15/Dec/2021 10:36:58] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 10:37:05,988 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 23, in service_manager_login
+    if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+IndexError: list index out of range
+2021-12-15 10:37:05,991 INFO 127.0.0.1 - - [15/Dec/2021 10:37:05] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 10:37:33,983 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 10:37:41,937 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 23, in service_manager_login
+    if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 10:37:41,944 INFO 127.0.0.1 - - [15/Dec/2021 10:37:41] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 10:37:46,318 INFO 127.0.0.1 - - [15/Dec/2021 10:37:46] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 10:39:13,605 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 10:39:19,048 INFO 127.0.0.1 - - [15/Dec/2021 10:39:19] "POST /employee/login HTTP/1.1" 200 -
+2021-12-15 10:39:27,710 INFO 127.0.0.1 - - [15/Dec/2021 10:39:27] "POST /employee/login HTTP/1.1" 200 -
+2021-12-15 10:40:13,119 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 10:40:20,979 INFO 127.0.0.1 - - [15/Dec/2021 10:40:20] "POST /employee/login HTTP/1.1" 200 -
+2021-12-15 10:40:51,719 INFO 127.0.0.1 - - [15/Dec/2021 10:40:51] "POST /employee/login HTTP/1.1" 200 -
+2021-12-15 10:40:56,812 ERROR Exception on /employee/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 33, in employee_login
+    logged_in = employee_service.service_employee_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 19, in service_employee_login
+    if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 10:40:56,823 INFO 127.0.0.1 - - [15/Dec/2021 10:40:56] "[35m[1mPOST /employee/login HTTP/1.1[0m" 500 -
+2021-12-15 10:43:29,890 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 10:43:35,904 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    credentials["username"],
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 10:43:35,911 INFO 127.0.0.1 - - [15/Dec/2021 10:43:35] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 10:43:51,801 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    credentials["username"],
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 10:43:51,803 INFO 127.0.0.1 - - [15/Dec/2021 10:43:51] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 10:45:30,513 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 10:45:35,701 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    credentials["username"],
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 10:45:35,713 INFO 127.0.0.1 - - [15/Dec/2021 10:45:35] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 10:46:00,999 ERROR Exception on /employee/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 33, in employee_login
+    logged_in = employee_service.service_employee_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 19, in service_employee_login
+    if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 10:46:01,002 INFO 127.0.0.1 - - [15/Dec/2021 10:46:01] "[35m[1mPOST /employee/login HTTP/1.1[0m" 500 -
+2021-12-15 10:46:06,033 INFO 127.0.0.1 - - [15/Dec/2021 10:46:06] "POST /employee/login HTTP/1.1" 200 -
+2021-12-15 10:51:47,921 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 10:51:56,168 INFO 127.0.0.1 - - [15/Dec/2021 10:51:56] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 10:52:02,555 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 23, in service_manager_login
+    if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+IndexError: list index out of range
+2021-12-15 10:52:02,569 INFO 127.0.0.1 - - [15/Dec/2021 10:52:02] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 10:59:19,617 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 10:59:29,288 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 22, in service_manager_login
+    credentials_returned = self.manager_dao.manager_login(credentials)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 23, in manager_login
+    credentials_list.append(Credentials(*credential))
+TypeError: __init__() takes 3 positional arguments but 10 were given
+2021-12-15 10:59:29,297 INFO 127.0.0.1 - - [15/Dec/2021 10:59:29] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 10:59:34,112 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 22, in service_manager_login
+    credentials_returned = self.manager_dao.manager_login(credentials)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 22, in manager_login
+    for credential in credentials:
+TypeError: 'NoneType' object is not iterable
+2021-12-15 10:59:34,113 INFO 127.0.0.1 - - [15/Dec/2021 10:59:34] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 10:59:49,262 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 10:59:53,460 INFO 127.0.0.1 - - [15/Dec/2021 10:59:53] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 11:02:58,221 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 11:03:11,522 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 11:03:16,764 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 22, in service_manager_login
+    credentials_returned = self.manager_dao.manager_login(credentials)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 23, in manager_login
+    credentials_list.append(Credentials(*credential))
+TypeError: __init__() missing 1 required positional argument: 'password'
+2021-12-15 11:03:16,774 INFO 127.0.0.1 - - [15/Dec/2021 11:03:16] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 11:03:21,868 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 22, in service_manager_login
+    credentials_returned = self.manager_dao.manager_login(credentials)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 20, in manager_login
+    credentials = cursor.fetchone()[0]
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 11:03:21,869 INFO 127.0.0.1 - - [15/Dec/2021 11:03:21] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 11:03:49,152 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 11:03:52,932 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 25, in service_manager_login
+    return self.manager_dao.return_manager_id(credentials)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 31, in return_manager_id
+    return int(manager_id)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+2021-12-15 11:03:52,975 INFO 127.0.0.1 - - [15/Dec/2021 11:03:52] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 11:03:57,194 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 23, in service_manager_login
+    if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 11:03:57,195 INFO 127.0.0.1 - - [15/Dec/2021 11:03:57] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 11:04:16,929 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 11:04:20,692 INFO 127.0.0.1 - - [15/Dec/2021 11:04:20] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 11:04:26,642 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 23, in service_manager_login
+    if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 11:04:26,645 INFO 127.0.0.1 - - [15/Dec/2021 11:04:26] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 11:05:03,648 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 11:05:08,259 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 22, in service_manager_login
+    credentials_returned = self.manager_dao.manager_login(credentials)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 22, in manager_login
+    for credential in credentials:
+TypeError: 'NoneType' object is not iterable
+2021-12-15 11:05:08,267 INFO 127.0.0.1 - - [15/Dec/2021 11:05:08] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 11:05:12,360 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 22, in service_manager_login
+    credentials_returned = self.manager_dao.manager_login(credentials)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 23, in manager_login
+    credentials_list.append(Credentials(*credential))
+TypeError: __init__() takes 3 positional arguments but 10 were given
+2021-12-15 11:05:12,361 INFO 127.0.0.1 - - [15/Dec/2021 11:05:12] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 11:05:42,391 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 11:05:46,575 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 22, in service_manager_login
+    credentials_returned = self.manager_dao.manager_login(credentials)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 23, in manager_login
+    credentials_list.append(Credentials(credential))
+TypeError: __init__() missing 1 required positional argument: 'password'
+2021-12-15 11:05:46,582 INFO 127.0.0.1 - - [15/Dec/2021 11:05:46] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 11:05:50,304 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 22, in service_manager_login
+    credentials_returned = self.manager_dao.manager_login(credentials)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 22, in manager_login
+    for credential in credentials:
+TypeError: 'NoneType' object is not iterable
+2021-12-15 11:05:50,306 INFO 127.0.0.1 - - [15/Dec/2021 11:05:50] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 11:06:12,946 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 11:06:16,436 INFO 127.0.0.1 - - [15/Dec/2021 11:06:16] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 11:06:25,858 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 23, in service_manager_login
+    if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 11:06:25,863 INFO 127.0.0.1 - - [15/Dec/2021 11:06:25] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 12:06:35,752 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 12:06:39,396 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 23, in service_manager_login
+    if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 12:06:39,403 INFO 127.0.0.1 - - [15/Dec/2021 12:06:39] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 12:06:49,979 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 23, in service_manager_login
+    if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 12:06:49,981 INFO 127.0.0.1 - - [15/Dec/2021 12:06:49] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 12:09:58,792 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 23, in service_manager_login
+    if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 12:09:58,797 INFO 127.0.0.1 - - [15/Dec/2021 12:09:58] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 12:14:10,906 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 12:14:15,385 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 23, in service_manager_login
+    if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 12:14:15,389 INFO 127.0.0.1 - - [15/Dec/2021 12:14:15] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 12:14:22,015 INFO 127.0.0.1 - - [15/Dec/2021 12:14:22] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 12:23:18,433 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    credentials["username"],
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 12:23:18,445 INFO 127.0.0.1 - - [15/Dec/2021 12:23:18] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 12:23:34,383 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    credentials["username"],
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 12:23:34,386 INFO 127.0.0.1 - - [15/Dec/2021 12:23:34] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 12:24:18,012 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    credentials["username"],
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 12:24:18,018 INFO 127.0.0.1 - - [15/Dec/2021 12:24:18] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 12:24:28,992 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    credentials["username"],
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 12:24:28,996 INFO 127.0.0.1 - - [15/Dec/2021 12:24:28] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 12:24:56,534 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    credentials["username"],
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 12:24:56,537 INFO 127.0.0.1 - - [15/Dec/2021 12:24:56] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 12:25:08,033 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    credentials["username"],
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 12:25:08,036 INFO 127.0.0.1 - - [15/Dec/2021 12:25:08] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 12:26:17,747 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 12:27:34,854 INFO 127.0.0.1 - - [15/Dec/2021 12:27:34] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 12:27:55,572 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 78, in manager_login
+    manager = manager_service.service_manager_login(login_data)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 23, in service_manager_login
+    if credentials.user_name != credentials_returned[0] or credentials.password != credentials_returned[1]:
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 12:27:55,579 INFO 127.0.0.1 - - [15/Dec/2021 12:27:55] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 12:31:54,214 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 12:32:05,278 INFO 127.0.0.1 - - [15/Dec/2021 12:32:05] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 12:32:12,144 INFO 127.0.0.1 - - [15/Dec/2021 12:32:12] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 12:32:28,715 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 12:36:20,643 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    credentials["username"],
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 12:36:20,657 INFO 127.0.0.1 - - [15/Dec/2021 12:36:20] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 12:36:32,035 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    credentials["username"],
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 12:36:32,039 INFO 127.0.0.1 - - [15/Dec/2021 12:36:32] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 12:37:33,555 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 12:37:38,577 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    credentials["username"],
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 12:37:38,585 INFO 127.0.0.1 - - [15/Dec/2021 12:37:38] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 12:39:19,784 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    credentials["username"],
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 12:39:19,789 INFO 127.0.0.1 - - [15/Dec/2021 12:39:19] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 12:39:59,744 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    credentials["username"],
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 12:39:59,749 INFO 127.0.0.1 - - [15/Dec/2021 12:39:59] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 12:40:44,528 INFO 127.0.0.1 - - [15/Dec/2021 12:40:44] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 12:41:42,985 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    credentials["username"],
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 12:41:42,987 INFO 127.0.0.1 - - [15/Dec/2021 12:41:42] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 12:46:57,014 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    credentials["username"],
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 12:46:57,021 INFO 127.0.0.1 - - [15/Dec/2021 12:46:57] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 12:49:14,200 INFO 127.0.0.1 - - [15/Dec/2021 12:49:14] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-15 12:49:14,235 INFO 127.0.0.1 - - [15/Dec/2021 12:49:14] "[31m[1mPOST /manager/login HTTP/1.1[0m" 400 -
+2021-12-15 12:54:25,748 INFO 127.0.0.1 - - [15/Dec/2021 12:54:25] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-15 12:54:25,758 INFO 127.0.0.1 - - [15/Dec/2021 12:54:25] "[31m[1mPOST /manager/login HTTP/1.1[0m" 400 -
+2021-12-15 12:54:47,677 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 12:54:52,576 INFO 127.0.0.1 - - [15/Dec/2021 12:54:52] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-15 12:54:52,579 INFO 127.0.0.1 - - [15/Dec/2021 12:54:52] "[31m[1mPOST /manager/login HTTP/1.1[0m" 400 -
+2021-12-15 12:55:02,141 INFO 127.0.0.1 - - [15/Dec/2021 12:55:02] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-15 12:55:02,145 INFO 127.0.0.1 - - [15/Dec/2021 12:55:02] "[31m[1mPOST /manager/login HTTP/1.1[0m" 400 -
+2021-12-15 12:56:14,207 INFO 127.0.0.1 - - [15/Dec/2021 12:56:14] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-15 12:56:14,212 INFO 127.0.0.1 - - [15/Dec/2021 12:56:14] "[31m[1mPOST /manager/login HTTP/1.1[0m" 400 -
+2021-12-15 12:57:15,285 INFO 127.0.0.1 - - [15/Dec/2021 12:57:15] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-15 12:57:15,289 INFO 127.0.0.1 - - [15/Dec/2021 12:57:15] "[31m[1mPOST /manager/login HTTP/1.1[0m" 400 -
+2021-12-15 13:00:19,689 INFO 127.0.0.1 - - [15/Dec/2021 13:00:19] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-15 13:00:19,695 INFO 127.0.0.1 - - [15/Dec/2021 13:00:19] "[31m[1mPOST /manager/login HTTP/1.1[0m" 400 -
+2021-12-15 13:01:20,490 INFO 127.0.0.1 - - [15/Dec/2021 13:01:20] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 13:01:26,688 INFO 127.0.0.1 - - [15/Dec/2021 13:01:26] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 13:07:33,844 INFO 127.0.0.1 - - [15/Dec/2021 13:07:33] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-15 13:07:33,850 INFO 127.0.0.1 - - [15/Dec/2021 13:07:33] "[31m[1mPOST /manager/login HTTP/1.1[0m" 400 -
+2021-12-15 13:24:53,889 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 13:25:34,568 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    credentials["username"],
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 13:25:34,575 INFO 127.0.0.1 - - [15/Dec/2021 13:25:34] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 13:27:05,337 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 76, in manager_login
+    credentials["username"],
+TypeError: 'NoneType' object is not subscriptable
+2021-12-15 13:27:05,343 INFO 127.0.0.1 - - [15/Dec/2021 13:27:05] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2021-12-15 13:28:31,101 INFO 127.0.0.1 - - [15/Dec/2021 13:28:31] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 13:31:14,713 INFO 127.0.0.1 - - [15/Dec/2021 13:31:14] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-15 13:31:14,796 INFO 127.0.0.1 - - [15/Dec/2021 13:31:14] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 13:31:58,792 INFO 127.0.0.1 - - [15/Dec/2021 13:31:58] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-15 13:31:58,874 INFO 127.0.0.1 - - [15/Dec/2021 13:31:58] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 13:32:44,834 INFO 127.0.0.1 - - [15/Dec/2021 13:32:44] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-15 13:32:44,931 INFO 127.0.0.1 - - [15/Dec/2021 13:32:44] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 13:33:09,565 INFO 127.0.0.1 - - [15/Dec/2021 13:33:09] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-15 13:33:09,665 INFO 127.0.0.1 - - [15/Dec/2021 13:33:09] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 13:45:20,631 INFO 127.0.0.1 - - [15/Dec/2021 13:45:20] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-15 13:45:20,715 INFO 127.0.0.1 - - [15/Dec/2021 13:45:20] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 13:57:36,546 INFO 127.0.0.1 - - [15/Dec/2021 13:57:36] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-15 13:57:36,635 INFO 127.0.0.1 - - [15/Dec/2021 13:57:36] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 14:23:16,524 INFO 127.0.0.1 - - [15/Dec/2021 14:23:16] "GET //pending HTTP/1.1" 200 -
+2021-12-15 14:31:52,457 INFO 127.0.0.1 - - [15/Dec/2021 14:31:52] "GET //pending HTTP/1.1" 200 -
+2021-12-15 14:41:38,764 INFO 127.0.0.1 - - [15/Dec/2021 14:41:38] "GET //pending HTTP/1.1" 200 -
+2021-12-15 19:42:47,119 ERROR Exception on /pending [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 100, in view_pending_requests
+    pending_requests = manager_service.service_view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 34, in service_view_pending_requests
+    return self.manager_dao.view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 47, in view_pending_requests
+    cursor.execute(sql)
+psycopg2.OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+2021-12-15 19:42:47,150 INFO 127.0.0.1 - - [15/Dec/2021 19:42:47] "[35m[1mGET //pending HTTP/1.1[0m" 500 -
+2021-12-15 19:42:52,057 ERROR Exception on /pending [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 100, in view_pending_requests
+    pending_requests = manager_service.service_view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 34, in service_view_pending_requests
+    return self.manager_dao.view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 46, in view_pending_requests
+    cursor = connection.cursor()
+psycopg2.InterfaceError: connection already closed
+2021-12-15 19:42:52,058 INFO 127.0.0.1 - - [15/Dec/2021 19:42:52] "[35m[1mGET //pending HTTP/1.1[0m" 500 -
+2021-12-15 19:43:27,479 ERROR Exception on /pending [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 100, in view_pending_requests
+    pending_requests = manager_service.service_view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 34, in service_view_pending_requests
+    return self.manager_dao.view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 46, in view_pending_requests
+    cursor = connection.cursor()
+psycopg2.InterfaceError: connection already closed
+2021-12-15 19:43:27,486 INFO 127.0.0.1 - - [15/Dec/2021 19:43:27] "[35m[1mGET /pending HTTP/1.1[0m" 500 -
+2021-12-15 19:44:29,373 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 19:44:39,249 INFO 127.0.0.1 - - [15/Dec/2021 19:44:39] "GET /pending HTTP/1.1" 200 -
+2021-12-15 19:46:04,610 INFO 127.0.0.1 - - [15/Dec/2021 19:46:04] "GET /pending HTTP/1.1" 200 -
+2021-12-15 19:46:13,417 INFO 127.0.0.1 - - [15/Dec/2021 19:46:13] "GET /pending HTTP/1.1" 200 -
+2021-12-15 19:46:51,238 INFO 127.0.0.1 - - [15/Dec/2021 19:46:51] "GET /pending HTTP/1.1" 200 -
+2021-12-15 19:54:17,325 INFO 127.0.0.1 - - [15/Dec/2021 19:54:17] "GET /pending HTTP/1.1" 200 -
+2021-12-15 19:55:16,444 INFO 127.0.0.1 - - [15/Dec/2021 19:55:16] "GET /pending HTTP/1.1" 200 -
+2021-12-15 19:58:08,084 INFO 127.0.0.1 - - [15/Dec/2021 19:58:08] "GET /pending HTTP/1.1" 200 -
+2021-12-15 20:20:48,170 ERROR Exception on /pending [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 100, in view_pending_requests
+    pending_requests = manager_service.service_view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 34, in service_view_pending_requests
+    return self.manager_dao.view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 47, in view_pending_requests
+    cursor.execute(sql)
+psycopg2.OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+2021-12-15 20:20:48,198 INFO 127.0.0.1 - - [15/Dec/2021 20:20:48] "[35m[1mGET /pending HTTP/1.1[0m" 500 -
+2021-12-15 20:21:20,571 ERROR Exception on /pending [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 100, in view_pending_requests
+    pending_requests = manager_service.service_view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 34, in service_view_pending_requests
+    return self.manager_dao.view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 46, in view_pending_requests
+    cursor = connection.cursor()
+psycopg2.InterfaceError: connection already closed
+2021-12-15 20:21:20,573 INFO 127.0.0.1 - - [15/Dec/2021 20:21:20] "[35m[1mGET /pending HTTP/1.1[0m" 500 -
+2021-12-15 20:21:33,213 ERROR Exception on /pending [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 100, in view_pending_requests
+    pending_requests = manager_service.service_view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 34, in service_view_pending_requests
+    return self.manager_dao.view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 46, in view_pending_requests
+    cursor = connection.cursor()
+psycopg2.InterfaceError: connection already closed
+2021-12-15 20:21:33,216 INFO 127.0.0.1 - - [15/Dec/2021 20:21:33] "[35m[1mGET /pending HTTP/1.1[0m" 500 -
+2021-12-15 20:28:36,205 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 20:33:28,270 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-15 20:33:37,485 INFO 127.0.0.1 - - [15/Dec/2021 20:33:37] "GET /pending HTTP/1.1" 200 -
+2021-12-15 20:45:54,730 INFO 127.0.0.1 - - [15/Dec/2021 20:45:54] "GET /pending HTTP/1.1" 200 -
+2021-12-15 20:50:54,996 INFO 127.0.0.1 - - [15/Dec/2021 20:50:54] "GET /pending HTTP/1.1" 200 -
+2021-12-15 21:01:22,874 INFO 127.0.0.1 - - [15/Dec/2021 21:01:22] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-15 21:01:22,993 INFO 127.0.0.1 - - [15/Dec/2021 21:01:22] "POST /manager/login HTTP/1.1" 200 -
+2021-12-15 21:01:33,614 INFO 127.0.0.1 - - [15/Dec/2021 21:01:33] "GET /pending HTTP/1.1" 200 -
