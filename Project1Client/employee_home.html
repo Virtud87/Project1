@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Prestige! Worldwide</h1>
+      <p>Employee Console</p>
+      <button
+        id="employeeLogout"
+        onclick="employeeLogout()"
+        class="btn btn-logout"
+      >
+        Logout
+      </button>
+    </header>
+    <div class="employee-container">
+      <section>
+        <h2 class="form-h2">New Reimbursement Request</h2>
+        <form id="submit-request">
+          <div class="form-group">
+            <label for="reimbursementId">Reimbursement ID</label>
+            <input id="reimbursementId" type="number" min="0" max="2" />
+          </div>
+          <div class="form-group">
+            <label for="employeeId">Employee ID</label>
+            <input id="employeeId" type="number" required min="1" max="4" />
+          </div>
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input id="date" type="date" required maxlength="10" />
+          </div>
+          <div class="form-group">
+            <label for="amount">Amount</label>
+            <input id="amount" type="number" required maxlength="6" min="0" />
+          </div>
+          <div class="form-group">
+            <label for="reason">Reason</label>
+            <input id="reason" type="text" required maxlength="25" />
+          </div>
+          <button
+            id="employee-submit"
+            onclick="submitRequest()"
+            type="submit"
+            class="btn btn-form"
+          >
+            Submit
+          </button>
+          <button type="reset" class="btn btn-form">Reset Form</button>
+        </form>
+      </section>
+      <section id="container-pending">
+        <h2>View All Requests</h2>
+        <button
+          id="viewRequests"
+          onclick="returnEmployeePending()"
+          class="btn btn-submit"
+        >
+          View
+        </button>
+        <table id="employee-table-pending">
+          <thead>
+            <tr>
+              <td>Reimbursement ID</td>
+              <td>Employee ID</td>
+              <td>Date</td>
+              <td>Amount</td>
+              <td>Reason</td>
+              <td>Status</td>
+              <td>Comment</td>
+            </tr>
+          </thead>
+          <tbody id="employee-tableBody"></tbody>
+        </table>
+      </section>
+    </div>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

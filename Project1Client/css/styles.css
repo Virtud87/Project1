@@ -27,12 +27,8 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
     color: var(--color-primary);
-}
-
-h3 {
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 p {
@@ -47,13 +43,32 @@ p {
     margin-bottom: 4rem;
 }
 
-.statement {
-    
-}
-
-.login-h2 {
+.login-h2, .form-h2 {
     margin: 3rem;
 }
+
+.stats {
+    margin-left: 3rem;
+}
+
+.stats-h2 {
+    margin-bottom: 1rem;
+}
+
+/* Container */
+.employee-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#container-pending {
+    margin-right: 3rem;
+}
+
+#employee-table-pending {
+    margin-left: 0;
+}
+
 
 /* Cards */
 
@@ -83,36 +98,64 @@ p {
 
 /* Buttons */
 .btn {
-    font-size: 2rem;
-    font-weight: 600;
     text-transform: uppercase;
-    padding: 2rem 3rem;
-    margin: 1rem 0;
     border: 0;
     border-radius: 40px;
     cursor: pointer;
 }
 
 .btn--login {
+    color: var(--color-headings);
+    background: var(--color-primary);
+    font-size: 2rem;
+    font-weight: 600;
     padding: 2rem 6rem;
     margin-bottom: 3rem;
     text-decoration: none;
 }
 
-.btn--primary {
-    background: var(--color-primary);
+.btn-logout {
+    font-size: 2rem;
     color: var(--color-headings);
+    background: var(--color-primary);
 }
 
-.btn-pending {
+.btn-pending, .btn-past {
     color: var(--color-headings);
+    background: var(--color-primary);
     font-size: 1.5rem;
     margin-left: 3rem;
     padding: 1rem 1.3rem;
 }
 
-.btn--primary:hover {
+.btn-approval, .btn-form, .btn-submit {
+    color: var(--color-headings);
+    background: var(--color-primary);
+    font-size: 1.5rem;
+    padding: 1rem 1.3rem;
+}
+
+.btn-stat1, .btn-stat2, .btn-stat3, .btn-stat4, .btn-stat5 {
+    color: var(--color-primary);
+    background-color: var(--color-headings);
+    text-transform: initial;
+    margin-left: 3rem;
+}
+
+.btn-denial {
+    background: #ff0700;
+}
+
+.btn-pending:hover, .btn-past:hover, .btn-approval:hover, .btn--login:hover {
     background: #58A0B4;
+}
+
+.btn-stat1:hover, .btn-stat2:hover, .btn-stat3:hover, .btn-stat4:hover, .btn-stat5:hover {
+    color: #58A0B4;
+}
+
+.btn-denial:hover {
+    background: #FF3833;
 }
 
 /* Inputs */
@@ -133,10 +176,12 @@ p {
 /* Tables */
 table {
     border: 1px solid gray;
+    border-radius: 10px;
     margin: 1rem 0 2rem 3rem;
 }
 
 th {
+    color: var(--color-body);
     font-size: 1.7rem;
     padding: 10px;
 }
@@ -150,3 +195,38 @@ td {
     padding: 0.75rem;
     text-align: center;
 }
+
+#stats-td {
+    padding: 0;
+    table-layout: fixed;
+}
+
+/* Forms */
+form {
+    margin-left: 3rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+#reimbursementId {
+    margin-left: 1rem;
+}
+
+#employeeId {
+    margin-left: 8.2rem;
+}
+
+#date {
+    margin-left: 17.7rem;
+}
+
+#amount {
+    margin-left: 13.6rem;
+}
+
+#reason {
+    margin-left: 14.6rem;
+}
+

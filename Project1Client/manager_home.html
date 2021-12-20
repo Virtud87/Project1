@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manager-Home</title>
+    <title>Manager Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,10 +17,18 @@
   <body id="body">
     <header class="header">
       <h1>Prestige! Worldwide</h1>
-      <p class="statement">Manager Console</p>
+      <p>Manager Console</p>
+      <button
+        id="managerLogout"
+        onclick="managerLogout()"
+        class="btn btn-logout"
+      >
+        Logout
+      </button>
     </header>
     <section>
       <button
+        id="managerView"
         onclick="returnPendingRequests()"
         class="btn btn--primary btn-pending"
       >
@@ -36,9 +44,121 @@
             <th>Reason</th>
             <th>Status</th>
             <th>Comment</th>
+            <th></th>
+            <th></th>
+            <th></th>
           </tr>
         </thead>
         <tbody id="table-body-pending"></tbody>
+      </table>
+      <button
+        id="managerPastButton"
+        onclick="returnPastReimbursements()"
+        class="btn btn--primary btn-past"
+      >
+        view past
+      </button>
+      <table id="table-past">
+        <thead id="table-head-past">
+          <tr>
+            <th>Reimbursement ID</th>
+            <th>Employee ID</th>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Reason</th>
+            <th>Status</th>
+            <th>Comment</th>
+          </tr>
+        </thead>
+        <tbody id="table-body-past"></tbody>
+      </table>
+    </section>
+    <section>
+      <h2 class="stats stats-h2">Reimbursement Statistics</h2>
+      <button
+        id="amountApproved"
+        onclick="returnAmountApproved()"
+        class="btn btn-stat1"
+      >
+        Total Amount Approved per Employee
+      </button>
+      <table>
+        <thead>
+          <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Total Amount Approved</th>
+          </tr>
+        </thead>
+        <tbody id="stat1-body"></tbody>
+      </table>
+      <button
+        id="requestsApproved"
+        onclick="returnRequestsApproved()"
+        class="btn btn-stat2"
+      >
+        Total Requests Approved per Employee
+      </button>
+      <table>
+        <thead>
+          <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Total Requests Approved</th>
+          </tr>
+        </thead>
+        <tbody id="stat2-body"></tbody>
+      </table>
+      <button
+        id="requestsDenied"
+        onclick="returnRequestsDenied()"
+        class="btn btn-stat3"
+      >
+        Total Requests Denied per Employee
+      </button>
+      <table>
+        <thead>
+          <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Total Requests Denied</th>
+          </tr>
+        </thead>
+        <tbody id="stat3-body"></tbody>
+      </table>
+      <button
+        id="foodDrink"
+        onclick="returnFoodDrinkApproved()"
+        class="btn btn-stat4"
+      >
+        Total Food/Drink Requests Approved per Employee
+      </button>
+      <table>
+        <thead>
+          <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Total Requests Approved</th>
+          </tr>
+        </thead>
+        <tbody id="stat4-body"></tbody>
+      </table>
+      <button
+        id="transportation"
+        onclick="returnTransportationApproved()"
+        class="btn btn-stat5"
+      >
+        Total Transportation Requests Approved per Employee
+      </button>
+      <table>
+        <thead>
+          <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Total Requests Approved</th>
+          </tr>
+        </thead>
+        <tbody id="stat5-body"></tbody>
       </table>
     </section>
     <script src="/js/main.js"></script>

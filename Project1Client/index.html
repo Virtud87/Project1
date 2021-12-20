@@ -32,7 +32,7 @@
           <input
             id="manager-password"
             class="input"
-            type="text"
+            type="password"
             placeholder="Enter password"
           />
         </div>
@@ -47,10 +47,24 @@
       <article class="card-login card-employee">
         <h2 class="login-h2">Continue as an EMPLOYEE</h2>
         <div class="input-group">
-          <input class="input" type="text" placeholder="Enter username" />
-          <input class="input" type="text" placeholder="Enter password" />
+          <input
+            id="employee-username"
+            class="input"
+            type="text"
+            placeholder="Enter username"
+          />
+          <input
+            id="employee-password"
+            class="input"
+            type="password"
+            placeholder="Enter password"
+          />
         </div>
-        <button id="employee-login" class="btn btn--login btn--primary">
+        <button
+          onclick="validateEmployeeLogin()"
+          id="employee-login"
+          class="btn btn--login btn--primary"
+        >
           login
         </button>
       </article>

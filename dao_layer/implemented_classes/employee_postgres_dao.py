@@ -27,7 +27,7 @@ class EmployeePostgresDAO(EmployeeDAO):
         cursor = connection.cursor()
         cursor.execute(sql, (submission.employee_id, submission.date, submission.amount, submission.reason))
         connection.commit()
-        return submission
+        return str(submission.reimbursement_id)
 
     def view_reimbursements_by_employee_id(self, employee_id: int) -> List[Reimbursement]:
         sql = "select * from reimbursements where employee_id = %s"

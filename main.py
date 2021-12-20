@@ -28,10 +28,10 @@ def employee_login():
     try:
         credentials = request.get_json()
         login_data = Credentials(
-            credentials["username"],
-            credentials["password"])
+            credentials["eusername"],
+            credentials["epassword"])
         employee = employee_service.service_employee_login(login_data)
-        employee_id_as_dict = {"managerId": int(employee[1])}
+        employee_id_as_dict = {"employeeId": int(employee[1])}
         return employee_id_as_dict
     except UsernameOrPasswordIncorrect as e:
         exception_dictionary = {"message": str(e)}
@@ -46,10 +46,10 @@ def submit_new_request():
             submission_data["reimbursementId"],
             submission_data["employeeId"],
             submission_data["date"],
-            submission_data["amount"],
+            float(submission_data["amount"]),
             submission_data["reason"])
         submission = employee_service.service_submit_new_request(new_submission)
-        return f"{submission} successful!"
+        return submission
     except NonNumericAmount as e:
         exception_dictionary = {"message": str(e)}
         return jsonify(exception_dictionary)
