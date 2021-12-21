@@ -3409,3 +3409,908 @@ ValueError: invalid literal for int() with base 10: 'undefined'
 2021-12-19 13:09:01,590 INFO 127.0.0.1 - - [19/Dec/2021 13:09:01] "POST /submission HTTP/1.1" 200 -
 2021-12-19 20:44:30,164 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 2021-12-19 21:24:51,722 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-20 12:43:22,252 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-20 13:03:45,287 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-20 13:09:53,533 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-20 13:16:44,685 INFO 127.0.0.1 - - [20/Dec/2021 13:16:44] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 13:16:44,831 INFO 127.0.0.1 - - [20/Dec/2021 13:16:44] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 13:26:53,620 INFO 127.0.0.1 - - [20/Dec/2021 13:26:53] "GET /pending HTTP/1.1" 200 -
+2021-12-20 13:26:53,842 INFO 127.0.0.1 - - [20/Dec/2021 13:26:53] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 13:26:53,843 INFO 127.0.0.1 - - [20/Dec/2021 13:26:53] "GET /amount HTTP/1.1" 200 -
+2021-12-20 13:26:53,914 INFO 127.0.0.1 - - [20/Dec/2021 13:26:53] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 13:26:53,951 INFO 127.0.0.1 - - [20/Dec/2021 13:26:53] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 13:26:53,951 INFO 127.0.0.1 - - [20/Dec/2021 13:26:53] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 13:30:59,236 INFO 127.0.0.1 - - [20/Dec/2021 13:30:59] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 13:30:59,320 INFO 127.0.0.1 - - [20/Dec/2021 13:30:59] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 13:30:59,763 INFO 127.0.0.1 - - [20/Dec/2021 13:30:59] "GET /pending HTTP/1.1" 200 -
+2021-12-20 13:30:59,927 INFO 127.0.0.1 - - [20/Dec/2021 13:30:59] "GET /amount HTTP/1.1" 200 -
+2021-12-20 13:31:00,161 INFO 127.0.0.1 - - [20/Dec/2021 13:31:00] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 13:31:00,162 INFO 127.0.0.1 - - [20/Dec/2021 13:31:00] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 13:31:00,354 INFO 127.0.0.1 - - [20/Dec/2021 13:31:00] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 13:31:00,354 INFO 127.0.0.1 - - [20/Dec/2021 13:31:00] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 13:33:08,996 INFO 127.0.0.1 - - [20/Dec/2021 13:33:08] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 13:33:09,084 INFO 127.0.0.1 - - [20/Dec/2021 13:33:09] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 13:33:09,480 INFO 127.0.0.1 - - [20/Dec/2021 13:33:09] "GET /pending HTTP/1.1" 200 -
+2021-12-20 13:33:09,724 INFO 127.0.0.1 - - [20/Dec/2021 13:33:09] "GET /amount HTTP/1.1" 200 -
+2021-12-20 13:33:09,764 INFO 127.0.0.1 - - [20/Dec/2021 13:33:09] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 13:33:09,799 INFO 127.0.0.1 - - [20/Dec/2021 13:33:09] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 13:33:09,800 INFO 127.0.0.1 - - [20/Dec/2021 13:33:09] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 13:35:47,134 INFO 127.0.0.1 - - [20/Dec/2021 13:35:47] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 13:35:47,212 INFO 127.0.0.1 - - [20/Dec/2021 13:35:47] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 13:35:47,586 INFO 127.0.0.1 - - [20/Dec/2021 13:35:47] "GET /pending HTTP/1.1" 200 -
+2021-12-20 13:35:47,765 INFO 127.0.0.1 - - [20/Dec/2021 13:35:47] "GET /amount HTTP/1.1" 200 -
+2021-12-20 13:35:47,802 INFO 127.0.0.1 - - [20/Dec/2021 13:35:47] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 13:35:47,837 INFO 127.0.0.1 - - [20/Dec/2021 13:35:47] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 13:35:47,839 INFO 127.0.0.1 - - [20/Dec/2021 13:35:47] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 13:35:47,879 INFO 127.0.0.1 - - [20/Dec/2021 13:35:47] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 13:39:17,003 INFO 127.0.0.1 - - [20/Dec/2021 13:39:17] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 13:39:17,106 INFO 127.0.0.1 - - [20/Dec/2021 13:39:17] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 13:39:17,419 INFO 127.0.0.1 - - [20/Dec/2021 13:39:17] "GET /pending HTTP/1.1" 200 -
+2021-12-20 13:39:17,715 INFO 127.0.0.1 - - [20/Dec/2021 13:39:17] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 13:39:17,717 INFO 127.0.0.1 - - [20/Dec/2021 13:39:17] "GET /amount HTTP/1.1" 200 -
+2021-12-20 13:39:17,718 INFO 127.0.0.1 - - [20/Dec/2021 13:39:17] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 13:39:17,829 INFO 127.0.0.1 - - [20/Dec/2021 13:39:17] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 13:39:17,831 INFO 127.0.0.1 - - [20/Dec/2021 13:39:17] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 13:40:44,051 INFO 127.0.0.1 - - [20/Dec/2021 13:40:44] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 13:40:44,145 INFO 127.0.0.1 - - [20/Dec/2021 13:40:44] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 13:40:44,556 INFO 127.0.0.1 - - [20/Dec/2021 13:40:44] "GET /pending HTTP/1.1" 200 -
+2021-12-20 13:40:44,771 INFO 127.0.0.1 - - [20/Dec/2021 13:40:44] "GET /amount HTTP/1.1" 200 -
+2021-12-20 13:40:44,773 INFO 127.0.0.1 - - [20/Dec/2021 13:40:44] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 13:40:44,844 INFO 127.0.0.1 - - [20/Dec/2021 13:40:44] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 13:40:44,883 INFO 127.0.0.1 - - [20/Dec/2021 13:40:44] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 13:40:44,884 INFO 127.0.0.1 - - [20/Dec/2021 13:40:44] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 13:41:22,035 INFO 127.0.0.1 - - [20/Dec/2021 13:41:22] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 13:41:22,110 INFO 127.0.0.1 - - [20/Dec/2021 13:41:22] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 13:43:25,835 INFO 127.0.0.1 - - [20/Dec/2021 13:43:25] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 13:43:25,915 INFO 127.0.0.1 - - [20/Dec/2021 13:43:25] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 13:43:27,281 INFO 127.0.0.1 - - [20/Dec/2021 13:43:27] "GET /pending HTTP/1.1" 200 -
+2021-12-20 13:43:27,485 INFO 127.0.0.1 - - [20/Dec/2021 13:43:27] "GET /amount HTTP/1.1" 200 -
+2021-12-20 13:43:27,524 INFO 127.0.0.1 - - [20/Dec/2021 13:43:27] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 13:43:27,562 INFO 127.0.0.1 - - [20/Dec/2021 13:43:27] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 13:43:27,563 INFO 127.0.0.1 - - [20/Dec/2021 13:43:27] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 13:43:27,598 INFO 127.0.0.1 - - [20/Dec/2021 13:43:27] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 13:44:08,252 INFO 127.0.0.1 - - [20/Dec/2021 13:44:08] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 13:44:08,341 INFO 127.0.0.1 - - [20/Dec/2021 13:44:08] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 13:44:09,232 INFO 127.0.0.1 - - [20/Dec/2021 13:44:09] "GET /pending HTTP/1.1" 200 -
+2021-12-20 13:44:09,429 INFO 127.0.0.1 - - [20/Dec/2021 13:44:09] "GET /amount HTTP/1.1" 200 -
+2021-12-20 13:44:09,464 INFO 127.0.0.1 - - [20/Dec/2021 13:44:09] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 13:44:09,513 INFO 127.0.0.1 - - [20/Dec/2021 13:44:09] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 13:44:09,514 INFO 127.0.0.1 - - [20/Dec/2021 13:44:09] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 13:44:09,550 INFO 127.0.0.1 - - [20/Dec/2021 13:44:09] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 14:57:08,487 INFO 127.0.0.1 - - [20/Dec/2021 14:57:08] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 14:57:08,595 INFO 127.0.0.1 - - [20/Dec/2021 14:57:08] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 14:57:09,510 INFO 127.0.0.1 - - [20/Dec/2021 14:57:09] "GET /pending HTTP/1.1" 200 -
+2021-12-20 14:57:09,769 INFO 127.0.0.1 - - [20/Dec/2021 14:57:09] "GET /amount HTTP/1.1" 200 -
+2021-12-20 14:57:09,811 INFO 127.0.0.1 - - [20/Dec/2021 14:57:09] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 14:57:09,851 INFO 127.0.0.1 - - [20/Dec/2021 14:57:09] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 14:57:09,852 INFO 127.0.0.1 - - [20/Dec/2021 14:57:09] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 14:59:16,366 INFO 127.0.0.1 - - [20/Dec/2021 14:59:16] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 14:59:16,459 INFO 127.0.0.1 - - [20/Dec/2021 14:59:16] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 14:59:17,301 INFO 127.0.0.1 - - [20/Dec/2021 14:59:17] "GET /pending HTTP/1.1" 200 -
+2021-12-20 14:59:17,546 INFO 127.0.0.1 - - [20/Dec/2021 14:59:17] "GET /amount HTTP/1.1" 200 -
+2021-12-20 14:59:17,588 INFO 127.0.0.1 - - [20/Dec/2021 14:59:17] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 14:59:17,626 INFO 127.0.0.1 - - [20/Dec/2021 14:59:17] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 14:59:17,665 INFO 127.0.0.1 - - [20/Dec/2021 14:59:17] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 14:59:17,665 INFO 127.0.0.1 - - [20/Dec/2021 14:59:17] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 15:02:08,077 INFO 127.0.0.1 - - [20/Dec/2021 15:02:08] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 15:02:08,176 INFO 127.0.0.1 - - [20/Dec/2021 15:02:08] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 15:02:08,932 INFO 127.0.0.1 - - [20/Dec/2021 15:02:08] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 15:02:09,028 INFO 127.0.0.1 - - [20/Dec/2021 15:02:09] "POST /submission HTTP/1.1" 200 -
+2021-12-20 15:02:09,314 ERROR Exception on /pending [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 101, in view_pending_requests
+    pending_requests = manager_service.service_view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 34, in service_view_pending_requests
+    return self.manager_dao.view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 48, in view_pending_requests
+    pending = cursor.fetchall()
+ValueError: year 11219 is out of range
+2021-12-20 15:02:09,344 INFO 127.0.0.1 - - [20/Dec/2021 15:02:09] "[35m[1mGET /pending HTTP/1.1[0m" 500 -
+2021-12-20 15:02:09,440 INFO 127.0.0.1 - - [20/Dec/2021 15:02:09] "GET /amount HTTP/1.1" 200 -
+2021-12-20 15:02:09,477 INFO 127.0.0.1 - - [20/Dec/2021 15:02:09] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 15:02:09,577 INFO 127.0.0.1 - - [20/Dec/2021 15:02:09] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 15:02:09,612 INFO 127.0.0.1 - - [20/Dec/2021 15:02:09] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 15:02:09,613 INFO 127.0.0.1 - - [20/Dec/2021 15:02:09] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 15:14:41,727 INFO 127.0.0.1 - - [20/Dec/2021 15:14:41] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 15:14:41,809 INFO 127.0.0.1 - - [20/Dec/2021 15:14:41] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 15:14:42,722 INFO 127.0.0.1 - - [20/Dec/2021 15:14:42] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 15:14:42,809 INFO 127.0.0.1 - - [20/Dec/2021 15:14:42] "POST /submission HTTP/1.1" 200 -
+2021-12-20 15:14:42,857 INFO 127.0.0.1 - - [20/Dec/2021 15:14:42] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 15:14:42,938 ERROR Exception on /reimbursements/1 [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 63, in view_reimbursements_by_employee_id
+    reimbursements = employee_service.service_view_reimbursements_by_employee_id(int(employee_id))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 32, in service_view_reimbursements_by_employee_id
+    return self.employee_dao.view_reimbursements_by_employee_id(employee_id)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 36, in view_reimbursements_by_employee_id
+    all_reimbursements = cursor.fetchall()
+ValueError: year 11219 is out of range
+2021-12-20 15:14:42,945 INFO 127.0.0.1 - - [20/Dec/2021 15:14:42] "[35m[1mGET /reimbursements/1 HTTP/1.1[0m" 500 -
+2021-12-20 15:14:43,181 ERROR Exception on /pending [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 101, in view_pending_requests
+    pending_requests = manager_service.service_view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 34, in service_view_pending_requests
+    return self.manager_dao.view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 48, in view_pending_requests
+    pending = cursor.fetchall()
+ValueError: year 11219 is out of range
+2021-12-20 15:14:43,182 INFO 127.0.0.1 - - [20/Dec/2021 15:14:43] "[35m[1mGET /pending HTTP/1.1[0m" 500 -
+2021-12-20 15:14:43,351 INFO 127.0.0.1 - - [20/Dec/2021 15:14:43] "GET /amount HTTP/1.1" 200 -
+2021-12-20 15:14:43,395 INFO 127.0.0.1 - - [20/Dec/2021 15:14:43] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 15:14:43,430 INFO 127.0.0.1 - - [20/Dec/2021 15:14:43] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 15:14:43,470 INFO 127.0.0.1 - - [20/Dec/2021 15:14:43] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 15:14:43,470 INFO 127.0.0.1 - - [20/Dec/2021 15:14:43] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 15:16:26,051 INFO 127.0.0.1 - - [20/Dec/2021 15:16:26] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 15:16:26,130 INFO 127.0.0.1 - - [20/Dec/2021 15:16:26] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 15:16:27,057 INFO 127.0.0.1 - - [20/Dec/2021 15:16:27] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 15:16:27,187 INFO 127.0.0.1 - - [20/Dec/2021 15:16:27] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 15:16:27,309 ERROR Exception on /reimbursements/1 [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 63, in view_reimbursements_by_employee_id
+    reimbursements = employee_service.service_view_reimbursements_by_employee_id(int(employee_id))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 32, in service_view_reimbursements_by_employee_id
+    return self.employee_dao.view_reimbursements_by_employee_id(employee_id)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 36, in view_reimbursements_by_employee_id
+    all_reimbursements = cursor.fetchall()
+ValueError: year 11219 is out of range
+2021-12-20 15:16:27,310 INFO 127.0.0.1 - - [20/Dec/2021 15:16:27] "[35m[1mGET /reimbursements/1 HTTP/1.1[0m" 500 -
+2021-12-20 15:16:27,347 INFO 127.0.0.1 - - [20/Dec/2021 15:16:27] "POST /submission HTTP/1.1" 200 -
+2021-12-20 15:16:27,495 INFO 127.0.0.1 - - [20/Dec/2021 15:16:27] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 15:16:27,616 INFO 127.0.0.1 - - [20/Dec/2021 15:16:27] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 15:16:27,699 ERROR Exception on /pending [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 101, in view_pending_requests
+    pending_requests = manager_service.service_view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 34, in service_view_pending_requests
+    return self.manager_dao.view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 48, in view_pending_requests
+    pending = cursor.fetchall()
+ValueError: year 11219 is out of range
+2021-12-20 15:16:27,701 INFO 127.0.0.1 - - [20/Dec/2021 15:16:27] "[35m[1mGET /pending HTTP/1.1[0m" 500 -
+2021-12-20 15:16:27,847 INFO 127.0.0.1 - - [20/Dec/2021 15:16:27] "GET /amount HTTP/1.1" 200 -
+2021-12-20 15:16:27,961 INFO 127.0.0.1 - - [20/Dec/2021 15:16:27] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 15:16:27,997 INFO 127.0.0.1 - - [20/Dec/2021 15:16:27] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 15:16:27,998 INFO 127.0.0.1 - - [20/Dec/2021 15:16:27] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 15:18:12,568 INFO 127.0.0.1 - - [20/Dec/2021 15:18:12] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 15:18:12,653 INFO 127.0.0.1 - - [20/Dec/2021 15:18:12] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 15:18:13,519 INFO 127.0.0.1 - - [20/Dec/2021 15:18:13] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 15:18:13,597 INFO 127.0.0.1 - - [20/Dec/2021 15:18:13] "POST /submission HTTP/1.1" 200 -
+2021-12-20 15:18:13,656 INFO 127.0.0.1 - - [20/Dec/2021 15:18:13] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 15:18:13,734 ERROR Exception on /reimbursements/1 [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 63, in view_reimbursements_by_employee_id
+    reimbursements = employee_service.service_view_reimbursements_by_employee_id(int(employee_id))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 32, in service_view_reimbursements_by_employee_id
+    return self.employee_dao.view_reimbursements_by_employee_id(employee_id)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 36, in view_reimbursements_by_employee_id
+    all_reimbursements = cursor.fetchall()
+ValueError: year 11219 is out of range
+2021-12-20 15:18:13,735 INFO 127.0.0.1 - - [20/Dec/2021 15:18:13] "[35m[1mGET /reimbursements/1 HTTP/1.1[0m" 500 -
+2021-12-20 15:18:13,958 INFO 127.0.0.1 - - [20/Dec/2021 15:18:13] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 15:18:14,034 INFO 127.0.0.1 - - [20/Dec/2021 15:18:14] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 15:18:14,649 ERROR Exception on /pending [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 101, in view_pending_requests
+    pending_requests = manager_service.service_view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 34, in service_view_pending_requests
+    return self.manager_dao.view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 48, in view_pending_requests
+    pending = cursor.fetchall()
+ValueError: year 11219 is out of range
+2021-12-20 15:18:14,651 INFO 127.0.0.1 - - [20/Dec/2021 15:18:14] "[35m[1mGET /pending HTTP/1.1[0m" 500 -
+2021-12-20 15:18:14,883 INFO 127.0.0.1 - - [20/Dec/2021 15:18:14] "GET /amount HTTP/1.1" 200 -
+2021-12-20 15:18:15,035 INFO 127.0.0.1 - - [20/Dec/2021 15:18:15] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 15:18:15,038 INFO 127.0.0.1 - - [20/Dec/2021 15:18:15] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 15:18:15,039 INFO 127.0.0.1 - - [20/Dec/2021 15:18:15] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 15:18:15,040 INFO 127.0.0.1 - - [20/Dec/2021 15:18:15] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 15:53:35,387 INFO 127.0.0.1 - - [20/Dec/2021 15:53:35] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 15:53:35,487 INFO 127.0.0.1 - - [20/Dec/2021 15:53:35] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 15:53:36,389 INFO 127.0.0.1 - - [20/Dec/2021 15:53:36] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 15:53:36,475 INFO 127.0.0.1 - - [20/Dec/2021 15:53:36] "POST /submission HTTP/1.1" 200 -
+2021-12-20 15:53:36,527 INFO 127.0.0.1 - - [20/Dec/2021 15:53:36] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 15:53:36,602 ERROR Exception on /reimbursements/1 [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 63, in view_reimbursements_by_employee_id
+    reimbursements = employee_service.service_view_reimbursements_by_employee_id(int(employee_id))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 32, in service_view_reimbursements_by_employee_id
+    return self.employee_dao.view_reimbursements_by_employee_id(employee_id)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 36, in view_reimbursements_by_employee_id
+    all_reimbursements = cursor.fetchall()
+ValueError: year 11219 is out of range
+2021-12-20 15:53:36,604 INFO 127.0.0.1 - - [20/Dec/2021 15:53:36] "[35m[1mGET /reimbursements/1 HTTP/1.1[0m" 500 -
+2021-12-20 15:53:36,878 INFO 127.0.0.1 - - [20/Dec/2021 15:53:36] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 15:53:36,950 INFO 127.0.0.1 - - [20/Dec/2021 15:53:36] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 15:53:37,556 ERROR Exception on /pending [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 101, in view_pending_requests
+    pending_requests = manager_service.service_view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 34, in service_view_pending_requests
+    return self.manager_dao.view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 48, in view_pending_requests
+    pending = cursor.fetchall()
+ValueError: year 11219 is out of range
+2021-12-20 15:53:37,557 INFO 127.0.0.1 - - [20/Dec/2021 15:53:37] "[35m[1mGET /pending HTTP/1.1[0m" 500 -
+2021-12-20 15:53:38,720 INFO 127.0.0.1 - - [20/Dec/2021 15:53:38] "GET /past HTTP/1.1" 200 -
+2021-12-20 15:53:38,841 INFO 127.0.0.1 - - [20/Dec/2021 15:53:38] "GET /amount HTTP/1.1" 200 -
+2021-12-20 15:53:38,875 INFO 127.0.0.1 - - [20/Dec/2021 15:53:38] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 15:53:38,939 INFO 127.0.0.1 - - [20/Dec/2021 15:53:38] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 15:53:38,940 INFO 127.0.0.1 - - [20/Dec/2021 15:53:38] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 15:53:38,976 INFO 127.0.0.1 - - [20/Dec/2021 15:53:38] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 16:14:16,642 INFO 127.0.0.1 - - [20/Dec/2021 16:14:16] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 16:14:16,737 INFO 127.0.0.1 - - [20/Dec/2021 16:14:16] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 16:14:17,631 INFO 127.0.0.1 - - [20/Dec/2021 16:14:17] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 16:14:17,704 INFO 127.0.0.1 - - [20/Dec/2021 16:14:17] "POST /submission HTTP/1.1" 200 -
+2021-12-20 16:14:17,998 INFO 127.0.0.1 - - [20/Dec/2021 16:14:17] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 16:14:18,123 INFO 127.0.0.1 - - [20/Dec/2021 16:14:18] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 16:14:18,641 ERROR Exception on /pending [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 101, in view_pending_requests
+    pending_requests = manager_service.service_view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 34, in service_view_pending_requests
+    return self.manager_dao.view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 48, in view_pending_requests
+    pending = cursor.fetchall()
+ValueError: year 11219 is out of range
+2021-12-20 16:14:18,643 INFO 127.0.0.1 - - [20/Dec/2021 16:14:18] "[35m[1mGET /pending HTTP/1.1[0m" 500 -
+2021-12-20 16:14:19,835 INFO 127.0.0.1 - - [20/Dec/2021 16:14:19] "GET /past HTTP/1.1" 200 -
+2021-12-20 16:14:19,934 INFO 127.0.0.1 - - [20/Dec/2021 16:14:19] "GET /amount HTTP/1.1" 200 -
+2021-12-20 16:14:19,971 INFO 127.0.0.1 - - [20/Dec/2021 16:14:19] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 16:14:20,006 INFO 127.0.0.1 - - [20/Dec/2021 16:14:20] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 16:14:20,044 INFO 127.0.0.1 - - [20/Dec/2021 16:14:20] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 16:14:20,044 INFO 127.0.0.1 - - [20/Dec/2021 16:14:20] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 16:15:49,448 INFO 127.0.0.1 - - [20/Dec/2021 16:15:49] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 16:15:49,554 INFO 127.0.0.1 - - [20/Dec/2021 16:15:49] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 16:15:50,381 INFO 127.0.0.1 - - [20/Dec/2021 16:15:50] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 16:15:50,461 INFO 127.0.0.1 - - [20/Dec/2021 16:15:50] "POST /submission HTTP/1.1" 200 -
+2021-12-20 16:15:50,736 INFO 127.0.0.1 - - [20/Dec/2021 16:15:50] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 16:15:50,853 INFO 127.0.0.1 - - [20/Dec/2021 16:15:50] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 16:15:51,384 ERROR Exception on /pending [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 101, in view_pending_requests
+    pending_requests = manager_service.service_view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 34, in service_view_pending_requests
+    return self.manager_dao.view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 48, in view_pending_requests
+    pending = cursor.fetchall()
+ValueError: year 11219 is out of range
+2021-12-20 16:15:51,386 INFO 127.0.0.1 - - [20/Dec/2021 16:15:51] "[35m[1mGET /pending HTTP/1.1[0m" 500 -
+2021-12-20 16:15:53,686 INFO 127.0.0.1 - - [20/Dec/2021 16:15:53] "GET /past HTTP/1.1" 200 -
+2021-12-20 16:15:53,765 INFO 127.0.0.1 - - [20/Dec/2021 16:15:53] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 16:15:53,765 INFO 127.0.0.1 - - [20/Dec/2021 16:15:53] "GET /amount HTTP/1.1" 200 -
+2021-12-20 16:15:53,816 INFO 127.0.0.1 - - [20/Dec/2021 16:15:53] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 16:15:53,853 INFO 127.0.0.1 - - [20/Dec/2021 16:15:53] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 16:15:53,897 INFO 127.0.0.1 - - [20/Dec/2021 16:15:53] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 16:22:30,116 INFO 127.0.0.1 - - [20/Dec/2021 16:22:30] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 16:22:30,196 INFO 127.0.0.1 - - [20/Dec/2021 16:22:30] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 16:22:31,063 INFO 127.0.0.1 - - [20/Dec/2021 16:22:31] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 16:22:31,140 INFO 127.0.0.1 - - [20/Dec/2021 16:22:31] "POST /submission HTTP/1.1" 200 -
+2021-12-20 16:22:31,189 INFO 127.0.0.1 - - [20/Dec/2021 16:22:31] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 16:22:31,273 ERROR Exception on /reimbursements/1 [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 63, in view_reimbursements_by_employee_id
+    reimbursements = employee_service.service_view_reimbursements_by_employee_id(int(employee_id))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 32, in service_view_reimbursements_by_employee_id
+    return self.employee_dao.view_reimbursements_by_employee_id(employee_id)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 36, in view_reimbursements_by_employee_id
+    all_reimbursements = cursor.fetchall()
+ValueError: year 11219 is out of range
+2021-12-20 16:22:31,276 INFO 127.0.0.1 - - [20/Dec/2021 16:22:31] "[35m[1mGET /reimbursements/1 HTTP/1.1[0m" 500 -
+2021-12-20 16:22:31,476 INFO 127.0.0.1 - - [20/Dec/2021 16:22:31] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 16:22:31,553 INFO 127.0.0.1 - - [20/Dec/2021 16:22:31] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 16:22:32,109 ERROR Exception on /pending [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 101, in view_pending_requests
+    pending_requests = manager_service.service_view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 34, in service_view_pending_requests
+    return self.manager_dao.view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 48, in view_pending_requests
+    pending = cursor.fetchall()
+ValueError: year 11219 is out of range
+2021-12-20 16:22:32,110 INFO 127.0.0.1 - - [20/Dec/2021 16:22:32] "[35m[1mGET /pending HTTP/1.1[0m" 500 -
+2021-12-20 16:22:34,326 INFO 127.0.0.1 - - [20/Dec/2021 16:22:34] "GET /past HTTP/1.1" 200 -
+2021-12-20 16:22:34,423 INFO 127.0.0.1 - - [20/Dec/2021 16:22:34] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 16:22:34,424 INFO 127.0.0.1 - - [20/Dec/2021 16:22:34] "GET /amount HTTP/1.1" 200 -
+2021-12-20 16:22:34,499 INFO 127.0.0.1 - - [20/Dec/2021 16:22:34] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 16:22:34,534 INFO 127.0.0.1 - - [20/Dec/2021 16:22:34] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 16:22:34,534 INFO 127.0.0.1 - - [20/Dec/2021 16:22:34] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 16:25:37,522 INFO 127.0.0.1 - - [20/Dec/2021 16:25:37] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 16:25:37,611 INFO 127.0.0.1 - - [20/Dec/2021 16:25:37] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 16:25:40,256 ERROR Exception on /pending [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 101, in view_pending_requests
+    pending_requests = manager_service.service_view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 34, in service_view_pending_requests
+    return self.manager_dao.view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 48, in view_pending_requests
+    pending = cursor.fetchall()
+ValueError: year 11219 is out of range
+2021-12-20 16:25:40,258 INFO 127.0.0.1 - - [20/Dec/2021 16:25:40] "[35m[1mGET /pending HTTP/1.1[0m" 500 -
+2021-12-20 16:25:42,679 INFO 127.0.0.1 - - [20/Dec/2021 16:25:42] "GET /past HTTP/1.1" 200 -
+2021-12-20 16:25:44,310 ERROR Exception on /pending [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 101, in view_pending_requests
+    pending_requests = manager_service.service_view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 34, in service_view_pending_requests
+    return self.manager_dao.view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 48, in view_pending_requests
+    pending = cursor.fetchall()
+ValueError: year 11219 is out of range
+2021-12-20 16:25:44,312 INFO 127.0.0.1 - - [20/Dec/2021 16:25:44] "[35m[1mGET /pending HTTP/1.1[0m" 500 -
+2021-12-20 19:37:13,937 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-20 19:37:48,819 INFO 127.0.0.1 - - [20/Dec/2021 19:37:48] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 19:37:48,961 INFO 127.0.0.1 - - [20/Dec/2021 19:37:48] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 19:37:49,771 INFO 127.0.0.1 - - [20/Dec/2021 19:37:49] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 19:37:49,860 INFO 127.0.0.1 - - [20/Dec/2021 19:37:49] "POST /submission HTTP/1.1" 200 -
+2021-12-20 19:37:49,907 INFO 127.0.0.1 - - [20/Dec/2021 19:37:49] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 19:37:49,993 ERROR Exception on /reimbursements/1 [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 63, in view_reimbursements_by_employee_id
+    reimbursements = employee_service.service_view_reimbursements_by_employee_id(int(employee_id))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 32, in service_view_reimbursements_by_employee_id
+    return self.employee_dao.view_reimbursements_by_employee_id(employee_id)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 36, in view_reimbursements_by_employee_id
+    all_reimbursements = cursor.fetchall()
+ValueError: year 11219 is out of range
+2021-12-20 19:37:50,002 INFO 127.0.0.1 - - [20/Dec/2021 19:37:50] "[35m[1mGET /reimbursements/1 HTTP/1.1[0m" 500 -
+2021-12-20 19:37:50,215 INFO 127.0.0.1 - - [20/Dec/2021 19:37:50] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 19:37:50,293 INFO 127.0.0.1 - - [20/Dec/2021 19:37:50] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 19:37:53,054 INFO 127.0.0.1 - - [20/Dec/2021 19:37:53] "GET /past HTTP/1.1" 200 -
+2021-12-20 19:37:53,120 INFO 127.0.0.1 - - [20/Dec/2021 19:37:53] "GET /amount HTTP/1.1" 200 -
+2021-12-20 19:37:53,157 INFO 127.0.0.1 - - [20/Dec/2021 19:37:53] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 19:37:53,235 INFO 127.0.0.1 - - [20/Dec/2021 19:37:53] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 19:37:53,272 INFO 127.0.0.1 - - [20/Dec/2021 19:37:53] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 19:37:53,273 INFO 127.0.0.1 - - [20/Dec/2021 19:37:53] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 19:43:04,427 INFO 127.0.0.1 - - [20/Dec/2021 19:43:04] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 19:43:04,512 INFO 127.0.0.1 - - [20/Dec/2021 19:43:04] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 19:43:05,325 INFO 127.0.0.1 - - [20/Dec/2021 19:43:05] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 19:43:05,403 INFO 127.0.0.1 - - [20/Dec/2021 19:43:05] "POST /submission HTTP/1.1" 200 -
+2021-12-20 19:43:05,462 INFO 127.0.0.1 - - [20/Dec/2021 19:43:05] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 19:43:05,545 ERROR Exception on /reimbursements/1 [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 63, in view_reimbursements_by_employee_id
+    reimbursements = employee_service.service_view_reimbursements_by_employee_id(int(employee_id))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 32, in service_view_reimbursements_by_employee_id
+    return self.employee_dao.view_reimbursements_by_employee_id(employee_id)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 36, in view_reimbursements_by_employee_id
+    all_reimbursements = cursor.fetchall()
+ValueError: year 11219 is out of range
+2021-12-20 19:43:05,547 INFO 127.0.0.1 - - [20/Dec/2021 19:43:05] "[35m[1mGET /reimbursements/1 HTTP/1.1[0m" 500 -
+2021-12-20 19:43:05,743 INFO 127.0.0.1 - - [20/Dec/2021 19:43:05] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 19:43:05,822 INFO 127.0.0.1 - - [20/Dec/2021 19:43:05] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 19:43:06,383 ERROR Exception on /pending [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 101, in view_pending_requests
+    pending_requests = manager_service.service_view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 34, in service_view_pending_requests
+    return self.manager_dao.view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 48, in view_pending_requests
+    pending = cursor.fetchall()
+ValueError: year 11219 is out of range
+2021-12-20 19:43:06,385 INFO 127.0.0.1 - - [20/Dec/2021 19:43:06] "[35m[1mGET /pending HTTP/1.1[0m" 500 -
+2021-12-20 19:43:08,600 INFO 127.0.0.1 - - [20/Dec/2021 19:43:08] "GET /past HTTP/1.1" 200 -
+2021-12-20 19:43:08,705 INFO 127.0.0.1 - - [20/Dec/2021 19:43:08] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 19:43:08,705 INFO 127.0.0.1 - - [20/Dec/2021 19:43:08] "GET /amount HTTP/1.1" 200 -
+2021-12-20 19:43:08,828 INFO 127.0.0.1 - - [20/Dec/2021 19:43:08] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 19:43:08,829 INFO 127.0.0.1 - - [20/Dec/2021 19:43:08] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 19:43:08,829 INFO 127.0.0.1 - - [20/Dec/2021 19:43:08] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 19:45:02,074 INFO 127.0.0.1 - - [20/Dec/2021 19:45:02] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 19:45:02,156 INFO 127.0.0.1 - - [20/Dec/2021 19:45:02] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 19:45:03,484 INFO 127.0.0.1 - - [20/Dec/2021 19:45:03] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 19:45:03,565 INFO 127.0.0.1 - - [20/Dec/2021 19:45:03] "POST /submission HTTP/1.1" 200 -
+2021-12-20 19:45:03,615 INFO 127.0.0.1 - - [20/Dec/2021 19:45:03] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 19:45:03,690 ERROR Exception on /reimbursements/1 [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 63, in view_reimbursements_by_employee_id
+    reimbursements = employee_service.service_view_reimbursements_by_employee_id(int(employee_id))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 32, in service_view_reimbursements_by_employee_id
+    return self.employee_dao.view_reimbursements_by_employee_id(employee_id)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 36, in view_reimbursements_by_employee_id
+    all_reimbursements = cursor.fetchall()
+ValueError: year 11219 is out of range
+2021-12-20 19:45:03,691 INFO 127.0.0.1 - - [20/Dec/2021 19:45:03] "[35m[1mGET /reimbursements/1 HTTP/1.1[0m" 500 -
+2021-12-20 19:45:03,889 INFO 127.0.0.1 - - [20/Dec/2021 19:45:03] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 19:45:03,968 INFO 127.0.0.1 - - [20/Dec/2021 19:45:03] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 19:45:04,537 ERROR Exception on /pending [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 101, in view_pending_requests
+    pending_requests = manager_service.service_view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 34, in service_view_pending_requests
+    return self.manager_dao.view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 48, in view_pending_requests
+    pending = cursor.fetchall()
+ValueError: year 11219 is out of range
+2021-12-20 19:45:04,538 INFO 127.0.0.1 - - [20/Dec/2021 19:45:04] "[35m[1mGET /pending HTTP/1.1[0m" 500 -
+2021-12-20 19:45:07,775 INFO 127.0.0.1 - - [20/Dec/2021 19:45:07] "GET /past HTTP/1.1" 200 -
+2021-12-20 19:45:07,834 INFO 127.0.0.1 - - [20/Dec/2021 19:45:07] "GET /amount HTTP/1.1" 200 -
+2021-12-20 19:45:07,907 INFO 127.0.0.1 - - [20/Dec/2021 19:45:07] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 19:45:07,947 INFO 127.0.0.1 - - [20/Dec/2021 19:45:07] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 19:45:07,989 INFO 127.0.0.1 - - [20/Dec/2021 19:45:07] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 19:45:07,989 INFO 127.0.0.1 - - [20/Dec/2021 19:45:07] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 19:48:27,664 ERROR Exception on /pending [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 101, in view_pending_requests
+    pending_requests = manager_service.service_view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 34, in service_view_pending_requests
+    return self.manager_dao.view_pending_requests()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 48, in view_pending_requests
+    pending = cursor.fetchall()
+ValueError: year 11219 is out of range
+2021-12-20 19:48:27,671 INFO 127.0.0.1 - - [20/Dec/2021 19:48:27] "[35m[1mGET /pending HTTP/1.1[0m" 500 -
+2021-12-20 19:49:43,916 INFO 127.0.0.1 - - [20/Dec/2021 19:49:43] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 19:49:44,085 INFO 127.0.0.1 - - [20/Dec/2021 19:49:44] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 19:50:12,526 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-20 19:53:08,503 INFO 127.0.0.1 - - [20/Dec/2021 19:53:08] "GET /pending HTTP/1.1" 200 -
+2021-12-20 19:53:46,814 INFO 127.0.0.1 - - [20/Dec/2021 19:53:46] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 19:53:46,901 INFO 127.0.0.1 - - [20/Dec/2021 19:53:46] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 20:00:19,625 INFO 127.0.0.1 - - [20/Dec/2021 20:00:19] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 20:00:19,730 INFO 127.0.0.1 - - [20/Dec/2021 20:00:19] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 20:00:21,052 INFO 127.0.0.1 - - [20/Dec/2021 20:00:21] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 20:00:21,140 INFO 127.0.0.1 - - [20/Dec/2021 20:00:21] "POST /submission HTTP/1.1" 200 -
+2021-12-20 20:00:21,175 INFO 127.0.0.1 - - [20/Dec/2021 20:00:21] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 20:00:21,251 INFO 127.0.0.1 - - [20/Dec/2021 20:00:21] "GET /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 20:00:21,465 INFO 127.0.0.1 - - [20/Dec/2021 20:00:21] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 20:00:21,552 INFO 127.0.0.1 - - [20/Dec/2021 20:00:21] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 20:00:22,144 INFO 127.0.0.1 - - [20/Dec/2021 20:00:22] "GET /pending HTTP/1.1" 200 -
+2021-12-20 20:00:24,322 INFO 127.0.0.1 - - [20/Dec/2021 20:00:24] "GET /past HTTP/1.1" 200 -
+2021-12-20 20:00:24,429 INFO 127.0.0.1 - - [20/Dec/2021 20:00:24] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 20:00:24,488 INFO 127.0.0.1 - - [20/Dec/2021 20:00:24] "GET /amount HTTP/1.1" 200 -
+2021-12-20 20:00:24,574 INFO 127.0.0.1 - - [20/Dec/2021 20:00:24] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 20:00:24,575 INFO 127.0.0.1 - - [20/Dec/2021 20:00:24] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 20:00:24,577 INFO 127.0.0.1 - - [20/Dec/2021 20:00:24] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 20:01:33,870 INFO 127.0.0.1 - - [20/Dec/2021 20:01:33] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 20:01:33,962 INFO 127.0.0.1 - - [20/Dec/2021 20:01:33] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 20:01:35,296 INFO 127.0.0.1 - - [20/Dec/2021 20:01:35] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 20:01:35,376 INFO 127.0.0.1 - - [20/Dec/2021 20:01:35] "POST /submission HTTP/1.1" 200 -
+2021-12-20 20:01:35,418 INFO 127.0.0.1 - - [20/Dec/2021 20:01:35] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 20:01:35,512 INFO 127.0.0.1 - - [20/Dec/2021 20:01:35] "GET /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 20:01:35,689 INFO 127.0.0.1 - - [20/Dec/2021 20:01:35] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 20:01:35,789 INFO 127.0.0.1 - - [20/Dec/2021 20:01:35] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 20:01:36,342 INFO 127.0.0.1 - - [20/Dec/2021 20:01:36] "GET /pending HTTP/1.1" 200 -
+2021-12-20 20:01:39,627 INFO 127.0.0.1 - - [20/Dec/2021 20:01:39] "GET /past HTTP/1.1" 200 -
+2021-12-20 20:01:39,769 INFO 127.0.0.1 - - [20/Dec/2021 20:01:39] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 20:01:39,770 INFO 127.0.0.1 - - [20/Dec/2021 20:01:39] "GET /amount HTTP/1.1" 200 -
+2021-12-20 20:01:39,926 INFO 127.0.0.1 - - [20/Dec/2021 20:01:39] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 20:01:39,927 INFO 127.0.0.1 - - [20/Dec/2021 20:01:39] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 20:01:39,928 INFO 127.0.0.1 - - [20/Dec/2021 20:01:39] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 20:02:15,737 INFO 127.0.0.1 - - [20/Dec/2021 20:02:15] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 20:02:15,860 INFO 127.0.0.1 - - [20/Dec/2021 20:02:15] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 20:02:46,706 INFO 127.0.0.1 - - [20/Dec/2021 20:02:46] "GET /pending HTTP/1.1" 200 -
+2021-12-20 20:21:28,094 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-20 20:21:37,667 INFO 127.0.0.1 - - [20/Dec/2021 20:21:37] "GET /pending HTTP/1.1" 200 -
+2021-12-20 20:31:26,280 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-20 20:35:56,918 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-20 20:36:52,249 INFO 127.0.0.1 - - [20/Dec/2021 20:36:52] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 20:36:52,379 INFO 127.0.0.1 - - [20/Dec/2021 20:36:52] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 20:36:53,668 INFO 127.0.0.1 - - [20/Dec/2021 20:36:53] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 20:36:53,747 INFO 127.0.0.1 - - [20/Dec/2021 20:36:53] "POST /submission HTTP/1.1" 200 -
+2021-12-20 20:36:53,791 INFO 127.0.0.1 - - [20/Dec/2021 20:36:53] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 20:36:53,866 INFO 127.0.0.1 - - [20/Dec/2021 20:36:53] "GET /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 20:36:54,241 INFO 127.0.0.1 - - [20/Dec/2021 20:36:54] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 20:36:54,324 INFO 127.0.0.1 - - [20/Dec/2021 20:36:54] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 20:36:54,900 INFO 127.0.0.1 - - [20/Dec/2021 20:36:54] "GET /pending HTTP/1.1" 200 -
+2021-12-20 20:36:58,163 INFO 127.0.0.1 - - [20/Dec/2021 20:36:58] "GET /past HTTP/1.1" 200 -
+2021-12-20 20:42:39,055 INFO 127.0.0.1 - - [20/Dec/2021 20:42:39] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 20:42:39,140 INFO 127.0.0.1 - - [20/Dec/2021 20:42:39] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 20:42:40,483 INFO 127.0.0.1 - - [20/Dec/2021 20:42:40] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 20:42:40,557 INFO 127.0.0.1 - - [20/Dec/2021 20:42:40] "POST /submission HTTP/1.1" 200 -
+2021-12-20 20:42:40,611 INFO 127.0.0.1 - - [20/Dec/2021 20:42:40] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 20:42:40,703 INFO 127.0.0.1 - - [20/Dec/2021 20:42:40] "GET /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 20:42:40,901 INFO 127.0.0.1 - - [20/Dec/2021 20:42:40] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 20:42:40,982 INFO 127.0.0.1 - - [20/Dec/2021 20:42:40] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 20:42:41,592 INFO 127.0.0.1 - - [20/Dec/2021 20:42:41] "GET /pending HTTP/1.1" 200 -
+2021-12-20 20:42:44,764 INFO 127.0.0.1 - - [20/Dec/2021 20:42:44] "GET /past HTTP/1.1" 200 -
+2021-12-20 20:42:44,866 INFO 127.0.0.1 - - [20/Dec/2021 20:42:44] "GET /amount HTTP/1.1" 200 -
+2021-12-20 20:42:44,901 INFO 127.0.0.1 - - [20/Dec/2021 20:42:44] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 20:42:45,006 INFO 127.0.0.1 - - [20/Dec/2021 20:42:45] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 20:42:45,048 INFO 127.0.0.1 - - [20/Dec/2021 20:42:45] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 20:42:45,049 INFO 127.0.0.1 - - [20/Dec/2021 20:42:45] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 20:43:22,368 INFO 127.0.0.1 - - [20/Dec/2021 20:43:22] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 20:43:22,460 INFO 127.0.0.1 - - [20/Dec/2021 20:43:22] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 20:43:26,737 INFO 127.0.0.1 - - [20/Dec/2021 20:43:26] "GET /pending HTTP/1.1" 200 -
+2021-12-20 20:46:26,172 INFO 127.0.0.1 - - [20/Dec/2021 20:46:26] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 20:46:26,286 INFO 127.0.0.1 - - [20/Dec/2021 20:46:26] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 20:46:27,572 INFO 127.0.0.1 - - [20/Dec/2021 20:46:27] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 20:46:27,674 INFO 127.0.0.1 - - [20/Dec/2021 20:46:27] "POST /submission HTTP/1.1" 200 -
+2021-12-20 20:46:27,706 INFO 127.0.0.1 - - [20/Dec/2021 20:46:27] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 20:46:27,782 INFO 127.0.0.1 - - [20/Dec/2021 20:46:27] "GET /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 20:46:28,007 INFO 127.0.0.1 - - [20/Dec/2021 20:46:28] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 20:46:28,089 INFO 127.0.0.1 - - [20/Dec/2021 20:46:28] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 20:46:28,640 INFO 127.0.0.1 - - [20/Dec/2021 20:46:28] "GET /pending HTTP/1.1" 200 -
+2021-12-20 20:46:33,897 INFO 127.0.0.1 - - [20/Dec/2021 20:46:33] "GET /past HTTP/1.1" 200 -
+2021-12-20 20:46:33,954 INFO 127.0.0.1 - - [20/Dec/2021 20:46:33] "GET /amount HTTP/1.1" 200 -
+2021-12-20 20:46:34,041 INFO 127.0.0.1 - - [20/Dec/2021 20:46:34] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 20:46:34,113 INFO 127.0.0.1 - - [20/Dec/2021 20:46:34] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 20:46:34,114 INFO 127.0.0.1 - - [20/Dec/2021 20:46:34] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 20:46:34,115 INFO 127.0.0.1 - - [20/Dec/2021 20:46:34] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 20:47:31,780 INFO 127.0.0.1 - - [20/Dec/2021 20:47:31] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 20:47:31,863 INFO 127.0.0.1 - - [20/Dec/2021 20:47:31] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 20:47:33,166 INFO 127.0.0.1 - - [20/Dec/2021 20:47:33] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 20:47:33,246 INFO 127.0.0.1 - - [20/Dec/2021 20:47:33] "POST /submission HTTP/1.1" 200 -
+2021-12-20 20:47:33,294 INFO 127.0.0.1 - - [20/Dec/2021 20:47:33] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 20:47:33,370 INFO 127.0.0.1 - - [20/Dec/2021 20:47:33] "GET /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 20:47:33,563 INFO 127.0.0.1 - - [20/Dec/2021 20:47:33] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 20:47:33,690 INFO 127.0.0.1 - - [20/Dec/2021 20:47:33] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 20:47:34,218 INFO 127.0.0.1 - - [20/Dec/2021 20:47:34] "GET /pending HTTP/1.1" 200 -
+2021-12-20 20:47:39,468 INFO 127.0.0.1 - - [20/Dec/2021 20:47:39] "GET /past HTTP/1.1" 200 -
+2021-12-20 20:47:39,537 INFO 127.0.0.1 - - [20/Dec/2021 20:47:39] "GET /amount HTTP/1.1" 200 -
+2021-12-20 20:47:39,610 INFO 127.0.0.1 - - [20/Dec/2021 20:47:39] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 20:47:39,646 INFO 127.0.0.1 - - [20/Dec/2021 20:47:39] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 20:47:39,687 INFO 127.0.0.1 - - [20/Dec/2021 20:47:39] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 20:47:39,688 INFO 127.0.0.1 - - [20/Dec/2021 20:47:39] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 20:51:50,753 INFO 127.0.0.1 - - [20/Dec/2021 20:51:50] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 20:51:50,845 INFO 127.0.0.1 - - [20/Dec/2021 20:51:50] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 20:51:52,196 INFO 127.0.0.1 - - [20/Dec/2021 20:51:52] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 20:51:52,277 INFO 127.0.0.1 - - [20/Dec/2021 20:51:52] "POST /submission HTTP/1.1" 200 -
+2021-12-20 20:51:52,321 INFO 127.0.0.1 - - [20/Dec/2021 20:51:52] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 20:51:52,403 INFO 127.0.0.1 - - [20/Dec/2021 20:51:52] "GET /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 20:51:52,633 INFO 127.0.0.1 - - [20/Dec/2021 20:51:52] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 20:51:52,719 INFO 127.0.0.1 - - [20/Dec/2021 20:51:52] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 20:51:53,306 INFO 127.0.0.1 - - [20/Dec/2021 20:51:53] "GET /pending HTTP/1.1" 200 -
+2021-12-20 20:51:58,533 INFO 127.0.0.1 - - [20/Dec/2021 20:51:58] "GET /past HTTP/1.1" 200 -
+2021-12-20 20:51:58,606 INFO 127.0.0.1 - - [20/Dec/2021 20:51:58] "GET /amount HTTP/1.1" 200 -
+2021-12-20 20:51:58,690 INFO 127.0.0.1 - - [20/Dec/2021 20:51:58] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 20:51:58,767 INFO 127.0.0.1 - - [20/Dec/2021 20:51:58] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 20:51:58,768 INFO 127.0.0.1 - - [20/Dec/2021 20:51:58] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 20:51:58,768 INFO 127.0.0.1 - - [20/Dec/2021 20:51:58] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 21:08:12,956 INFO 127.0.0.1 - - [20/Dec/2021 21:08:12] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 21:08:13,046 INFO 127.0.0.1 - - [20/Dec/2021 21:08:13] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 21:08:14,424 INFO 127.0.0.1 - - [20/Dec/2021 21:08:14] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 21:08:14,521 INFO 127.0.0.1 - - [20/Dec/2021 21:08:14] "POST /submission HTTP/1.1" 200 -
+2021-12-20 21:08:14,590 INFO 127.0.0.1 - - [20/Dec/2021 21:08:14] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 21:08:14,664 INFO 127.0.0.1 - - [20/Dec/2021 21:08:14] "GET /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 21:08:14,931 INFO 127.0.0.1 - - [20/Dec/2021 21:08:14] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 21:08:15,009 INFO 127.0.0.1 - - [20/Dec/2021 21:08:15] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 21:08:15,570 INFO 127.0.0.1 - - [20/Dec/2021 21:08:15] "GET /pending HTTP/1.1" 200 -
+2021-12-20 21:08:20,825 INFO 127.0.0.1 - - [20/Dec/2021 21:08:20] "GET /past HTTP/1.1" 200 -
+2021-12-20 21:08:20,923 INFO 127.0.0.1 - - [20/Dec/2021 21:08:20] "GET /amount HTTP/1.1" 200 -
+2021-12-20 21:08:20,969 INFO 127.0.0.1 - - [20/Dec/2021 21:08:20] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 21:08:21,004 INFO 127.0.0.1 - - [20/Dec/2021 21:08:21] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 21:08:21,042 INFO 127.0.0.1 - - [20/Dec/2021 21:08:21] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 21:08:21,042 INFO 127.0.0.1 - - [20/Dec/2021 21:08:21] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 21:09:29,150 INFO 127.0.0.1 - - [20/Dec/2021 21:09:29] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 21:09:29,241 INFO 127.0.0.1 - - [20/Dec/2021 21:09:29] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 21:09:30,567 INFO 127.0.0.1 - - [20/Dec/2021 21:09:30] "GET /pending HTTP/1.1" 200 -
+2021-12-20 21:11:58,527 INFO 127.0.0.1 - - [20/Dec/2021 21:11:58] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 21:11:58,616 INFO 127.0.0.1 - - [20/Dec/2021 21:11:58] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 21:11:59,880 INFO 127.0.0.1 - - [20/Dec/2021 21:11:59] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 21:11:59,996 INFO 127.0.0.1 - - [20/Dec/2021 21:11:59] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 21:12:00,140 INFO 127.0.0.1 - - [20/Dec/2021 21:12:00] "POST /submission HTTP/1.1" 200 -
+2021-12-20 21:12:00,215 INFO 127.0.0.1 - - [20/Dec/2021 21:12:00] "GET /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 21:12:00,263 INFO 127.0.0.1 - - [20/Dec/2021 21:12:00] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 21:12:00,367 INFO 127.0.0.1 - - [20/Dec/2021 21:12:00] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 21:12:00,920 INFO 127.0.0.1 - - [20/Dec/2021 21:12:00] "GET /pending HTTP/1.1" 200 -
+2021-12-20 21:12:06,229 INFO 127.0.0.1 - - [20/Dec/2021 21:12:06] "GET /past HTTP/1.1" 200 -
+2021-12-20 21:12:06,264 INFO 127.0.0.1 - - [20/Dec/2021 21:12:06] "GET /amount HTTP/1.1" 200 -
+2021-12-20 21:12:06,298 INFO 127.0.0.1 - - [20/Dec/2021 21:12:06] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 21:12:06,342 INFO 127.0.0.1 - - [20/Dec/2021 21:12:06] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 21:12:06,381 INFO 127.0.0.1 - - [20/Dec/2021 21:12:06] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 21:12:06,382 INFO 127.0.0.1 - - [20/Dec/2021 21:12:06] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 21:21:26,333 INFO 127.0.0.1 - - [20/Dec/2021 21:21:26] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 21:21:26,443 INFO 127.0.0.1 - - [20/Dec/2021 21:21:26] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 21:21:27,704 INFO 127.0.0.1 - - [20/Dec/2021 21:21:27] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 21:21:27,790 INFO 127.0.0.1 - - [20/Dec/2021 21:21:27] "POST /submission HTTP/1.1" 200 -
+2021-12-20 21:21:27,825 INFO 127.0.0.1 - - [20/Dec/2021 21:21:27] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 21:21:27,901 INFO 127.0.0.1 - - [20/Dec/2021 21:21:27] "GET /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 21:21:28,094 INFO 127.0.0.1 - - [20/Dec/2021 21:21:28] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 21:21:28,176 INFO 127.0.0.1 - - [20/Dec/2021 21:21:28] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 21:21:28,758 INFO 127.0.0.1 - - [20/Dec/2021 21:21:28] "GET /pending HTTP/1.1" 200 -
+2021-12-20 21:21:33,973 INFO 127.0.0.1 - - [20/Dec/2021 21:21:33] "GET /past HTTP/1.1" 200 -
+2021-12-20 21:21:34,045 INFO 127.0.0.1 - - [20/Dec/2021 21:21:34] "GET /amount HTTP/1.1" 200 -
+2021-12-20 21:21:34,127 INFO 127.0.0.1 - - [20/Dec/2021 21:21:34] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 21:21:34,163 INFO 127.0.0.1 - - [20/Dec/2021 21:21:34] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 21:21:34,198 INFO 127.0.0.1 - - [20/Dec/2021 21:21:34] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 21:21:34,199 INFO 127.0.0.1 - - [20/Dec/2021 21:21:34] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 21:31:03,146 INFO 127.0.0.1 - - [20/Dec/2021 21:31:03] "GET /pending HTTP/1.1" 200 -
+2021-12-20 21:34:47,925 INFO 127.0.0.1 - - [20/Dec/2021 21:34:47] "GET /pending HTTP/1.1" 200 -
+2021-12-20 21:37:02,978 INFO 127.0.0.1 - - [20/Dec/2021 21:37:02] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 21:37:03,091 INFO 127.0.0.1 - - [20/Dec/2021 21:37:03] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 21:37:04,360 INFO 127.0.0.1 - - [20/Dec/2021 21:37:04] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 21:37:04,444 INFO 127.0.0.1 - - [20/Dec/2021 21:37:04] "POST /submission HTTP/1.1" 200 -
+2021-12-20 21:37:04,492 INFO 127.0.0.1 - - [20/Dec/2021 21:37:04] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 21:37:04,565 INFO 127.0.0.1 - - [20/Dec/2021 21:37:04] "GET /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 21:37:04,813 INFO 127.0.0.1 - - [20/Dec/2021 21:37:04] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 21:37:04,901 INFO 127.0.0.1 - - [20/Dec/2021 21:37:04] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 21:37:05,488 INFO 127.0.0.1 - - [20/Dec/2021 21:37:05] "GET /pending HTTP/1.1" 200 -
+2021-12-20 21:37:10,679 INFO 127.0.0.1 - - [20/Dec/2021 21:37:10] "GET /past HTTP/1.1" 200 -
+2021-12-20 21:37:10,799 INFO 127.0.0.1 - - [20/Dec/2021 21:37:10] "GET /amount HTTP/1.1" 200 -
+2021-12-20 21:37:10,880 INFO 127.0.0.1 - - [20/Dec/2021 21:37:10] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 21:37:10,918 INFO 127.0.0.1 - - [20/Dec/2021 21:37:10] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 21:37:10,919 INFO 127.0.0.1 - - [20/Dec/2021 21:37:10] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 21:37:10,919 INFO 127.0.0.1 - - [20/Dec/2021 21:37:10] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 21:39:03,338 INFO 127.0.0.1 - - [20/Dec/2021 21:39:03] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 21:39:03,422 INFO 127.0.0.1 - - [20/Dec/2021 21:39:03] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 21:39:04,773 INFO 127.0.0.1 - - [20/Dec/2021 21:39:04] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 21:39:04,899 INFO 127.0.0.1 - - [20/Dec/2021 21:39:04] "POST /submission HTTP/1.1" 200 -
+2021-12-20 21:39:04,914 INFO 127.0.0.1 - - [20/Dec/2021 21:39:04] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 21:39:05,057 INFO 127.0.0.1 - - [20/Dec/2021 21:39:05] "GET /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 21:39:05,264 INFO 127.0.0.1 - - [20/Dec/2021 21:39:05] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 21:39:05,350 INFO 127.0.0.1 - - [20/Dec/2021 21:39:05] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 21:39:05,934 INFO 127.0.0.1 - - [20/Dec/2021 21:39:05] "GET /pending HTTP/1.1" 200 -
+2021-12-20 21:39:11,107 INFO 127.0.0.1 - - [20/Dec/2021 21:39:11] "GET /past HTTP/1.1" 200 -
+2021-12-20 21:39:11,178 INFO 127.0.0.1 - - [20/Dec/2021 21:39:11] "GET /amount HTTP/1.1" 200 -
+2021-12-20 21:39:11,265 INFO 127.0.0.1 - - [20/Dec/2021 21:39:11] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 21:39:11,301 INFO 127.0.0.1 - - [20/Dec/2021 21:39:11] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 21:39:11,341 INFO 127.0.0.1 - - [20/Dec/2021 21:39:11] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 21:39:11,342 INFO 127.0.0.1 - - [20/Dec/2021 21:39:11] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 21:46:22,641 INFO 127.0.0.1 - - [20/Dec/2021 21:46:22] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 21:46:22,725 INFO 127.0.0.1 - - [20/Dec/2021 21:46:22] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 21:46:24,063 INFO 127.0.0.1 - - [20/Dec/2021 21:46:24] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 21:46:24,174 INFO 127.0.0.1 - - [20/Dec/2021 21:46:24] "POST /submission HTTP/1.1" 200 -
+2021-12-20 21:46:24,220 INFO 127.0.0.1 - - [20/Dec/2021 21:46:24] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 21:46:24,293 INFO 127.0.0.1 - - [20/Dec/2021 21:46:24] "GET /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 21:46:24,538 INFO 127.0.0.1 - - [20/Dec/2021 21:46:24] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 21:46:24,624 INFO 127.0.0.1 - - [20/Dec/2021 21:46:24] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 21:46:25,189 INFO 127.0.0.1 - - [20/Dec/2021 21:46:25] "GET /pending HTTP/1.1" 200 -
+2021-12-20 21:46:29,394 INFO 127.0.0.1 - - [20/Dec/2021 21:46:29] "GET /past HTTP/1.1" 200 -
+2021-12-20 21:46:29,499 INFO 127.0.0.1 - - [20/Dec/2021 21:46:29] "GET /amount HTTP/1.1" 200 -
+2021-12-20 21:46:29,551 INFO 127.0.0.1 - - [20/Dec/2021 21:46:29] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 21:46:29,637 INFO 127.0.0.1 - - [20/Dec/2021 21:46:29] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 21:46:29,637 INFO 127.0.0.1 - - [20/Dec/2021 21:46:29] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 21:46:29,638 INFO 127.0.0.1 - - [20/Dec/2021 21:46:29] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 21:47:15,980 INFO 127.0.0.1 - - [20/Dec/2021 21:47:15] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 21:47:16,075 INFO 127.0.0.1 - - [20/Dec/2021 21:47:16] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 21:47:17,404 INFO 127.0.0.1 - - [20/Dec/2021 21:47:17] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 21:47:17,493 INFO 127.0.0.1 - - [20/Dec/2021 21:47:17] "POST /submission HTTP/1.1" 200 -
+2021-12-20 21:47:17,531 INFO 127.0.0.1 - - [20/Dec/2021 21:47:17] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 21:47:17,606 INFO 127.0.0.1 - - [20/Dec/2021 21:47:17] "GET /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 21:47:17,840 INFO 127.0.0.1 - - [20/Dec/2021 21:47:17] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 21:47:17,949 INFO 127.0.0.1 - - [20/Dec/2021 21:47:17] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 21:47:18,489 INFO 127.0.0.1 - - [20/Dec/2021 21:47:18] "GET /pending HTTP/1.1" 200 -
+2021-12-20 21:47:21,597 INFO 127.0.0.1 - - [20/Dec/2021 21:47:21] "GET /pending HTTP/1.1" 200 -
+2021-12-20 21:47:24,604 INFO 127.0.0.1 - - [20/Dec/2021 21:47:24] "OPTIONS /approve/80 HTTP/1.1" 200 -
+2021-12-20 21:47:24,683 INFO 127.0.0.1 - - [20/Dec/2021 21:47:24] "PATCH /approve/80 HTTP/1.1" 200 -
+2021-12-20 21:47:25,815 INFO 127.0.0.1 - - [20/Dec/2021 21:47:25] "GET /past HTTP/1.1" 200 -
+2021-12-20 21:47:25,909 INFO 127.0.0.1 - - [20/Dec/2021 21:47:25] "GET /amount HTTP/1.1" 200 -
+2021-12-20 21:47:25,945 INFO 127.0.0.1 - - [20/Dec/2021 21:47:25] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 21:47:25,984 INFO 127.0.0.1 - - [20/Dec/2021 21:47:25] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 21:47:26,032 INFO 127.0.0.1 - - [20/Dec/2021 21:47:26] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 21:47:26,032 INFO 127.0.0.1 - - [20/Dec/2021 21:47:26] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 21:48:20,343 INFO 127.0.0.1 - - [20/Dec/2021 21:48:20] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 21:48:20,450 INFO 127.0.0.1 - - [20/Dec/2021 21:48:20] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 21:48:21,799 INFO 127.0.0.1 - - [20/Dec/2021 21:48:21] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 21:48:21,886 INFO 127.0.0.1 - - [20/Dec/2021 21:48:21] "POST /submission HTTP/1.1" 200 -
+2021-12-20 21:48:21,930 INFO 127.0.0.1 - - [20/Dec/2021 21:48:21] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 21:48:22,041 INFO 127.0.0.1 - - [20/Dec/2021 21:48:22] "GET /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 21:48:22,242 INFO 127.0.0.1 - - [20/Dec/2021 21:48:22] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 21:48:22,319 INFO 127.0.0.1 - - [20/Dec/2021 21:48:22] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 21:48:22,891 INFO 127.0.0.1 - - [20/Dec/2021 21:48:22] "GET /pending HTTP/1.1" 200 -
+2021-12-20 21:48:25,999 INFO 127.0.0.1 - - [20/Dec/2021 21:48:25] "GET /pending HTTP/1.1" 200 -
+2021-12-20 21:48:28,999 INFO 127.0.0.1 - - [20/Dec/2021 21:48:28] "OPTIONS /approve/81 HTTP/1.1" 200 -
+2021-12-20 21:48:29,082 INFO 127.0.0.1 - - [20/Dec/2021 21:48:29] "PATCH /approve/81 HTTP/1.1" 200 -
+2021-12-20 21:48:29,157 INFO 127.0.0.1 - - [20/Dec/2021 21:48:29] "GET /pending HTTP/1.1" 200 -
+2021-12-20 21:48:32,351 INFO 127.0.0.1 - - [20/Dec/2021 21:48:32] "GET /past HTTP/1.1" 200 -
+2021-12-20 21:48:32,419 INFO 127.0.0.1 - - [20/Dec/2021 21:48:32] "GET /amount HTTP/1.1" 200 -
+2021-12-20 21:48:32,491 INFO 127.0.0.1 - - [20/Dec/2021 21:48:32] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 21:48:32,526 INFO 127.0.0.1 - - [20/Dec/2021 21:48:32] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 21:48:32,527 INFO 127.0.0.1 - - [20/Dec/2021 21:48:32] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 21:48:32,562 INFO 127.0.0.1 - - [20/Dec/2021 21:48:32] "GET /transportation HTTP/1.1" 200 -
+2021-12-20 21:53:09,194 INFO 127.0.0.1 - - [20/Dec/2021 21:53:09] "OPTIONS /employee/login HTTP/1.1" 200 -
+2021-12-20 21:53:09,278 INFO 127.0.0.1 - - [20/Dec/2021 21:53:09] "POST /employee/login HTTP/1.1" 200 -
+2021-12-20 21:53:10,612 INFO 127.0.0.1 - - [20/Dec/2021 21:53:10] "OPTIONS /submission HTTP/1.1" 200 -
+2021-12-20 21:53:10,709 INFO 127.0.0.1 - - [20/Dec/2021 21:53:10] "POST /submission HTTP/1.1" 200 -
+2021-12-20 21:53:10,774 INFO 127.0.0.1 - - [20/Dec/2021 21:53:10] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 21:53:10,875 INFO 127.0.0.1 - - [20/Dec/2021 21:53:10] "GET /reimbursements/1 HTTP/1.1" 200 -
+2021-12-20 21:53:11,111 INFO 127.0.0.1 - - [20/Dec/2021 21:53:11] "OPTIONS /manager/login HTTP/1.1" 200 -
+2021-12-20 21:53:11,195 INFO 127.0.0.1 - - [20/Dec/2021 21:53:11] "POST /manager/login HTTP/1.1" 200 -
+2021-12-20 21:53:11,762 INFO 127.0.0.1 - - [20/Dec/2021 21:53:11] "GET /pending HTTP/1.1" 200 -
+2021-12-20 21:53:12,844 INFO 127.0.0.1 - - [20/Dec/2021 21:53:12] "GET /pending HTTP/1.1" 200 -
+2021-12-20 21:53:13,844 INFO 127.0.0.1 - - [20/Dec/2021 21:53:13] "OPTIONS /approve/82 HTTP/1.1" 200 -
+2021-12-20 21:53:13,930 INFO 127.0.0.1 - - [20/Dec/2021 21:53:13] "PATCH /approve/82 HTTP/1.1" 200 -
+2021-12-20 21:53:14,007 INFO 127.0.0.1 - - [20/Dec/2021 21:53:14] "GET /pending HTTP/1.1" 200 -
+2021-12-20 21:53:15,203 INFO 127.0.0.1 - - [20/Dec/2021 21:53:15] "GET /past HTTP/1.1" 200 -
+2021-12-20 21:53:15,300 INFO 127.0.0.1 - - [20/Dec/2021 21:53:15] "GET /amount HTTP/1.1" 200 -
+2021-12-20 21:53:15,335 INFO 127.0.0.1 - - [20/Dec/2021 21:53:15] "GET /approved/number HTTP/1.1" 200 -
+2021-12-20 21:53:15,370 INFO 127.0.0.1 - - [20/Dec/2021 21:53:15] "GET /foodDrink HTTP/1.1" 200 -
+2021-12-20 21:53:15,408 INFO 127.0.0.1 - - [20/Dec/2021 21:53:15] "GET /denied/number HTTP/1.1" 200 -
+2021-12-20 21:53:15,409 INFO 127.0.0.1 - - [20/Dec/2021 21:53:15] "GET /transportation HTTP/1.1" 200 -

@@ -1,6 +1,5 @@
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.remote.webelement import WebElement
 
 
 class Project1HomePage:
@@ -78,15 +77,15 @@ class ManagerHomePage:
         return element
 
     def click_approve_button(self):
-        element: WebDriver = self.driver.find_element(By.ID, "approvalButton")
+        element: WebDriver = self.driver.find_element(By.XPATH, '//*[@id="table-body-pending"]/tr[1]/td[8]/button')
         return element
 
     def click_comment_section(self):
-        element: WebDriver = self.driver.find_element(By.ID, "comment")
+        element: WebDriver = self.driver.find_element(By.XPATH, '//*[@id="table-body-pending"]/tr[2]/td[10]/input')
         return element
 
     def click_deny_button(self):
-        element: WebDriver = self.driver.find_element(By.ID, "denialButton")
+        element: WebDriver = self.driver.find_element(By.XPATH, '//*[@id="table-body-pending"]/tr[2]/td[9]/button')
         return element
 
     def click_past_button(self):

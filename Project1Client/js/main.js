@@ -50,7 +50,7 @@ function populateData(requestsBody) {
         let count = 1;
         for (let request of requestsBody) {
         let tableRow = document.createElement("tr");
-        tableRow.innerHTML = `<td id="request${count}">${request.reimbursementId}</td><td>${request.employeeId}</td><td>${request.date}</td><td>${request.amount}</td><td>${request.reason}</td><td>${request.status}</td><td>${request.comment}</td><td id="data-btn-approval"><button id="approvalButton" onclick="approveRequest(${request.reimbursementId})" class="btn btn-approval">approve</button></td><td><button id="denialButton" onclick="denyRequest(${request.reimbursementId})" class="btn btn-approval btn-denial">deny</button></td><td><input id="comment"></input></td>`;
+        tableRow.innerHTML = `<td id="request${count}">${request.reimbursementId}</td><td>${request.employeeId}</td><td>${request.date}</td><td>${request.amount}</td><td>${request.reason}</td><td>${request.status}</td><td>${request.comment}</td><td><button onclick="approveRequest(${request.reimbursementId})" class="btn btn-approval">approve</button></td><td><button onclick="denyRequest(${request.reimbursementId})" class="btn btn-approval btn-denial">deny</button></td><td><input></input></td>`;
         tableBody.appendChild(tableRow);
         count++;
     }
@@ -292,6 +292,7 @@ async function returnEmployeePending() {
 
     if (response.ok) {
         populateEmployeePending(employeeRequests);
+        alert("Populating employee requests successful!")
         } else {alert("There was a problem returning past reimbursements.");}
 }
 
