@@ -5,7 +5,7 @@ from page_object_models.project1_page import Project1HomePage, EmployeeHomePage,
 
 def before_all(context: Context):
     context.driver = webdriver.Chrome("chromedriver")
-    context.driver.set_window_size(1920, 1080)
+    # context.driver.set_window_size(1920, 1080)
     context.project1_home = Project1HomePage(context.driver)
     context.employee_home = EmployeeHomePage(context.driver)
     context.manager_home = ManagerHomePage(context.driver)

@@ -68,7 +68,7 @@ async function approveRequest(reimbursementId) {
 
 /** Submitting denial w/ comment */
 async function denyRequest(reimbursementId) {
-    let comment = document.getElementById("comment").value;
+    let comment = document.getElementById("comment");
     let response = await fetch(url + `deny/${reimbursementId}`, {method: "PATCH", headers: {"Content-Type": "application/json"}, body: JSON.stringify({comment})});
     tableBody.innerHTML = "";
     returnPendingRequests();
@@ -292,7 +292,6 @@ async function returnEmployeePending() {
 
     if (response.ok) {
         populateEmployeePending(employeeRequests);
-        alert("Populating employee requests successful!")
         } else {alert("There was a problem returning past reimbursements.");}
 }
 
@@ -307,44 +306,3 @@ function populateEmployeePending(employeeRequestsBody) {
         }
     }
 }
-
-// const submissionForm = document.getElementById("submit-request");
-
-// submissionForm.addEventListener("submit", handleFormSubmit);
-
-// async function handleFormSubmit(event) {
-//     event.preventDefault();
-
-//     const form = event.currentTarget;
-
-//     const URL = form.action;
-
-//     try {
-//         const formData = new FormData(form);
-//         const responseData = await postFormDataAsJson({ URL, formData});
-//         return responseData;
-//     } catch (error) {
-//         console.log(error);
-//     }
-// }
-
-// async function postFormDataAsJson({ URL, formData}) {
-//     const plainFormData = Object.fromEntries(formData.entries());
-//     const formDataJsonString = JSON.stringify(plainFormData);
-//     const fetchOptions = {
-//         method: "POST",
-//         headers: {
-//             "Content-Type": "application/json",
-//             "Accept": "application/json"
-//         },
-//         body: formDataJsonString
-//     };
-//     const response = await fetch(URL, fetchOptions);
-
-//     if (!response.ok) {
-//         const errorMessage = await response.text();
-//         throw new Error(errorMessage);
-//     }
-
-//     return response.json();
-// }

@@ -1,6 +1,8 @@
 from behave import Given, When, Then
 import time
 
+from behave.formatter import null
+
 
 @Given(u'The employee is on the home page')
 def get_project1_home(context):
@@ -64,6 +66,12 @@ def click_employee_submit(context):
     context.employee_home.click_employee_submit().click()
 
 
+@When(u'The employee clicks on the submit button')
+def click_employee_submit(context):
+    context.employee_home.click_employee_submit().click()
+    time.sleep(1)
+
+
 @Then(u'The employee clicks on the view button')
 def click_view_button(context):
     context.employee_home.click_view_button().click()
@@ -83,7 +91,6 @@ def employee_logout_redirect(context):
 @Given(u'The manager is on the home page')
 def project1_home(context):
     get_project1_home(context)
-    # context.driver.get("http://127.0.0.1:5500/index.html")
 
 
 @When(u'The manager enters their username')
@@ -178,3 +185,35 @@ def click_manager_logout(context):
 @Then(u'The manager is redirected to the home page')
 def manager_logout_redirect(context):
     assert context.driver.title == "Login Page"
+
+
+# Feature 2
+@When(u'The employee enters the wrong password')
+def enters_incorrect_password(context):
+    context.project1_home.enter_employee_password().send_keys("veritas")
+
+
+@Then(u'The system should reject the login attempt')
+def reject_login_attempt(context):
+    assert context.driver.switch_to.alert.text == "Either your username or password or both are incorrect!"
+    context.driver.switch_to.alert.accept()
+
+
+@When(u'The employee enters a negative value in amount')
+def enters_negative_value(context):
+    context.employee_home.enter_amount().send_keys(-20)
+
+
+@Then(u'The system should reject the negative value')
+def reject_negative(context):
+    assert context.employee_home.enter_amount().text != null
+
+
+@When(u'The employee enters a non-numeric value in amount')
+def enters_non_numeric_value(context):
+    context.employee_home.enter_amount().send_keys("value")
+
+
+@Then(u'The system should reject the non-numeric value')
+def reject_non_numeric(context):
+    assert context.employee_home.enter_amount().text != null
