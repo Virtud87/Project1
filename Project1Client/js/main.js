@@ -50,7 +50,7 @@ function populateData(requestsBody) {
         let count = 1;
         for (let request of requestsBody) {
         let tableRow = document.createElement("tr");
-        tableRow.innerHTML = `<td id="request${count}">${request.reimbursementId}</td><td>${request.employeeId}</td><td>${request.date}</td><td>${request.amount}</td><td>${request.reason}</td><td>${request.status}</td><td>${request.comment}</td><td><button onclick="approveRequest(${request.reimbursementId})" class="btn btn-approval">approve</button></td><td><button onclick="denyRequest(${request.reimbursementId})" class="btn btn-approval btn-denial">deny</button></td><td><input></input></td>`;
+        tableRow.innerHTML = `<td id="request${count}">${request.reimbursementId}</td><td>${request.employeeId}</td><td>${request.date}</td><td>${request.amount}</td><td>${request.reason}</td><td>${request.status}</td><td>${request.comment}</td><td><button onclick="approveRequest(${request.reimbursementId})" class="btn btn-approval">approve</button></td><td><button onclick="denyRequest(${request.reimbursementId})" class="btn btn-approval btn-denial">deny</button></td><td><input id="comment"></input></td>`;
         tableBody.appendChild(tableRow);
         count++;
     }
@@ -68,7 +68,7 @@ async function approveRequest(reimbursementId) {
 
 /** Submitting denial w/ comment */
 async function denyRequest(reimbursementId) {
-    let comment = document.getElementById("comment");
+    let comment = document.getElementById("comment").value;
     let response = await fetch(url + `deny/${reimbursementId}`, {method: "PATCH", headers: {"Content-Type": "application/json"}, body: JSON.stringify({comment})});
     tableBody.innerHTML = "";
     returnPendingRequests();
