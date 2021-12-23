@@ -268,16 +268,11 @@ async function submitRequest() {
     let date = document.getElementById("date").value;
     let amount = Number(document.getElementById("amount").value);
     let reason = document.getElementById("reason").value;
-    // let jsonobject = {reimbursementId, employeeId, date, amount, reason}
     let response = await fetch(url + `submission`, {method: "POST", 
     headers: {"Content-Type": "application/json", "Accept": "application/json"}, 
     body: JSON.stringify({reimbursementId, employeeId, date, amount, reason})});
     let responseBody = await response.json();
-    // let response = await fetch(url + "submission", {method: "POST", 
-    // headers: {"Content-Type": "application/json"}, 
-    // body: JSON.stringify(jsonobject)});
     console.log(responseBody, JSON.stringify({reimbursementId, employeeId, date, amount, reason}));
-    // return responseBody;
 }
 
 /** View pending requests */
