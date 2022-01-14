@@ -12,7 +12,7 @@ from entities.total_number_denied_requests import TotalNumberDeniedRequests
 
 class ManagerDAO(ABC):
     @abstractmethod
-    def manager_login(self, credentials: Credentials):
+    def manager_login(self, user_name: str, password: str):
         pass
 
     @abstractmethod

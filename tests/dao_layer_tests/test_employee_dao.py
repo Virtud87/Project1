@@ -1,17 +1,14 @@
 from dao_layer.implemented_classes.employee_postgres_dao import EmployeePostgresDAO
-from entities.credentials import Credentials
 from entities.submission import Submission
 
 employee_dao_postgres = EmployeePostgresDAO()
 
 new_submission = Submission(0, 1, "2021-12-09", 300.00, "food/drink")
 
-credentials = Credentials("texasDan", "veritas1")
-
 
 def test_employee_login_success():
-    login = employee_dao_postgres.employee_login(credentials)
-    assert bool(login)
+    login = employee_dao_postgres.employee_login("texasDan", "veritas1")
+    assert login == (1,)
 
 
 def test_submit_new_request_success():

@@ -8,12 +8,12 @@ from util.database_connection import connection
 
 
 class EmployeePostgresDAO(EmployeeDAO):
-    def employee_login(self, credentials: Credentials):
-        sql = "select user_name, password from employees where user_name = %s and password = %s"
+    def employee_login(self, user_name: str, password: str):
+        sql = "select employee_id from employees where user_name = %s and password = %s"
         cursor = connection.cursor()
-        cursor.execute(sql, (credentials.user_name, credentials.password))
-        credentials = cursor.fetchone()
-        return credentials
+        cursor.execute(sql, (user_name, password))
+        validated = cursor.fetchone()
+        return validated
 
     def return_employee_id(self, credentials: Credentials):
         sql = "select employee_id from employees where user_name = %s and password = %s"

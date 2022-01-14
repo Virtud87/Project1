@@ -13,12 +13,12 @@ from entities.reimbursement import Reimbursement
 
 
 class ManagerPostgresDAO(ManagerDAO):
-    def manager_login(self, credentials: Credentials):
-        sql = "select user_name, password from managers where user_name = %s and password = %s"
+    def manager_login(self, user_name: str, password: str):
+        sql = "select manager_id from managers where user_name = %s and password = %s"
         cursor = connection.cursor()
-        cursor.execute(sql, (credentials.user_name, credentials.password))
-        credentials = cursor.fetchone()
-        return credentials
+        cursor.execute(sql, (user_name, password))
+        validated = cursor.fetchone()
+        return validated
 
     def return_manager_id(self, credentials: Credentials):
         sql = "select manager_id from managers where user_name = %s and password = %s"

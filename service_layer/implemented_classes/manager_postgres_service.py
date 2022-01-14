@@ -18,11 +18,12 @@ class ManagerPostgresService(ManagerService):
     def __init__(self, manager_dao: ManagerPostgresDAO):
         self.manager_dao = manager_dao
 
-    def service_manager_login(self, credentials: Credentials):
-        credentials_returned = self.manager_dao.manager_login(credentials)
-        if credentials_returned is None:
-            raise UsernameOrPasswordIncorrect("Either your user name or password or both are incorrect!")
-        return self.manager_dao.return_manager_id(credentials)
+    def service_manager_login(self, user_name: str, password: str):
+        validation = self.manager_dao.manager_login(user_name, password)
+        if type(validation) == tuple:
+            return True
+        else:
+            return False
 
     def service_approve_reimbursement_by_id(self, reimbursement_id: int):
         return self.manager_dao.approve_reimbursement_by_id(reimbursement_id)

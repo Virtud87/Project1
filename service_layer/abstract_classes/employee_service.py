@@ -8,7 +8,7 @@ from entities.submission import Submission
 
 class EmployeeService(ABC):
     @abstractmethod
-    def service_employee_login(self, credentials: Credentials):
+    def service_employee_login(self, user_name: str, password: str):
         pass
 
     @abstractmethod

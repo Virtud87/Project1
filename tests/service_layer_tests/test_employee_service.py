@@ -15,8 +15,8 @@ credentials = Credentials("user", "veritas1")
 
 def test_service_employee_login():
     try:
-        employee_service.service_employee_login(credentials)
-        assert False
+        if employee_service.service_employee_login("", ""):
+            assert False
     except UsernameOrPasswordIncorrect as e:
         assert str(e) == "Either your user name or password or both are incorrect!"
 

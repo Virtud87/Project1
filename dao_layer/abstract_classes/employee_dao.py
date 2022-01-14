@@ -8,7 +8,7 @@ from entities.submission import Submission
 
 class EmployeeDAO(ABC):
     @abstractmethod
-    def employee_login(self, credentials: Credentials):
+    def employee_login(self, user_name: str, password: str):
         pass
 
     @abstractmethod

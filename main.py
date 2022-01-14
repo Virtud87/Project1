@@ -6,6 +6,8 @@ from custom_exceptions.custom_exceptions import NonNumericAmount, NegativeDollar
 from dao_layer.implemented_classes.employee_postgres_dao import EmployeePostgresDAO
 from dao_layer.implemented_classes.manager_postgres_dao import ManagerPostgresDAO
 from entities.credentials import Credentials
+from entities.elogin import EmployeeLogin
+from entities.login import ManagerLogin
 from entities.submission import Submission
 from service_layer.implemented_classes.employee_postgres_service import EmployeePostgresService
 from service_layer.implemented_classes.manager_postgres_service import ManagerPostgresService
@@ -25,17 +27,15 @@ manager_service = ManagerPostgresService(manager_dao)
 # EMPLOYEES
 @app.post("/employee/login")
 def employee_login():
-    try:
-        credentials = request.get_json()
-        login_data = Credentials(
-            credentials["eusername"],
-            credentials["epassword"])
-        employee = employee_service.service_employee_login(login_data)
-        employee_id_as_dict = {"employeeId": int(employee[1])}
-        return employee_id_as_dict
-    except UsernameOrPasswordIncorrect as e:
-        exception_dictionary = {"message": str(e)}
-        return jsonify(exception_dictionary)
+    body = request.get_json()
+    login_credentials = EmployeeLogin(body["user_name"], body["password"])
+    validated = employee_service.service_employee_login(login_credentials.user_name, login_credentials.password)
+    if validated:
+        message = {"validated": True}
+        return jsonify(message)
+    else:
+        message = {"validated": False}
+        return jsonify(message)
 
 
 @app.post("/submission")
@@ -71,17 +71,15 @@ def view_reimbursements_by_employee_id(employee_id: str):
 # Managers
 @app.post("/manager/login")
 def manager_login():
-    try:
-        credentials = request.get_json()
-        login_data = Credentials(
-            credentials["username"],
-            credentials["password"])
-        manager = manager_service.service_manager_login(login_data)
-        manager_id_as_dict = {"managerId": int(manager[1])}
-        return manager_id_as_dict
-    except UsernameOrPasswordIncorrect as e:
-        exception_dictionary = {"message": str(e)}
-        return jsonify(exception_dictionary)
+    body = request.get_json()
+    login_credentials = ManagerLogin(body["user_name"], body["password"])
+    validated = manager_service.service_manager_login(login_credentials.user_name, login_credentials.password)
+    if validated:
+        message = {"validated": True}
+        return jsonify(message)
+    else:
+        message = {"validated": False}
+        return jsonify(message)
 
 
 @app.patch("/approve/<reimbursement_id>")

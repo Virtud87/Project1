@@ -3,27 +3,25 @@ const url = "http://127.0.0.1:5000/";
 /* Validate manager login credentials and send user to manager home page if validation is successful*/
 let button = document.getElementById("manager-login");
 
-async function validateLogin() {
-    let username = document.getElementById("manager-username").value;
-    let password = document.getElementById("manager-password").value;
-    if (username !== "laPatrona" || password !== "bella1") {
-        alert("Either your username or password or both are incorrect!"); 
-    } else {
-        let response = await fetch(url + "manager/login", {method: "POST", mode: "cors", headers: {
-            "Content-Type": "application/json"
-          }, body: JSON.stringify({username, password})});
-    
-        if (response.ok) {
-            let managerId = await response.json()
-            transfer(managerId)
-        }
-    }
-}
+async function managerLogin() {
+    const username = document.getElementById("manager-username").value;
+    const password = document.getElementById("manager-password").value;
 
-function transfer(managerId) {
-    sessionStorage.setItem("managerId", managerId.managerId);
-    window.location.href="/manager_home.html";
-}
+    let response = await fetch(url + "manager/login", {method: "POST", mode: "cors", headers: {
+        "Content-Type": "application/json"
+        }, body: JSON.stringify({"user_name": username, "password": password})});
+
+    if (response.ok) {
+        let body = await response.json()
+        if (body["validated"]) {
+            sessionStorage.setItem("validated", true);
+            window.location.href = "/manager_home.html";
+        }
+        else {alert("Login failed: Please try again");}
+    }
+    else {alert("The request failed.");}
+    }
+
 
 /** Logout */
 function managerLogout(managerId) {
@@ -231,29 +229,25 @@ function populateTransportationRequests(requestsTransportationBody) {
 /* Validate employee login credentials and send user to employee home page if validation is successful*/
 let employeeButton = document.getElementById("employee-login");
 
-async function validateEmployeeLogin() {
-    let eusername = document.getElementById("employee-username").value;
-    let epassword = document.getElementById("employee-password").value;
+async function employeeLogin() {
+    const eusername = document.getElementById("employee-username").value;
+    const epassword = document.getElementById("employee-password").value;
 
-    if ((eusername !== "texasDan" || epassword !== "veritas1") && (eusername !== "lilToe" || epassword !== "cheese1")) {
-        alert("Either your username or password or both are incorrect!");
-    } else {
-        let response = await fetch(url + "employee/login", {method: "POST", mode: "cors", headers: {
-            "Content-Type": "application/json"
-          }, body: JSON.stringify({eusername, epassword})});
-    
-        if (response.ok) {
-            let employeeId = await response.json();
-            etransfer(employeeId)
+    let response = await fetch(url + "employee/login", {method: "POST", mode: "cors", headers: {
+        "Content-Type": "application/json"
+        }, body: JSON.stringify({"user_name": eusername, "password": epassword})});
+
+    if (response.ok) {
+        let body = await response.json()
+        if (body["validated"]) {
+            sessionStorage.setItem("validated", true);
+            window.location.href = "/employee_home.html";
         }
+        else {alert("Login failed: Please try again");}
     }
+    else {alert("The request failed.");}
 }
 
-function etransfer(employeeId) {
-    sessionStorage.setItem("employeeId", employeeId.employeeId);
-    window.location.href="/employee_home.html";
-    console.log(employeeId.employeeId);
-}
 
 /** Logout */
 function employeeLogout(employeeId) {

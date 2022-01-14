@@ -1,14 +1,11 @@
 from dao_layer.implemented_classes.manager_postgres_dao import ManagerPostgresDAO
-from entities.credentials import Credentials
 
 manager_postgres_dao = ManagerPostgresDAO()
 
-credentials = Credentials("laPatrona", "bella1")
-
 
 def test_manager_login_success():
-    login = manager_postgres_dao.manager_login(credentials)
-    assert bool(login)
+    login = manager_postgres_dao.manager_login("laPatrona", "bella1")
+    assert login == (1,)
 
 
 def test_approve_reimbursement_by_id_success():

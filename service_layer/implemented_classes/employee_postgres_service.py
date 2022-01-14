@@ -14,11 +14,12 @@ class EmployeePostgresService(EmployeeService):
     def __init__(self, employee_dao: EmployeePostgresDAO):
         self.employee_dao = employee_dao
 
-    def service_employee_login(self, credentials: Credentials):
-        credentials_returned = self.employee_dao.employee_login(credentials)
-        if credentials_returned is None:
-            raise UsernameOrPasswordIncorrect("Either your user name or password or both are incorrect!")
-        return self.employee_dao.return_employee_id(credentials)
+    def service_employee_login(self, user_name: str, password: str):
+        validation = self.employee_dao.employee_login(user_name, password)
+        if type(validation) == tuple:
+            return True
+        else:
+            return False
 
     def service_submit_new_request(self, submission: Submission):
         check_float = isinstance(submission.amount, float)
