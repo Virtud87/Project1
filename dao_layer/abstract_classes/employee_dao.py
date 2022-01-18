@@ -1,12 +1,14 @@
 from abc import ABC, abstractmethod
 from typing import List
-
 from entities.credentials import Credentials
 from entities.reimbursement import Reimbursement
-from entities.submission import Submission
 
 
 class EmployeeDAO(ABC):
+    @abstractmethod
+    def get_all_employees(self):
+        pass
+
     @abstractmethod
     def employee_login(self, user_name: str, password: str):
         pass
@@ -16,9 +18,9 @@ class EmployeeDAO(ABC):
         pass
 
     @abstractmethod
-    def submit_new_request(self, submission: Submission):
+    def submit_new_request(self, employee_id, date, amount, reason):
         pass
 
     @abstractmethod
-    def view_reimbursements_by_employee_id(self, employee_id: int) -> List[Reimbursement]:
+    def view_reimbursements_by_employee_id(self, validated) -> List[Reimbursement]:
         pass

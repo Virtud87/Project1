@@ -1,14 +1,9 @@
 import logging
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-
 from custom_exceptions.custom_exceptions import NonNumericAmount, NegativeDollarAmount, UsernameOrPasswordIncorrect
 from dao_layer.implemented_classes.employee_postgres_dao import EmployeePostgresDAO
 from dao_layer.implemented_classes.manager_postgres_dao import ManagerPostgresDAO
-from entities.credentials import Credentials
-from entities.elogin import EmployeeLogin
-from entities.login import ManagerLogin
-from entities.submission import Submission
 from service_layer.implemented_classes.employee_postgres_service import EmployeePostgresService
 from service_layer.implemented_classes.manager_postgres_service import ManagerPostgresService
 
@@ -24,32 +19,28 @@ manager_dao = ManagerPostgresDAO()
 manager_service = ManagerPostgresService(manager_dao)
 
 
-# EMPLOYEES
+# --------------------------------------------- EMPLOYEES ------------------------------
 @app.post("/employee/login")
 def employee_login():
-    body = request.get_json()
-    login_credentials = EmployeeLogin(body["user_name"], body["password"])
-    validated = employee_service.service_employee_login(login_credentials.user_name, login_credentials.password)
-    if validated:
-        message = {"validated": True}
-        return jsonify(message)
-    else:
-        message = {"validated": False}
-        return jsonify(message)
+    try:
+        body = request.get_json()
+        employee_id = employee_service.service_employee_login(body["username"], body["password"])
+        employee_id_as_dict = {"employee_id": employee_id}
+        return jsonify(employee_id_as_dict)
+    except UsernameOrPasswordIncorrect as e:
+        exception_dictionary = {"message": str(e)}
+        return jsonify(exception_dictionary), 400
 
 
 @app.post("/submission")
 def submit_new_request():
     try:
         submission_data = request.get_json()
-        new_submission = Submission(
-            submission_data["reimbursementId"],
-            submission_data["employeeId"],
-            submission_data["date"],
-            float(submission_data["amount"]),
-            submission_data["reason"])
-        submission = employee_service.service_submit_new_request(new_submission)
-        return submission
+        employee_id = submission_data["employeeId"]
+        date = submission_data["date"]
+        amount = float(submission_data["amount"])
+        reason = submission_data["reason"]
+        return jsonify(employee_service.service_submit_new_request(employee_id, date, amount, reason))
     except NonNumericAmount as e:
         exception_dictionary = {"message": str(e)}
         return jsonify(exception_dictionary)
@@ -59,7 +50,7 @@ def submit_new_request():
 
 
 @app.get("/reimbursements/<employee_id>")
-def view_reimbursements_by_employee_id(employee_id: str):
+def view_reimbursements_by_employee_id(employee_id):
     reimbursements = employee_service.service_view_reimbursements_by_employee_id(int(employee_id))
     reimbursement_list = []
     for reimbursement in reimbursements:
@@ -68,18 +59,17 @@ def view_reimbursements_by_employee_id(employee_id: str):
     return jsonify(reimbursement_list)
 
 
-# Managers
+# ------------------------------- Managers -----------------------------------------
 @app.post("/manager/login")
 def manager_login():
-    body = request.get_json()
-    login_credentials = ManagerLogin(body["user_name"], body["password"])
-    validated = manager_service.service_manager_login(login_credentials.user_name, login_credentials.password)
-    if validated:
-        message = {"validated": True}
-        return jsonify(message)
-    else:
-        message = {"validated": False}
-        return jsonify(message)
+    try:
+        body = request.get_json()
+        manager_id = manager_service.service_manager_login(body["username"], body["password"])
+        manager_id_as_dict = {"manager_id": manager_id}
+        return jsonify(manager_id_as_dict)
+    except UsernameOrPasswordIncorrect as e:
+        exception_dictionary = {"message": str(e)}
+        return jsonify(exception_dictionary), 400
 
 
 @app.patch("/approve/<reimbursement_id>")

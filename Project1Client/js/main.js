@@ -1,32 +1,35 @@
 const url = "http://127.0.0.1:5000/";
 
 /* Validate manager login credentials and send user to manager home page if validation is successful*/
-let button = document.getElementById("manager-login");
-
 async function managerLogin() {
     const username = document.getElementById("manager-username").value;
     const password = document.getElementById("manager-password").value;
+    const credentials = {"username": username, "password": password};
 
     let response = await fetch(url + "manager/login", {method: "POST", mode: "cors", headers: {
         "Content-Type": "application/json"
-        }, body: JSON.stringify({"user_name": username, "password": password})});
+        }, body: JSON.stringify(credentials)});
+    
 
-    if (response.ok) {
-        let body = await response.json()
-        if (body["validated"]) {
-            sessionStorage.setItem("validated", true);
-            window.location.href = "/manager_home.html";
-        }
-        else {alert("Login failed: Please try again");}
+    let body = await response.json()
+    console.log(body.manager_id);
+    if (response.status === 400) {
+        alert("Either your username or password or both are incorrect!");
     }
-    else {alert("The request failed.");}
+    else if (response.status === 200) {
+        sessionStorage.setItem("manager_id", body["manager_id"]);
+        window.location.href = "manager_home.html";
     }
+    else {
+        alert("Something went wrong!");
+    }
+}
 
 
 /** Logout */
 function managerLogout(managerId) {
     sessionStorage.clear(managerId);
-    window.location.href="/index.html";
+    window.location.href="index.html";
 }
 
 /* Return pending requests and dynamically display them when button is clicked */
@@ -97,7 +100,7 @@ function populatePastReimbursements(pastReimbursementsBody) {
     }
 }
 
-/** STATISTICS */
+/** -------------------------------------STATISTICS------------------------------------------------- */
 
 /* Total Amount Approved per Employee */
 const stat1Body = document.getElementById("stat1-body");
@@ -225,55 +228,58 @@ function populateTransportationRequests(requestsTransportationBody) {
 
 
 
-/** Employee */
-/* Validate employee login credentials and send user to employee home page if validation is successful*/
-let employeeButton = document.getElementById("employee-login");
+/** -----------------------------------------------Employee------------------------------------------------ */
 
+/* Validate employee login credentials and send user to employee home page if validation is successful*/
 async function employeeLogin() {
     const eusername = document.getElementById("employee-username").value;
     const epassword = document.getElementById("employee-password").value;
+    const credentials = {"username": eusername, "password": epassword};
 
     let response = await fetch(url + "employee/login", {method: "POST", mode: "cors", headers: {
         "Content-Type": "application/json"
-        }, body: JSON.stringify({"user_name": eusername, "password": epassword})});
+        }, body: JSON.stringify(credentials)});
 
-    if (response.ok) {
-        let body = await response.json()
-        if (body["validated"]) {
-            sessionStorage.setItem("validated", true);
-            window.location.href = "/employee_home.html";
-        }
-        else {alert("Login failed: Please try again");}
+    let body = await response.json()
+    if (response.status === 400) {
+        alert("Either your username or password or both are incorrect!");
     }
-    else {alert("The request failed.");}
+    else if (response.status === 200) {
+        sessionStorage.setItem("employee_id", body["employee_id"]);
+        window.location.href = "employee_home.html";
+    }
+    else {
+        alert("Something went wrong!");
+    }
 }
 
 
 /** Logout */
 function employeeLogout(employeeId) {
     sessionStorage.clear(employeeId);
-    window.location.href="/index.html";
+    window.location.href = "index.html";
 }
 
 /** Submitting requests */
 async function submitRequest() {
-    let reimbursementId = Number(document.getElementById("reimbursementId").value);
+    // let reimbursementId = Number(document.getElementById("reimbursementId").value);
     let employeeId = Number(document.getElementById("employeeId").value);
     let date = document.getElementById("date").value;
     let amount = Number(document.getElementById("amount").value);
     let reason = document.getElementById("reason").value;
-    let response = await fetch(url + `submission`, {method: "POST", 
+
+    let response = await fetch(url + "submission", {method: "POST", 
     headers: {"Content-Type": "application/json", "Accept": "application/json"}, 
-    body: JSON.stringify({reimbursementId, employeeId, date, amount, reason})});
+    body: JSON.stringify({employeeId, date, amount, reason})});
     let responseBody = await response.json();
-    console.log(responseBody, JSON.stringify({reimbursementId, employeeId, date, amount, reason}));
+    console.log(responseBody);
 }
 
 /** View pending requests */
 const employeeTableBody = document.getElementById("employee-tableBody");
 
 async function returnEmployeePending() {
-    let employeeId = sessionStorage.getItem("employeeId");
+    let employeeId = sessionStorage.getItem("employee_id");
     let response = await fetch(url + `reimbursements/${employeeId}`, {method: "GET", 
     headers: {"Content-Type": "application/json", "Accept": "application/json"}});
     let employeeRequests = await response.json();

@@ -4671,3 +4671,878 @@ ValueError: year 11219 is out of range
 2022-01-14 08:38:56,617 INFO 127.0.0.1 - - [14/Jan/2022 08:38:56] "POST /employee/login HTTP/1.1" 200 -
 2022-01-14 08:39:04,628 INFO 127.0.0.1 - - [14/Jan/2022 08:39:04] "OPTIONS /employee/login HTTP/1.1" 200 -
 2022-01-14 08:39:04,933 INFO 127.0.0.1 - - [14/Jan/2022 08:39:04] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 14:10:17,620 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 14:14:06,731 INFO 127.0.0.1 - - [15/Jan/2022 14:14:06] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 14:14:06,944 INFO 127.0.0.1 - - [15/Jan/2022 14:14:06] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 14:14:32,851 INFO 127.0.0.1 - - [15/Jan/2022 14:14:32] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 14:14:33,110 INFO 127.0.0.1 - - [15/Jan/2022 14:14:33] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 14:21:21,945 INFO 127.0.0.1 - - [15/Jan/2022 14:21:21] "OPTIONS /submission HTTP/1.1" 200 -
+2022-01-15 14:21:21,952 ERROR Exception on /submission [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 46, in submit_new_request
+    submission_data["reimbursementId"],
+KeyError: 'reimbursementId'
+2022-01-15 14:21:21,964 INFO 127.0.0.1 - - [15/Jan/2022 14:21:21] "[35m[1mPOST /submission HTTP/1.1[0m" 500 -
+2022-01-15 14:21:59,029 INFO 127.0.0.1 - - [15/Jan/2022 14:21:59] "OPTIONS /submission HTTP/1.1" 200 -
+2022-01-15 14:21:59,034 ERROR Exception on /submission [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 46, in submit_new_request
+    submission_data["reimbursementId"],
+KeyError: 'reimbursementId'
+2022-01-15 14:21:59,036 INFO 127.0.0.1 - - [15/Jan/2022 14:21:59] "[35m[1mPOST /submission HTTP/1.1[0m" 500 -
+2022-01-15 14:23:12,215 INFO 127.0.0.1 - - [15/Jan/2022 14:23:12] "OPTIONS /submission HTTP/1.1" 200 -
+2022-01-15 14:23:12,226 ERROR Exception on /submission [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 46, in submit_new_request
+    submission_data["reimbursementId"],
+KeyError: 'reimbursementId'
+2022-01-15 14:23:12,230 INFO 127.0.0.1 - - [15/Jan/2022 14:23:12] "[35m[1mPOST /submission HTTP/1.1[0m" 500 -
+2022-01-15 14:37:01,785 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 14:38:00,484 INFO 127.0.0.1 - - [15/Jan/2022 14:38:00] "OPTIONS /submission HTTP/1.1" 200 -
+2022-01-15 14:38:00,568 ERROR Exception on /submission [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 50, in submit_new_request
+    submission = employee_service.service_submit_new_request(new_submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 30, in service_submit_new_request
+    return self.employee_dao.submit_new_request(submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 28, in submit_new_request
+    cursor.execute(sql, (submission.employee_id, submission.date, submission.amount, submission.reason))
+psycopg2.errors.DatetimeFieldOverflow: date/time field value out of range: "2022-15-01"
+LINE 1: insert into reimbursements values(default, 1, '2022-15-01', ...
+                                                      ^
+HINT:  Perhaps you need a different "datestyle" setting.
+
+2022-01-15 14:38:00,575 INFO 127.0.0.1 - - [15/Jan/2022 14:38:00] "[35m[1mPOST /submission HTTP/1.1[0m" 500 -
+2022-01-15 14:41:11,474 INFO 127.0.0.1 - - [15/Jan/2022 14:41:11] "OPTIONS /submission HTTP/1.1" 200 -
+2022-01-15 14:41:11,612 ERROR Exception on /submission [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 50, in submit_new_request
+    submission = employee_service.service_submit_new_request(new_submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 30, in service_submit_new_request
+    return self.employee_dao.submit_new_request(submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 28, in submit_new_request
+    cursor.execute(sql, (submission.employee_id, submission.date, submission.amount, submission.reason))
+psycopg2.errors.InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block
+
+2022-01-15 14:41:11,614 INFO 127.0.0.1 - - [15/Jan/2022 14:41:11] "[35m[1mPOST /submission HTTP/1.1[0m" 500 -
+2022-01-15 14:43:33,229 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 14:45:09,864 INFO 127.0.0.1 - - [15/Jan/2022 14:45:09] "OPTIONS /submission HTTP/1.1" 200 -
+2022-01-15 14:45:10,287 ERROR Exception on /submission [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 49, in submit_new_request
+    submission = employee_service.service_submit_new_request(new_submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 30, in service_submit_new_request
+    return self.employee_dao.submit_new_request(submission)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 30, in submit_new_request
+    return str(submission.reimbursement_id)
+AttributeError: 'Submission' object has no attribute 'reimbursement_id'
+2022-01-15 14:45:10,297 INFO 127.0.0.1 - - [15/Jan/2022 14:45:10] "[35m[1mPOST /submission HTTP/1.1[0m" 500 -
+2022-01-15 14:52:05,091 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 14:53:02,675 INFO 127.0.0.1 - - [15/Jan/2022 14:53:02] "OPTIONS /submission HTTP/1.1" 200 -
+2022-01-15 14:53:02,679 ERROR Exception on /submission [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 45, in submit_new_request
+    submission_data["reimbursementId"] == 0,
+KeyError: 'reimbursementId'
+2022-01-15 14:53:02,686 INFO 127.0.0.1 - - [15/Jan/2022 14:53:02] "[35m[1mPOST /submission HTTP/1.1[0m" 500 -
+2022-01-15 14:55:24,011 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 14:55:47,960 INFO 127.0.0.1 - - [15/Jan/2022 14:55:47] "OPTIONS /submission HTTP/1.1" 200 -
+2022-01-15 14:55:47,962 ERROR Exception on /submission [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 45, in submit_new_request
+    submission_data["reimbursementId"],
+KeyError: 'reimbursementId'
+2022-01-15 14:55:47,966 INFO 127.0.0.1 - - [15/Jan/2022 14:55:47] "[35m[1mPOST /submission HTTP/1.1[0m" 500 -
+2022-01-15 15:04:29,085 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 15:04:57,407 INFO 127.0.0.1 - - [15/Jan/2022 15:04:57] "OPTIONS /submission HTTP/1.1" 200 -
+2022-01-15 15:08:41,967 INFO 127.0.0.1 - - [15/Jan/2022 15:08:41] "OPTIONS /submission HTTP/1.1" 200 -
+2022-01-15 15:08:42,285 ERROR Exception on /submission [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1538, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1731, in make_response
+    "The view function did not return a valid"
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a bool.
+2022-01-15 15:08:42,290 INFO 127.0.0.1 - - [15/Jan/2022 15:08:42] "[35m[1mPOST /submission HTTP/1.1[0m" 500 -
+2022-01-15 15:11:12,253 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 15:11:31,925 INFO 127.0.0.1 - - [15/Jan/2022 15:11:31] "OPTIONS /submission HTTP/1.1" 200 -
+2022-01-15 15:11:32,087 INFO 127.0.0.1 - - [15/Jan/2022 15:11:32] "POST /submission HTTP/1.1" 200 -
+2022-01-15 15:12:16,562 INFO 127.0.0.1 - - [15/Jan/2022 15:12:16] "OPTIONS /reimbursements/null HTTP/1.1" 200 -
+2022-01-15 15:12:16,574 ERROR Exception on /reimbursements/null [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 60, in view_reimbursements_by_employee_id
+    reimbursements = employee_service.service_view_reimbursements_by_employee_id(int(employee_id))
+ValueError: invalid literal for int() with base 10: 'null'
+2022-01-15 15:12:16,585 INFO 127.0.0.1 - - [15/Jan/2022 15:12:16] "[35m[1mGET /reimbursements/null HTTP/1.1[0m" 500 -
+2022-01-15 15:25:31,179 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 15:25:37,786 INFO 127.0.0.1 - - [15/Jan/2022 15:25:37] "OPTIONS /reimbursements/null HTTP/1.1" 200 -
+2022-01-15 15:25:37,795 ERROR Exception on /reimbursements/null [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: view_reimbursements_by_employee_id() got an unexpected keyword argument 'employee_id'
+2022-01-15 15:25:37,799 INFO 127.0.0.1 - - [15/Jan/2022 15:25:37] "[35m[1mGET /reimbursements/null HTTP/1.1[0m" 500 -
+2022-01-15 15:29:24,470 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 15:29:31,318 INFO 127.0.0.1 - - [15/Jan/2022 15:29:31] "OPTIONS /reimbursements/null HTTP/1.1" 200 -
+2022-01-15 15:29:31,323 ERROR Exception on /reimbursements/null [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: view_reimbursements_by_employee_id() got an unexpected keyword argument 'employee_id'
+2022-01-15 15:29:31,325 INFO 127.0.0.1 - - [15/Jan/2022 15:29:31] "[35m[1mGET /reimbursements/null HTTP/1.1[0m" 500 -
+2022-01-15 15:40:51,039 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 15:43:10,702 INFO 127.0.0.1 - - [15/Jan/2022 15:43:10] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 15:43:10,836 INFO 127.0.0.1 - - [15/Jan/2022 15:43:10] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 15:43:20,487 INFO 127.0.0.1 - - [15/Jan/2022 15:43:20] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 15:43:20,533 INFO 127.0.0.1 - - [15/Jan/2022 15:43:20] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 15:43:56,845 INFO 127.0.0.1 - - [15/Jan/2022 15:43:56] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 15:43:56,922 INFO 127.0.0.1 - - [15/Jan/2022 15:43:56] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 15:44:50,193 INFO 127.0.0.1 - - [15/Jan/2022 15:44:50] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 15:44:50,241 INFO 127.0.0.1 - - [15/Jan/2022 15:44:50] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 15:45:08,889 INFO 127.0.0.1 - - [15/Jan/2022 15:45:08] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 15:45:08,955 INFO 127.0.0.1 - - [15/Jan/2022 15:45:08] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 15:45:27,651 INFO 127.0.0.1 - - [15/Jan/2022 15:45:27] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 15:45:27,772 INFO 127.0.0.1 - - [15/Jan/2022 15:45:27] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 15:46:03,862 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 15:46:09,776 INFO 127.0.0.1 - - [15/Jan/2022 15:46:09] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 15:46:09,922 INFO 127.0.0.1 - - [15/Jan/2022 15:46:09] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 15:46:12,586 INFO 127.0.0.1 - - [15/Jan/2022 15:46:12] "OPTIONS /reimbursements/null HTTP/1.1" 200 -
+2022-01-15 15:46:12,593 ERROR Exception on /reimbursements/null [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: view_reimbursements_by_employee_id() got an unexpected keyword argument 'employee_id'
+2022-01-15 15:46:12,596 INFO 127.0.0.1 - - [15/Jan/2022 15:46:12] "[35m[1mGET /reimbursements/null HTTP/1.1[0m" 500 -
+2022-01-15 15:47:04,798 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 15:48:40,630 INFO 127.0.0.1 - - [15/Jan/2022 15:48:40] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 15:48:40,756 INFO 127.0.0.1 - - [15/Jan/2022 15:48:40] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 15:48:42,544 INFO 127.0.0.1 - - [15/Jan/2022 15:48:42] "OPTIONS /reimbursements/null HTTP/1.1" 200 -
+2022-01-15 15:48:42,547 ERROR Exception on /reimbursements/null [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: view_reimbursements_by_employee_id() got an unexpected keyword argument 'employee_id'
+2022-01-15 15:48:42,550 INFO 127.0.0.1 - - [15/Jan/2022 15:48:42] "[35m[1mGET /reimbursements/null HTTP/1.1[0m" 500 -
+2022-01-15 15:49:35,653 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 15:49:45,739 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 15:50:03,969 INFO 127.0.0.1 - - [15/Jan/2022 15:50:03] "OPTIONS /reimbursements/null HTTP/1.1" 200 -
+2022-01-15 15:50:03,973 ERROR Exception on /reimbursements/null [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: view_reimbursements_by_employee_id() got an unexpected keyword argument 'employee_id'
+2022-01-15 15:50:03,976 INFO 127.0.0.1 - - [15/Jan/2022 15:50:03] "[35m[1mGET /reimbursements/null HTTP/1.1[0m" 500 -
+2022-01-15 15:50:30,978 INFO 127.0.0.1 - - [15/Jan/2022 15:50:30] "OPTIONS /reimbursements/null HTTP/1.1" 200 -
+2022-01-15 15:50:30,984 ERROR Exception on /reimbursements/null [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: view_reimbursements_by_employee_id() got an unexpected keyword argument 'employee_id'
+2022-01-15 15:50:30,985 INFO 127.0.0.1 - - [15/Jan/2022 15:50:30] "[35m[1mGET /reimbursements/null HTTP/1.1[0m" 500 -
+2022-01-15 15:52:36,121 INFO 127.0.0.1 - - [15/Jan/2022 15:52:36] "OPTIONS /reimbursements/null HTTP/1.1" 200 -
+2022-01-15 15:52:36,129 ERROR Exception on /reimbursements/null [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: view_reimbursements_by_employee_id() got an unexpected keyword argument 'employee_id'
+2022-01-15 15:52:36,131 INFO 127.0.0.1 - - [15/Jan/2022 15:52:36] "[35m[1mGET /reimbursements/null HTTP/1.1[0m" 500 -
+2022-01-15 15:52:51,001 INFO 127.0.0.1 - - [15/Jan/2022 15:52:51] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 15:52:51,285 INFO 127.0.0.1 - - [15/Jan/2022 15:52:51] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 15:53:55,750 INFO 127.0.0.1 - - [15/Jan/2022 15:53:55] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 15:53:55,792 INFO 127.0.0.1 - - [15/Jan/2022 15:53:55] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 15:53:57,313 INFO 127.0.0.1 - - [15/Jan/2022 15:53:57] "OPTIONS /reimbursements/null HTTP/1.1" 200 -
+2022-01-15 15:53:57,315 ERROR Exception on /reimbursements/null [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: view_reimbursements_by_employee_id() got an unexpected keyword argument 'employee_id'
+2022-01-15 15:53:57,316 INFO 127.0.0.1 - - [15/Jan/2022 15:53:57] "[35m[1mGET /reimbursements/null HTTP/1.1[0m" 500 -
+2022-01-15 15:54:59,029 INFO 127.0.0.1 - - [15/Jan/2022 15:54:59] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 15:54:59,213 INFO 127.0.0.1 - - [15/Jan/2022 15:54:59] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 15:55:00,833 INFO 127.0.0.1 - - [15/Jan/2022 15:55:00] "OPTIONS /reimbursements/null HTTP/1.1" 200 -
+2022-01-15 15:55:00,837 ERROR Exception on /reimbursements/null [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: view_reimbursements_by_employee_id() got an unexpected keyword argument 'employee_id'
+2022-01-15 15:55:00,838 INFO 127.0.0.1 - - [15/Jan/2022 15:55:00] "[35m[1mGET /reimbursements/null HTTP/1.1[0m" 500 -
+2022-01-15 15:56:00,399 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 15:56:44,225 INFO 127.0.0.1 - - [15/Jan/2022 15:56:44] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 15:56:44,472 ERROR Exception on /employee/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 31, in employee_login
+    validated = employee_service.service_employee_login(login_credentials.user_name, login_credentials.password)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 17, in service_employee_login
+    validation = self.employee_dao.employee_login(user_name, password)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 14, in employee_login
+    return int(validated)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+2022-01-15 15:56:44,483 INFO 127.0.0.1 - - [15/Jan/2022 15:56:44] "[35m[1mPOST /employee/login HTTP/1.1[0m" 500 -
+2022-01-15 15:57:58,613 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 15:58:10,455 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 15:58:20,671 INFO 127.0.0.1 - - [15/Jan/2022 15:58:20] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 15:58:20,833 INFO 127.0.0.1 - - [15/Jan/2022 15:58:20] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 16:00:30,914 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 16:01:11,377 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 16:01:24,011 INFO 127.0.0.1 - - [15/Jan/2022 16:01:24] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 16:01:24,093 INFO 127.0.0.1 - - [15/Jan/2022 16:01:24] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 16:01:26,186 INFO 127.0.0.1 - - [15/Jan/2022 16:01:26] "OPTIONS /reimbursements/null HTTP/1.1" 200 -
+2022-01-15 16:01:26,190 ERROR Exception on /reimbursements/null [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: view_reimbursements_by_employee_id() got an unexpected keyword argument 'employee_id'
+2022-01-15 16:01:26,192 INFO 127.0.0.1 - - [15/Jan/2022 16:01:26] "[35m[1mGET /reimbursements/null HTTP/1.1[0m" 500 -
+2022-01-15 16:01:57,795 INFO 127.0.0.1 - - [15/Jan/2022 16:01:57] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 16:01:57,913 INFO 127.0.0.1 - - [15/Jan/2022 16:01:57] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 16:02:00,167 INFO 127.0.0.1 - - [15/Jan/2022 16:02:00] "OPTIONS /reimbursements/null HTTP/1.1" 200 -
+2022-01-15 16:02:00,170 ERROR Exception on /reimbursements/null [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: view_reimbursements_by_employee_id() got an unexpected keyword argument 'employee_id'
+2022-01-15 16:02:00,171 INFO 127.0.0.1 - - [15/Jan/2022 16:02:00] "[35m[1mGET /reimbursements/null HTTP/1.1[0m" 500 -
+2022-01-15 16:06:00,659 INFO 127.0.0.1 - - [15/Jan/2022 16:06:00] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 16:06:00,703 INFO 127.0.0.1 - - [15/Jan/2022 16:06:00] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 16:06:47,701 INFO 127.0.0.1 - - [15/Jan/2022 16:06:47] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 16:06:47,846 INFO 127.0.0.1 - - [15/Jan/2022 16:06:47] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 16:08:45,020 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 16:09:53,809 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 16:10:13,279 INFO 127.0.0.1 - - [15/Jan/2022 16:10:13] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 16:10:13,362 INFO 127.0.0.1 - - [15/Jan/2022 16:10:13] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 16:10:22,790 INFO 127.0.0.1 - - [15/Jan/2022 16:10:22] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 16:10:22,831 INFO 127.0.0.1 - - [15/Jan/2022 16:10:22] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 16:10:56,931 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-15 16:11:04,205 INFO 127.0.0.1 - - [15/Jan/2022 16:11:04] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 16:11:04,281 INFO 127.0.0.1 - - [15/Jan/2022 16:11:04] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 16:11:13,581 INFO 127.0.0.1 - - [15/Jan/2022 16:11:13] "OPTIONS /reimbursements/null HTTP/1.1" 200 -
+2022-01-15 16:11:13,588 ERROR Exception on /reimbursements/null [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: view_reimbursements_by_employee_id() got an unexpected keyword argument 'employee_id'
+2022-01-15 16:11:13,591 INFO 127.0.0.1 - - [15/Jan/2022 16:11:13] "[35m[1mGET /reimbursements/null HTTP/1.1[0m" 500 -
+2022-01-15 16:12:36,343 INFO 127.0.0.1 - - [15/Jan/2022 16:12:36] "OPTIONS /reimbursements/true HTTP/1.1" 200 -
+2022-01-15 16:12:36,353 ERROR Exception on /reimbursements/true [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: view_reimbursements_by_employee_id() got an unexpected keyword argument 'employee_id'
+2022-01-15 16:12:36,353 INFO 127.0.0.1 - - [15/Jan/2022 16:12:36] "[35m[1mGET /reimbursements/true HTTP/1.1[0m" 500 -
+2022-01-15 16:12:59,996 INFO 127.0.0.1 - - [15/Jan/2022 16:12:59] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 16:13:00,057 INFO 127.0.0.1 - - [15/Jan/2022 16:13:00] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 16:13:01,285 INFO 127.0.0.1 - - [15/Jan/2022 16:13:01] "OPTIONS /reimbursements/true HTTP/1.1" 200 -
+2022-01-15 16:13:01,287 ERROR Exception on /reimbursements/true [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: view_reimbursements_by_employee_id() got an unexpected keyword argument 'employee_id'
+2022-01-15 16:13:01,289 INFO 127.0.0.1 - - [15/Jan/2022 16:13:01] "[35m[1mGET /reimbursements/true HTTP/1.1[0m" 500 -
+2022-01-15 16:14:59,418 INFO 127.0.0.1 - - [15/Jan/2022 16:14:59] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 16:14:59,470 INFO 127.0.0.1 - - [15/Jan/2022 16:14:59] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 16:15:00,789 INFO 127.0.0.1 - - [15/Jan/2022 16:15:00] "OPTIONS /reimbursements/true HTTP/1.1" 200 -
+2022-01-15 16:15:00,792 ERROR Exception on /reimbursements/true [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: view_reimbursements_by_employee_id() got an unexpected keyword argument 'employee_id'
+2022-01-15 16:15:00,793 INFO 127.0.0.1 - - [15/Jan/2022 16:15:00] "[35m[1mGET /reimbursements/true HTTP/1.1[0m" 500 -
+2022-01-15 16:16:10,082 INFO 127.0.0.1 - - [15/Jan/2022 16:16:10] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 16:16:10,124 INFO 127.0.0.1 - - [15/Jan/2022 16:16:10] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 16:17:09,316 INFO 127.0.0.1 - - [15/Jan/2022 16:17:09] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 16:17:09,364 INFO 127.0.0.1 - - [15/Jan/2022 16:17:09] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 16:17:10,821 INFO 127.0.0.1 - - [15/Jan/2022 16:17:10] "OPTIONS /reimbursements/true HTTP/1.1" 200 -
+2022-01-15 16:17:10,825 ERROR Exception on /reimbursements/true [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: view_reimbursements_by_employee_id() got an unexpected keyword argument 'employee_id'
+2022-01-15 16:17:10,826 INFO 127.0.0.1 - - [15/Jan/2022 16:17:10] "[35m[1mGET /reimbursements/true HTTP/1.1[0m" 500 -
+2022-01-15 16:18:23,592 INFO 127.0.0.1 - - [15/Jan/2022 16:18:23] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-15 16:18:23,632 INFO 127.0.0.1 - - [15/Jan/2022 16:18:23] "POST /employee/login HTTP/1.1" 200 -
+2022-01-15 16:18:24,885 INFO 127.0.0.1 - - [15/Jan/2022 16:18:24] "OPTIONS /reimbursements/null HTTP/1.1" 200 -
+2022-01-15 16:18:24,887 ERROR Exception on /reimbursements/null [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: view_reimbursements_by_employee_id() got an unexpected keyword argument 'employee_id'
+2022-01-15 16:18:24,888 INFO 127.0.0.1 - - [15/Jan/2022 16:18:24] "[35m[1mGET /reimbursements/null HTTP/1.1[0m" 500 -
+2022-01-15 16:18:31,936 INFO 127.0.0.1 - - [15/Jan/2022 16:18:31] "OPTIONS /reimbursements/null HTTP/1.1" 200 -
+2022-01-15 16:18:31,942 ERROR Exception on /reimbursements/null [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: view_reimbursements_by_employee_id() got an unexpected keyword argument 'employee_id'
+2022-01-15 16:18:31,942 INFO 127.0.0.1 - - [15/Jan/2022 16:18:31] "[35m[1mGET /reimbursements/null HTTP/1.1[0m" 500 -
+2022-01-16 13:20:46,576 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-16 13:28:35,876 INFO 127.0.0.1 - - [16/Jan/2022 13:28:35] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-16 13:28:35,964 INFO 127.0.0.1 - - [16/Jan/2022 13:28:35] "POST /manager/login HTTP/1.1" 200 -
+2022-01-16 16:37:02,396 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-16 16:37:14,271 INFO 127.0.0.1 - - [16/Jan/2022 16:37:14] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-16 16:37:14,371 INFO 127.0.0.1 - - [16/Jan/2022 16:37:14] "POST /manager/login HTTP/1.1" 200 -
+2022-01-16 16:42:47,779 INFO 127.0.0.1 - - [16/Jan/2022 16:42:47] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-16 16:42:47,851 INFO 127.0.0.1 - - [16/Jan/2022 16:42:47] "POST /manager/login HTTP/1.1" 200 -
+2022-01-16 16:43:23,656 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-16 16:43:30,312 INFO 127.0.0.1 - - [16/Jan/2022 16:43:30] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-16 16:43:30,399 INFO 127.0.0.1 - - [16/Jan/2022 16:43:30] "POST /manager/login HTTP/1.1" 200 -
+2022-01-16 16:44:23,945 INFO 127.0.0.1 - - [16/Jan/2022 16:44:23] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-16 16:44:23,991 INFO 127.0.0.1 - - [16/Jan/2022 16:44:23] "POST /manager/login HTTP/1.1" 200 -
+2022-01-16 16:44:41,217 INFO 127.0.0.1 - - [16/Jan/2022 16:44:41] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-16 16:44:41,265 INFO 127.0.0.1 - - [16/Jan/2022 16:44:41] "POST /manager/login HTTP/1.1" 200 -
+2022-01-16 16:46:50,814 INFO 127.0.0.1 - - [16/Jan/2022 16:46:50] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-16 16:46:50,857 INFO 127.0.0.1 - - [16/Jan/2022 16:46:50] "POST /manager/login HTTP/1.1" 200 -
+2022-01-16 16:53:51,723 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-16 16:53:59,133 INFO 127.0.0.1 - - [16/Jan/2022 16:53:59] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-16 16:53:59,218 INFO 127.0.0.1 - - [16/Jan/2022 16:53:59] "POST /manager/login HTTP/1.1" 200 -
+2022-01-16 16:54:12,809 INFO 127.0.0.1 - - [16/Jan/2022 16:54:12] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-16 16:54:12,910 INFO 127.0.0.1 - - [16/Jan/2022 16:54:12] "POST /manager/login HTTP/1.1" 200 -
+2022-01-16 16:54:16,067 INFO 127.0.0.1 - - [16/Jan/2022 16:54:16] "GET /pending HTTP/1.1" 200 -
+2022-01-16 16:54:17,920 INFO 127.0.0.1 - - [16/Jan/2022 16:54:17] "GET /pending HTTP/1.1" 200 -
+2022-01-16 16:54:19,591 INFO 127.0.0.1 - - [16/Jan/2022 16:54:19] "GET /past HTTP/1.1" 200 -
+2022-01-16 16:54:21,378 INFO 127.0.0.1 - - [16/Jan/2022 16:54:21] "GET /past HTTP/1.1" 200 -
+2022-01-16 16:54:30,171 INFO 127.0.0.1 - - [16/Jan/2022 16:54:30] "GET /past HTTP/1.1" 200 -
+2022-01-16 16:56:02,003 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-16 17:13:27,166 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-16 17:13:44,542 INFO 127.0.0.1 - - [16/Jan/2022 17:13:44] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-16 17:13:44,623 INFO 127.0.0.1 - - [16/Jan/2022 17:13:44] "POST /manager/login HTTP/1.1" 200 -
+2022-01-16 18:42:54,278 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-16 18:43:25,264 INFO 127.0.0.1 - - [16/Jan/2022 18:43:25] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-16 18:43:25,360 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 69, in manager_login
+    manager_id = manager_service.service_manager_login(body["user_name"], body["password"])
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 22, in service_manager_login
+    manager = self.manager_dao.get_manager_by_username(user_name)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 21, in get_manager_by_username
+    return Manager(*manager_info)
+TypeError: type object argument after * must be an iterable, not NoneType
+2022-01-16 18:43:25,371 INFO 127.0.0.1 - - [16/Jan/2022 18:43:25] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2022-01-16 18:46:32,835 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-16 18:46:40,102 INFO 127.0.0.1 - - [16/Jan/2022 18:46:40] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-16 18:46:40,186 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 69, in manager_login
+    manager_id = manager_service.service_manager_login(body["user_name"], body["password"])
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 22, in service_manager_login
+    manager = self.manager_dao.get_manager_by_username(user_name)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 21, in get_manager_by_username
+    manager = Manager(*manager_info)
+TypeError: type object argument after * must be an iterable, not NoneType
+2022-01-16 18:46:40,194 INFO 127.0.0.1 - - [16/Jan/2022 18:46:40] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2022-01-16 18:48:08,306 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-16 18:48:21,962 INFO 127.0.0.1 - - [16/Jan/2022 18:48:21] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-16 18:48:22,051 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 69, in manager_login
+    manager_id = manager_service.service_manager_login(body["user_name"], body["password"])
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 22, in service_manager_login
+    manager = self.manager_dao.get_manager_by_username(user_name)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 21, in get_manager_by_username
+    manager = Manager(manager_info)
+TypeError: __init__() missing 4 required positional arguments: 'first_name', 'last_name', 'user_name', and 'password'
+2022-01-16 18:48:22,062 INFO 127.0.0.1 - - [16/Jan/2022 18:48:22] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2022-01-16 18:50:37,984 INFO 127.0.0.1 - - [16/Jan/2022 18:50:37] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-16 18:50:38,036 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 69, in manager_login
+    manager_id = manager_service.service_manager_login(body["user_name"], body["password"])
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/manager_postgres_service.py", line 22, in service_manager_login
+    manager = self.manager_dao.get_manager_by_username(user_name)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/manager_postgres_dao.py", line 21, in get_manager_by_username
+    manager = Manager(*manager_info)
+TypeError: __init__() missing 4 required positional arguments: 'first_name', 'last_name', 'user_name', and 'password'
+2022-01-16 18:50:38,040 INFO 127.0.0.1 - - [16/Jan/2022 18:50:38] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2022-01-16 18:50:52,234 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-16 18:51:03,616 INFO 127.0.0.1 - - [16/Jan/2022 18:51:03] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-16 18:51:03,734 INFO 127.0.0.1 - - [16/Jan/2022 18:51:03] "POST /manager/login HTTP/1.1" 200 -
+2022-01-16 19:03:11,062 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-16 19:03:48,627 INFO 127.0.0.1 - - [16/Jan/2022 19:03:48] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-16 19:03:48,751 INFO 127.0.0.1 - - [16/Jan/2022 19:03:48] "POST /manager/login HTTP/1.1" 200 -
+2022-01-16 19:03:59,473 INFO 127.0.0.1 - - [16/Jan/2022 19:03:59] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-16 19:03:59,513 INFO 127.0.0.1 - - [16/Jan/2022 19:03:59] "POST /manager/login HTTP/1.1" 200 -
+2022-01-16 19:09:18,054 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-16 19:13:24,880 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-16 19:13:42,359 INFO 127.0.0.1 - - [16/Jan/2022 19:13:42] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-16 19:13:42,496 INFO 127.0.0.1 - - [16/Jan/2022 19:13:42] "POST /manager/login HTTP/1.1" 200 -
+2022-01-16 19:13:51,717 INFO 127.0.0.1 - - [16/Jan/2022 19:13:51] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-16 19:13:51,765 INFO 127.0.0.1 - - [16/Jan/2022 19:13:51] "POST /manager/login HTTP/1.1" 200 -
+2022-01-16 19:24:10,863 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-16 19:32:19,697 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-16 19:35:06,798 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-17 12:47:08,399 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-17 12:47:45,999 INFO 127.0.0.1 - - [17/Jan/2022 12:47:45] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-17 12:47:46,119 INFO 127.0.0.1 - - [17/Jan/2022 12:47:46] "POST /manager/login HTTP/1.1" 200 -
+2022-01-17 12:47:58,750 INFO 127.0.0.1 - - [17/Jan/2022 12:47:58] "GET /pending HTTP/1.1" 200 -
+2022-01-17 12:48:00,230 INFO 127.0.0.1 - - [17/Jan/2022 12:48:00] "GET /pending HTTP/1.1" 200 -
+2022-01-17 12:48:12,492 INFO 127.0.0.1 - - [17/Jan/2022 12:48:12] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-17 12:48:12,539 INFO 127.0.0.1 - - [17/Jan/2022 12:48:12] "POST /manager/login HTTP/1.1" 200 -
+2022-01-17 12:48:20,595 INFO 127.0.0.1 - - [17/Jan/2022 12:48:20] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-17 12:48:20,637 ERROR Exception on /employee/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 28, in employee_login
+    validated = employee_service.service_employee_login(body["user_name"], body["password"])
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 17, in service_employee_login
+    validation = self.employee_dao.employee_login(user_name, password)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 13, in employee_login
+    validated = cursor.fetchone()[0]
+TypeError: 'NoneType' object is not subscriptable
+2022-01-17 12:48:20,655 INFO 127.0.0.1 - - [17/Jan/2022 12:48:20] "[35m[1mPOST /employee/login HTTP/1.1[0m" 500 -
+2022-01-17 12:48:34,361 INFO 127.0.0.1 - - [17/Jan/2022 12:48:34] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-17 12:48:34,408 INFO 127.0.0.1 - - [17/Jan/2022 12:48:34] "POST /employee/login HTTP/1.1" 200 -
+2022-01-17 12:51:48,410 INFO 127.0.0.1 - - [17/Jan/2022 12:51:48] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-17 12:51:48,457 ERROR Exception on /employee/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 28, in employee_login
+    validated = employee_service.service_employee_login(body["user_name"], body["password"])
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 17, in service_employee_login
+    validation = self.employee_dao.employee_login(user_name, password)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 13, in employee_login
+    validated = cursor.fetchone()[0]
+TypeError: 'NoneType' object is not subscriptable
+2022-01-17 12:51:48,459 INFO 127.0.0.1 - - [17/Jan/2022 12:51:48] "[35m[1mPOST /employee/login HTTP/1.1[0m" 500 -
+2022-01-17 13:12:50,392 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-17 13:15:24,012 INFO 127.0.0.1 - - [17/Jan/2022 13:15:24] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-17 13:15:24,255 INFO 127.0.0.1 - - [17/Jan/2022 13:15:24] "POST /manager/login HTTP/1.1" 200 -
+2022-01-17 13:21:25,349 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-17 13:22:17,936 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-17 13:24:49,530 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-18 09:53:14,762 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-18 09:54:03,782 INFO 127.0.0.1 - - [18/Jan/2022 09:54:03] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-18 09:54:03,880 INFO 127.0.0.1 - - [18/Jan/2022 09:54:03] "POST /manager/login HTTP/1.1" 200 -
+2022-01-18 09:54:32,817 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-18 09:55:05,938 ERROR Exception on /manager/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 67, in manager_login
+    manager_id = manager_service.service_manager_login(body["user_name"], body["password"])
+KeyError: 'user_name'
+2022-01-18 09:55:05,943 INFO 127.0.0.1 - - [18/Jan/2022 09:55:05] "[35m[1mPOST /manager/login HTTP/1.1[0m" 500 -
+2022-01-18 09:59:17,318 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-18 09:59:21,982 INFO 127.0.0.1 - - [18/Jan/2022 09:59:21] "POST /manager/login HTTP/1.1" 200 -
+2022-01-18 09:59:51,454 INFO 127.0.0.1 - - [18/Jan/2022 09:59:51] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-18 09:59:51,493 INFO 127.0.0.1 - - [18/Jan/2022 09:59:51] "POST /manager/login HTTP/1.1" 200 -
+2022-01-18 10:04:13,953 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-18 10:13:58,761 INFO 127.0.0.1 - - [18/Jan/2022 10:13:58] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-18 10:13:58,841 INFO 127.0.0.1 - - [18/Jan/2022 10:13:58] "POST /manager/login HTTP/1.1" 200 -
+2022-01-18 10:14:41,378 INFO 127.0.0.1 - - [18/Jan/2022 10:14:41] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-18 10:14:41,416 INFO 127.0.0.1 - - [18/Jan/2022 10:14:41] "POST /manager/login HTTP/1.1" 200 -
+2022-01-18 10:16:30,408 INFO 127.0.0.1 - - [18/Jan/2022 10:16:30] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-18 10:16:30,460 INFO 127.0.0.1 - - [18/Jan/2022 10:16:30] "POST /manager/login HTTP/1.1" 200 -
+2022-01-18 10:17:22,130 INFO 127.0.0.1 - - [18/Jan/2022 10:17:22] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-18 10:17:22,167 INFO 127.0.0.1 - - [18/Jan/2022 10:17:22] "POST /manager/login HTTP/1.1" 200 -
+2022-01-18 10:18:19,215 INFO 127.0.0.1 - - [18/Jan/2022 10:18:19] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-18 10:18:19,256 INFO 127.0.0.1 - - [18/Jan/2022 10:18:19] "POST /manager/login HTTP/1.1" 200 -
+2022-01-18 10:18:53,116 INFO 127.0.0.1 - - [18/Jan/2022 10:18:53] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-18 10:18:53,210 INFO 127.0.0.1 - - [18/Jan/2022 10:18:53] "POST /manager/login HTTP/1.1" 200 -
+2022-01-18 10:24:13,256 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-18 10:25:32,820 INFO 127.0.0.1 - - [18/Jan/2022 10:25:32] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-18 10:25:32,898 INFO 127.0.0.1 - - [18/Jan/2022 10:25:32] "[31m[1mPOST /manager/login HTTP/1.1[0m" 400 -
+2022-01-18 10:25:45,213 INFO 127.0.0.1 - - [18/Jan/2022 10:25:45] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-18 10:25:45,253 INFO 127.0.0.1 - - [18/Jan/2022 10:25:45] "[31m[1mPOST /manager/login HTTP/1.1[0m" 400 -
+2022-01-18 10:25:56,563 INFO 127.0.0.1 - - [18/Jan/2022 10:25:56] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-18 10:25:56,663 INFO 127.0.0.1 - - [18/Jan/2022 10:25:56] "[31m[1mPOST /manager/login HTTP/1.1[0m" 400 -
+2022-01-18 10:26:05,379 INFO 127.0.0.1 - - [18/Jan/2022 10:26:05] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-18 10:26:05,517 INFO 127.0.0.1 - - [18/Jan/2022 10:26:05] "POST /manager/login HTTP/1.1" 200 -
+2022-01-18 10:27:29,345 INFO 127.0.0.1 - - [18/Jan/2022 10:27:29] "POST /manager/login HTTP/1.1" 200 -
+2022-01-18 10:28:53,626 INFO 127.0.0.1 - - [18/Jan/2022 10:28:53] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-18 10:28:53,702 INFO 127.0.0.1 - - [18/Jan/2022 10:28:53] "POST /manager/login HTTP/1.1" 200 -
+2022-01-18 13:35:13,010 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-18 13:44:18,767 INFO 127.0.0.1 - - [18/Jan/2022 13:44:18] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-18 13:44:18,850 ERROR Exception on /employee/login [POST]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/main.py", line 27, in employee_login
+    employee_id = employee_service.service_employee_login(body["username"], body["password"])
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/service_layer/implemented_classes/employee_postgres_service.py", line 14, in service_employee_login
+    employees = self.employee_dao.get_all_employees()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/dao_layer/implemented_classes/employee_postgres_dao.py", line 17, in get_all_employees
+    employees_list.append(Employee(*employee))
+TypeError: __init__() takes 6 positional arguments but 7 were given
+2022-01-18 13:44:18,859 INFO 127.0.0.1 - - [18/Jan/2022 13:44:18] "[35m[1mPOST /employee/login HTTP/1.1[0m" 500 -
+2022-01-18 13:44:33,012 INFO 127.0.0.1 - - [18/Jan/2022 13:44:33] "OPTIONS /manager/login HTTP/1.1" 200 -
+2022-01-18 13:44:33,051 INFO 127.0.0.1 - - [18/Jan/2022 13:44:33] "[31m[1mPOST /manager/login HTTP/1.1[0m" 400 -
+2022-01-18 13:51:40,685 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-18 13:51:49,239 INFO 127.0.0.1 - - [18/Jan/2022 13:51:49] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-18 13:51:49,313 INFO 127.0.0.1 - - [18/Jan/2022 13:51:49] "[31m[1mPOST /employee/login HTTP/1.1[0m" 400 -
+2022-01-18 13:51:58,727 INFO 127.0.0.1 - - [18/Jan/2022 13:51:58] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-18 13:51:58,801 INFO 127.0.0.1 - - [18/Jan/2022 13:51:58] "POST /employee/login HTTP/1.1" 200 -
+2022-01-18 13:52:27,975 INFO 127.0.0.1 - - [18/Jan/2022 13:52:27] "OPTIONS /reimbursements/null HTTP/1.1" 200 -
+2022-01-18 13:52:27,978 ERROR Exception on /reimbursements/null [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: view_reimbursements_by_employee_id() got an unexpected keyword argument 'employee_id'
+2022-01-18 13:52:27,982 INFO 127.0.0.1 - - [18/Jan/2022 13:52:27] "[35m[1mGET /reimbursements/null HTTP/1.1[0m" 500 -
+2022-01-18 13:53:45,353 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-18 13:54:12,186 ERROR Exception on /reimbursements/1 [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: view_reimbursements_by_employee_id() got an unexpected keyword argument 'employee_id'
+2022-01-18 13:54:12,190 INFO 127.0.0.1 - - [18/Jan/2022 13:54:12] "[35m[1mGET /reimbursements/1 HTTP/1.1[0m" 500 -
+2022-01-18 13:56:29,602 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-18 13:56:49,521 INFO 127.0.0.1 - - [18/Jan/2022 13:56:49] "OPTIONS /employee/login HTTP/1.1" 200 -
+2022-01-18 13:56:49,640 INFO 127.0.0.1 - - [18/Jan/2022 13:56:49] "POST /employee/login HTTP/1.1" 200 -
+2022-01-18 13:56:50,951 INFO 127.0.0.1 - - [18/Jan/2022 13:56:50] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2022-01-18 13:56:50,953 ERROR Exception on /reimbursements/1 [GET]
+Traceback (most recent call last):
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/dlanderos/PycharmProjects/pythonProject/Project1/venv/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: view_reimbursements_by_employee_id() got an unexpected keyword argument 'employee_id'
+2022-01-18 13:56:50,958 INFO 127.0.0.1 - - [18/Jan/2022 13:56:50] "[35m[1mGET /reimbursements/1 HTTP/1.1[0m" 500 -
+2022-01-18 13:58:02,782 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-18 13:58:12,461 INFO 127.0.0.1 - - [18/Jan/2022 13:58:12] "GET /reimbursements/1 HTTP/1.1" 200 -
+2022-01-18 13:58:19,520 INFO 127.0.0.1 - - [18/Jan/2022 13:58:19] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2022-01-18 13:58:19,565 INFO 127.0.0.1 - - [18/Jan/2022 13:58:19] "GET /reimbursements/1 HTTP/1.1" 200 -
+2022-01-18 13:58:26,398 INFO 127.0.0.1 - - [18/Jan/2022 13:58:26] "OPTIONS /reimbursements/1 HTTP/1.1" 200 -
+2022-01-18 13:58:26,439 INFO 127.0.0.1 - - [18/Jan/2022 13:58:26] "GET /reimbursements/1 HTTP/1.1" 200 -

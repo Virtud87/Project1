@@ -9,7 +9,10 @@ manager_service = ManagerPostgresService(manager_dao)
 
 def test_service_manager_login():
     try:
-        if manager_service.service_manager_login("laa", "bella1"):
+        if manager_service.service_manager_login("laPatrona", "bella1"):
             assert False
     except UsernameOrPasswordIncorrect as e:
-        assert str(e) == "Either your user name or password or both are incorrect!"
+        assert str(e) == "Either your username or password or both are incorrect!"
+
+
+

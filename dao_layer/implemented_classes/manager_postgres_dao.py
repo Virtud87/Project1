@@ -1,8 +1,6 @@
 from typing import List
-
-
 from dao_layer.abstract_classes.manager_dao import ManagerDAO
-from entities.credentials import Credentials
+from entities.manager import Manager
 from entities.total_amount_approved import TotalAmountApproved
 from entities.total_number_approved_food_drink import TotalNumberApprovedFoodDrink
 from entities.total_number_approved_requests import TotalNumberApprovedRequests
@@ -13,17 +11,27 @@ from entities.reimbursement import Reimbursement
 
 
 class ManagerPostgresDAO(ManagerDAO):
+    def get_all_managers(self):
+        sql = "select * from managers"
+        cursor = connection.cursor()
+        cursor.execute(sql)
+        managers = cursor.fetchall()
+        managers_list = []
+        for manager in managers:
+            managers_list.append(Manager(*manager))
+        return managers_list
+
     def manager_login(self, user_name: str, password: str):
         sql = "select manager_id from managers where user_name = %s and password = %s"
         cursor = connection.cursor()
         cursor.execute(sql, (user_name, password))
-        validated = cursor.fetchone()
-        return validated
+        manager_id = cursor.fetchone()[0]
+        return manager_id
 
-    def return_manager_id(self, credentials: Credentials):
+    def return_manager_id(self, user_name: str, password: str):
         sql = "select manager_id from managers where user_name = %s and password = %s"
         cursor = connection.cursor()
-        cursor.execute(sql, (credentials.user_name, credentials.password))
+        cursor.execute(sql, (user_name, password))
         manager_id = cursor.fetchone()
         return str(manager_id)
 

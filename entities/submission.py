@@ -1,5 +1,5 @@
 class Submission:
-    def __init__(self, reimbursement_id: int, employee_id: int, date: str, amount, reason: str):
+    def __init__(self, reimbursement_id, employee_id: int, date: str, amount, reason: str):
         self.reimbursement_id = reimbursement_id
         self.employee_id = employee_id
         self. date = date

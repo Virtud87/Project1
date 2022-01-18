@@ -1,7 +1,5 @@
 from abc import ABC, abstractmethod
-from typing import List, Tuple
-
-from entities.credentials import Credentials
+from typing import List
 from entities.reimbursement import Reimbursement
 from entities.total_amount_approved import TotalAmountApproved
 from entities.total_number_approved_food_drink import TotalNumberApprovedFoodDrink
@@ -12,11 +10,15 @@ from entities.total_number_denied_requests import TotalNumberDeniedRequests
 
 class ManagerDAO(ABC):
     @abstractmethod
+    def get_all_managers(self):
+        pass
+
+    @abstractmethod
     def manager_login(self, user_name: str, password: str):
         pass
 
     @abstractmethod
-    def return_manager_id(self, credentials: Credentials):
+    def return_manager_id(self, user_name: str, password: str):
         pass
 
     @abstractmethod

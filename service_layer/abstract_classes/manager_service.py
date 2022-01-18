@@ -1,7 +1,5 @@
 from abc import ABC, abstractmethod
-from typing import List, Tuple
-
-from entities.credentials import Credentials
+from typing import List
 from entities.reimbursement import Reimbursement
 from entities.total_amount_approved import TotalAmountApproved
 from entities.total_number_approved_food_drink import TotalNumberApprovedFoodDrink

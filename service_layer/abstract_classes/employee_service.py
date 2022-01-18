@@ -1,9 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import List
-
-from entities.credentials import Credentials
 from entities.reimbursement import Reimbursement
-from entities.submission import Submission
 
 
 class EmployeeService(ABC):
@@ -12,9 +9,9 @@ class EmployeeService(ABC):
         pass
 
     @abstractmethod
-    def service_submit_new_request(self, submission: Submission):
+    def service_submit_new_request(self, employee_id, date, amount, reason):
         pass
 
     @abstractmethod
-    def service_view_reimbursements_by_employee_id(self, employee_id: int) -> List[Reimbursement]:
+    def service_view_reimbursements_by_employee_id(self, validated) -> List[Reimbursement]:
         pass
