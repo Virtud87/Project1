@@ -1,11 +1,11 @@
-Project1
+# Project1
 
 This project is about creating an expense reimbursement system
 for a small company/group. This program allows employees to create reimbursement
 requests, and all managers can view these requests and approve or deny them. When they approve/deny they can optionally leave a message for the employee.
 
 
-Technologies Used
+# Technologies Used
 
 Python
 JavaScript
@@ -19,7 +19,7 @@ Flask
 Psycopg2
 
 
-Features
+# Features
 
 Emloyee can log in to their account
 Employee can create a reimbursement request
@@ -35,13 +35,13 @@ Manager can view statistics about employees' requests
 Manager can log out
 
 
-To-do list:
+# To-do list:
 
 Improve the reimbursement creation form to remove the need to enter a reimbursement id
 Add more exception handlers
 
 
-Getting Started
+# Getting Started
 
 git clone command: https://github.com/Virtud87/Project1.git 
 environment set up--download:
@@ -53,6 +53,6 @@ behave plugin
 gherkin plugin
 
 
-Usage
+# Usage
 
 To use this program after installation, run server and run home page on live server.
