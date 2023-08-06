@@ -20,5 +20,4 @@ connection = create_connection()
 
 print(connection)
 
-# environment variables: PYTHONUNBUFFERED=1;HOST=database-1.ckokj6ajfvpg.us-west-1.rds.amazonaws.com;DB=postgres;
-# PASSWORD=Udonlamei31;PORT=5432;USER=Virtud87
+
